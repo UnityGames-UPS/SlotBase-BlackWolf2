@@ -1,0 +1,1846 @@
+fileFormatVersion: 2
+guid: 8aa1d57f0d6174000be30ff13fb3d017
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3104977338160123238
+    second: PAYLINES2_0
+  - first:
+      213: -7275583722754940367
+    second: PAYLINES2_1
+  - first:
+      213: -6270205160442598068
+    second: PAYLINES2_2
+  - first:
+      213: 2091068548055314353
+    second: PAYLINES2_3
+  - first:
+      213: 6554087675260466245
+    second: PAYLINES2_4
+  - first:
+      213: -7297519278370792996
+    second: PAYLINES2_5
+  - first:
+      213: 2916322658375489054
+    second: PAYLINES2_6
+  - first:
+      213: 2105060722642928115
+    second: PAYLINES2_7
+  - first:
+      213: -8345941914475435388
+    second: PAYLINES2_8
+  - first:
+      213: -4978432331905059107
+    second: PAYLINES2_9
+  - first:
+      213: -7664835510691381712
+    second: PAYLINES2_10
+  - first:
+      213: 6818857708168710038
+    second: PAYLINES2_11
+  - first:
+      213: 79707906881537168
+    second: PAYLINES2_12
+  - first:
+      213: 8315471027776461366
+    second: PAYLINES2_13
+  - first:
+      213: 637559137557569301
+    second: PAYLINES2_14
+  - first:
+      213: 3570070512042709521
+    second: PAYLINES2_15
+  - first:
+      213: 6839294993371872887
+    second: PAYLINES2_16
+  - first:
+      213: -1599455204907500777
+    second: PAYLINES2_17
+  - first:
+      213: 1950101215808237741
+    second: PAYLINES2_18
+  - first:
+      213: 8038350191569577387
+    second: PAYLINES2_19
+  - first:
+      213: -5185669417291933760
+    second: PAYLINES2_20
+  - first:
+      213: 1326188347288403924
+    second: PAYLINES2_21
+  - first:
+      213: 5389052283417507056
+    second: PAYLINES2_22
+  - first:
+      213: 5303925464717133514
+    second: PAYLINES2_23
+  - first:
+      213: -4431662664653181834
+    second: PAYLINES2_24
+  - first:
+      213: 4759318580489748478
+    second: PAYLINES2_25
+  - first:
+      213: 5828595476510115894
+    second: PAYLINES2_26
+  - first:
+      213: 5402704492811886409
+    second: PAYLINES2_27
+  - first:
+      213: -3163050862535974594
+    second: PAYLINES2_28
+  - first:
+      213: -2612311797862473095
+    second: PAYLINES2_29
+  - first:
+      213: 8277132901709766968
+    second: PAYLINES2_30
+  - first:
+      213: -7555583013047787986
+    second: PAYLINES2_31
+  - first:
+      213: -5236965645762881254
+    second: PAYLINES2_32
+  - first:
+      213: 5682665020354519207
+    second: PAYLINES2_33
+  - first:
+      213: 7441877948700654355
+    second: PAYLINES2_34
+  - first:
+      213: -5022488342563480519
+    second: PAYLINES2_35
+  - first:
+      213: -3008046568047034234
+    second: PAYLINES2_36
+  - first:
+      213: 1620508455590634043
+    second: PAYLINES2_37
+  - first:
+      213: -6960581865742007691
+    second: PAYLINES2_38
+  - first:
+      213: -240099509608579580
+    second: PAYLINES2_39
+  - first:
+      213: 3868155374134301759
+    second: PAYLINES2_40
+  - first:
+      213: -6874772267309755470
+    second: PAYLINES2_41
+  - first:
+      213: 2427884046627256506
+    second: PAYLINES2_42
+  - first:
+      213: -1333357571348318111
+    second: PAYLINES2_43
+  - first:
+      213: 6789392554101039702
+    second: PAYLINES2_44
+  - first:
+      213: 5484061242466736039
+    second: PAYLINES2_45
+  - first:
+      213: 8526768516835798000
+    second: PAYLINES2_46
+  - first:
+      213: -5573599816121600367
+    second: PAYLINES2_47
+  - first:
+      213: 3465374259194093204
+    second: PAYLINES2_48
+  - first:
+      213: 94318078541976650
+    second: PAYLINES2_49
+  - first:
+      213: 7037489318877157619
+    second: PAYLINES2_50
+  - first:
+      213: -6148141924744476349
+    second: PAYLINES2_51
+  - first:
+      213: 5652172201924671675
+    second: PAYLINES2_52
+  - first:
+      213: 4813658608366162890
+    second: PAYLINES2_53
+  - first:
+      213: -220492973668365493
+    second: PAYLINES2_54
+  - first:
+      213: -8386404487161835050
+    second: PAYLINES2_55
+  - first:
+      213: 8647709527158125519
+    second: PAYLINES2_56
+  - first:
+      213: 4333871739875890705
+    second: PAYLINES2_57
+  - first:
+      213: -6319972153705880997
+    second: PAYLINES2_58
+  - first:
+      213: -3733746145461802498
+    second: PAYLINES2_59
+  - first:
+      213: -2824488071606087173
+    second: PAYLINES2_60
+  - first:
+      213: 6958735491020563903
+    second: PAYLINES2_61
+  - first:
+      213: -925148667834106995
+    second: PAYLINES2_62
+  - first:
+      213: -6839936901339515893
+    second: PAYLINES2_63
+  - first:
+      213: 8137346425117637676
+    second: PAYLINES2_64
+  - first:
+      213: 5103457685009907186
+    second: PAYLINES2_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PAYLINES2_0
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 830
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92f353df87e8e4d0800000000000000
+      internalID: -3104977338160123238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 794
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132e39fd62fe70b90800000000000000
+      internalID: -7275583722754940367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_2
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 830
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d6ff6a0a1cbf8a0800000000000000
+      internalID: -6270205160442598068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 794
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf24d7f3c7f40d10800000000000000
+      internalID: 2091068548055314353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_4
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 828
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5447aaef30cc4fa50800000000000000
+      internalID: 6554087675260466245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_5
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 795
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9d42751e00aba90800000000000000
+      internalID: -7297519278370792996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_6
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 828
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16d4e6a10cd87820800000000000000
+      internalID: 2916322658375489054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_7
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 794
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f142cbf29da63d10800000000000000
+      internalID: 2105060722642928115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_8
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 829
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ae5a72c024d2c80800000000000000
+      internalID: -8345941914475435388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 794
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6ba76cb2e09eab0800000000000000
+      internalID: -4978432331905059107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 689
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03eb07b86b801a590800000000000000
+      internalID: -7664835510691381712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 656
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697845d25f271ae50800000000000000
+      internalID: 6818857708168710038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 689
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094c6734bed2b1100800000000000000
+      internalID: 79707906881537168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 656
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a1baea7dc766370800000000000000
+      internalID: 8315471027776461366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_14
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 689
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f5c6d58a019d800800000000000000
+      internalID: 637559137557569301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_15
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 657
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112176537307b8130800000000000000
+      internalID: 3570070512042709521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_16
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 690
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eb9027f8e0aee50800000000000000
+      internalID: 6839294993371872887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_17
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 656
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bb65527f79dc9e0800000000000000
+      internalID: -1599455204907500777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_18
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 689
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0be4449b6201b10800000000000000
+      internalID: 1950101215808237741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_19
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 689
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5a2b409e4fd8f60800000000000000
+      internalID: 8038350191569577387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_20
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 656
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c715bbc32dc808b0800000000000000
+      internalID: -5185669417291933760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_21
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 553
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df33618641976210800000000000000
+      internalID: 1326188347288403924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 554
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4bb15df72c9ca40800000000000000
+      internalID: 5389052283417507056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 516
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac60d97db145b9940800000000000000
+      internalID: 5303925464717133514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_24
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 554
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c6cf459429f72c0800000000000000
+      internalID: -4431662664653181834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_25
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 554
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efff103780f7c0240800000000000000
+      internalID: 4759318580489748478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_26
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 516
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63885d464b453e050800000000000000
+      internalID: 5828595476510115894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_27
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 553
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f95788c134afa40800000000000000
+      internalID: 5402704492811886409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_28
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 553
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31ec04cff59a14d0800000000000000
+      internalID: -3163050862535974594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_29
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 517
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97268dda2443fbbd0800000000000000
+      internalID: -2612311797862473095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_30
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 553
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831eb1d15884ed270800000000000000
+      internalID: 8277132901709766968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_31
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 554
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e9f44e74d252790800000000000000
+      internalID: -7555583013047787986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_32
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 516
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a191167ed7f8257b0800000000000000
+      internalID: -5236965645762881254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_33
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 553
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0e4cb5ab1ecde40800000000000000
+      internalID: 5682665020354519207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_34
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 553
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b7d1ac09cd64760800000000000000
+      internalID: 7441877948700654355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_35
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 516
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c96f476798c4ab0800000000000000
+      internalID: -5022488342563480519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 415
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68049bb65954146d0800000000000000
+      internalID: -3008046568047034234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_37
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 415
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b322ff2cad33d7610800000000000000
+      internalID: 1620508455590634043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_38
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 379
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5720c6efbab076f90800000000000000
+      internalID: -6960581865742007691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_39
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 415
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ef803a4cefaacf0800000000000000
+      internalID: -240099509608579580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_40
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 415
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f341b4381d27ea530800000000000000
+      internalID: 3868155374134301759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_41
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 379
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b39b470c07e790a0800000000000000
+      internalID: -6874772267309755470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_42
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 414
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab83e0b4da391b120800000000000000
+      internalID: 2427884046627256506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_43
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 414
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168b4317a56fe7de0800000000000000
+      internalID: -1333357571348318111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_44
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 380
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652efd36e84c83e50800000000000000
+      internalID: 6789392554101039702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_45
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 414
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a797bbe4ac4b1c40800000000000000
+      internalID: 5484061242466736039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_46
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 415
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb6bff0aca255670800000000000000
+      internalID: 8526768516835798000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_47
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 379
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196b3e75f7896a2b0800000000000000
+      internalID: -5573599816121600367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_48
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 414
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49edb05478b771030800000000000000
+      internalID: 3465374259194093204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_49
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 414
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44546feac51f4100800000000000000
+      internalID: 94318078541976650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_50
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 379
+        width: 128
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f85742df3f2aa160800000000000000
+      internalID: 7037489318877157619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_51
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 276
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3494be26e796daaa0800000000000000
+      internalID: -6148141924744476349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_52
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 277
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8be01dbac807e40800000000000000
+      internalID: 5652172201924671675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_53
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 239
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac39aad100d8dc240800000000000000
+      internalID: 4813658608366162890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_54
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 277
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b07050fc6a0fcf0800000000000000
+      internalID: -220492973668365493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_55
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 277
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d11aff4d818d9b80800000000000000
+      internalID: -8386404487161835050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_56
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 239
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc375075ff5d20870800000000000000
+      internalID: 8647709527158125519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_57
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 277
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1161865b261052c30800000000000000
+      internalID: 4333871739875890705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_58
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 276
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5220049fc2fa48a0800000000000000
+      internalID: -6319972153705880997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_59
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 240
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9e346b9a11f2cc0800000000000000
+      internalID: -3733746145461802498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_60
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 277
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1579b40176dc8d0800000000000000
+      internalID: -2824488071606087173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_61
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 277
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb52f246f05629060800000000000000
+      internalID: 6958735491020563903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_62
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 239
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b725130363923f0800000000000000
+      internalID: -925148667834106995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_63
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 277
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b047295b0a9a311a0800000000000000
+      internalID: -6839936901339515893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_64
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 276
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c7e6bc579ade070800000000000000
+      internalID: 8137346425117637676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAYLINES2_65
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 239
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdb049a9bf13d640800000000000000
+      internalID: 5103457685009907186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PAYLINES2_0: -3104977338160123238
+      PAYLINES2_1: -7275583722754940367
+      PAYLINES2_10: -7664835510691381712
+      PAYLINES2_11: 6818857708168710038
+      PAYLINES2_12: 79707906881537168
+      PAYLINES2_13: 8315471027776461366
+      PAYLINES2_14: 637559137557569301
+      PAYLINES2_15: 3570070512042709521
+      PAYLINES2_16: 6839294993371872887
+      PAYLINES2_17: -1599455204907500777
+      PAYLINES2_18: 1950101215808237741
+      PAYLINES2_19: 8038350191569577387
+      PAYLINES2_2: -6270205160442598068
+      PAYLINES2_20: -5185669417291933760
+      PAYLINES2_21: 1326188347288403924
+      PAYLINES2_22: 5389052283417507056
+      PAYLINES2_23: 5303925464717133514
+      PAYLINES2_24: -4431662664653181834
+      PAYLINES2_25: 4759318580489748478
+      PAYLINES2_26: 5828595476510115894
+      PAYLINES2_27: 5402704492811886409
+      PAYLINES2_28: -3163050862535974594
+      PAYLINES2_29: -2612311797862473095
+      PAYLINES2_3: 2091068548055314353
+      PAYLINES2_30: 8277132901709766968
+      PAYLINES2_31: -7555583013047787986
+      PAYLINES2_32: -5236965645762881254
+      PAYLINES2_33: 5682665020354519207
+      PAYLINES2_34: 7441877948700654355
+      PAYLINES2_35: -5022488342563480519
+      PAYLINES2_36: -3008046568047034234
+      PAYLINES2_37: 1620508455590634043
+      PAYLINES2_38: -6960581865742007691
+      PAYLINES2_39: -240099509608579580
+      PAYLINES2_4: 6554087675260466245
+      PAYLINES2_40: 3868155374134301759
+      PAYLINES2_41: -6874772267309755470
+      PAYLINES2_42: 2427884046627256506
+      PAYLINES2_43: -1333357571348318111
+      PAYLINES2_44: 6789392554101039702
+      PAYLINES2_45: 5484061242466736039
+      PAYLINES2_46: 8526768516835798000
+      PAYLINES2_47: -5573599816121600367
+      PAYLINES2_48: 3465374259194093204
+      PAYLINES2_49: 94318078541976650
+      PAYLINES2_5: -7297519278370792996
+      PAYLINES2_50: 7037489318877157619
+      PAYLINES2_51: -6148141924744476349
+      PAYLINES2_52: 5652172201924671675
+      PAYLINES2_53: 4813658608366162890
+      PAYLINES2_54: -220492973668365493
+      PAYLINES2_55: -8386404487161835050
+      PAYLINES2_56: 8647709527158125519
+      PAYLINES2_57: 4333871739875890705
+      PAYLINES2_58: -6319972153705880997
+      PAYLINES2_59: -3733746145461802498
+      PAYLINES2_6: 2916322658375489054
+      PAYLINES2_60: -2824488071606087173
+      PAYLINES2_61: 6958735491020563903
+      PAYLINES2_62: -925148667834106995
+      PAYLINES2_63: -6839936901339515893
+      PAYLINES2_64: 8137346425117637676
+      PAYLINES2_65: 5103457685009907186
+      PAYLINES2_7: 2105060722642928115
+      PAYLINES2_8: -8345941914475435388
+      PAYLINES2_9: -4978432331905059107
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
