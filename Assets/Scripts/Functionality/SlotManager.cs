@@ -14,10 +14,13 @@ public class SlotManager : MonoBehaviour
     [Header("Slot Images")]
     [SerializeField] private List<SlotImage> _totalImages;     //class to store total images
     [SerializeField] private List<SlotImage> _resultImages;     //class to store the result matrix
+    [SerializeField] private List<SlotImage> _winSlotImages;     //class to store the winning line images
 
     [Header("Slots Transforms")]
     [SerializeField] private Transform[] _slotTransforms;
 
+    [Header("UI Elements")]
+    [SerializeField] private GameObject WinSlotsParent;
 
     [Header("Managers")]
     [SerializeField] private AudioController _audioController;
@@ -196,6 +199,12 @@ public class SlotManager : MonoBehaviour
             yield break;
         }
 
+        // win line/slot reset area
+        StopCoroutine(_loopLinesCoroutine);
+        _loopLinesCoroutine = null;
+        WinSlotsParent.SetActive(false);
+        //
+
         if (_audioController) _audioController.PlayWLAudio("spin");
 
         _checkSpinAudio = true;
@@ -231,8 +240,8 @@ public class SlotManager : MonoBehaviour
         //         }
         //     }
         // }
-        
-         ResultSlotImages();
+
+        ResultSlotImages();
 
         if (_isTurboOn)
         {
@@ -260,6 +269,11 @@ public class SlotManager : MonoBehaviour
         yield return _alltweens[^1].WaitForCompletion();
         KillAllTweens();
         //shuffleSlotImages(true);
+
+        if (_socketManager.resultData.payload.wins.Count > 0)
+        {
+            _loopLinesCoroutine = StartCoroutine(WinLineAnimation(_socketManager.resultData.payload.wins));
+        }
 
         // if (_socketManager.resultData.diamondCount != diamondCount && _isFreeSpin)
         // {
@@ -415,6 +429,32 @@ public class SlotManager : MonoBehaviour
             _alltweens.Clear();
         }
     }
+    #endregion
+
+    #region WinningLines
+
+    private IEnumerator WinLineAnimation(List<Win> wins)
+    {
+        WinSlotsParent.SetActive(true);
+        while (true)
+        {
+            for (int i = 0; i < wins.Count; i++)
+            {
+                for (int j = 0; j < _winSlotImages[wins[i].positions[j]].slotImages.Count; j++)
+                {
+                    _winSlotImages[wins[i].positions[j]].slotImages[j].gameObject.SetActive(true);
+                    //start image animation
+                }
+                yield return new WaitForSeconds(1f);
+                for (int j = 0; j < _winSlotImages[wins[i].positions[j]].slotImages.Count; j++)
+                {
+                    _winSlotImages[wins[i].positions[j]].slotImages[j].gameObject.SetActive(false);
+                    //reset image animation
+                }
+            }
+        }
+    }
+
     #endregion
 }
 
