@@ -1,9 +1,18 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="com.Tivadar.Best.HTTP.csproj" />
+  <Project Path="ToolBuddy.Curvy.Editor.csproj" />
+  <Project Path="ToolBuddy.Curvy.csproj" />
+  <Project Path="ToolBuddy.Curvy.Examples.csproj" />
+  <Project Path="FluffyUnderware.DevTools.Editor.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="FluffyUnderware.DevTools.csproj" />
+  <Project Path="ToolBuddy.ArraysPooling.csproj" />
   <Project Path="com.Tivadar.Best.SocketIO.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="ToolBuddy.Dependencies.VectorGraphics.csproj" />
   <Project Path="com.Tivadar.Best.WebSockets.csproj" />
+  <Project Path="LibTessDotNet.csproj" />
+  <Project Path="ToolBuddy.Curvy.Examples.Editor.csproj" />
   <Project Path="com.Tivadar.Best.HTTP.Profiler.Editor.csproj" />
 </Solution>

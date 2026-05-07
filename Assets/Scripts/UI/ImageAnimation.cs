@@ -8,14 +8,15 @@ public class ImageAnimation : MonoBehaviour
 	{
 		NONE,
 		PLAYING,
-		PAUSED
+		PAUSED,
+		FINISHED
 	}
-	[SerializeField] private List<Sprite> textureArray;
+	[SerializeField] internal List<Sprite> textureArray;
 	[SerializeField] private Image rendererDelegate;
 	[SerializeField] private bool useSharedMaterial = true;
-	[SerializeField] private bool doLoopAnimation = true;
+	[SerializeField] internal bool doLoopAnimation = true;
 	[SerializeField] private bool StartOnAwake;
-	[SerializeField] private float AnimationSpeed = 5f;
+	[SerializeField] internal float AnimationSpeed = 5f;
 	[SerializeField] private float delayBetweenLoop;
 	[HideInInspector] public ImageState currentAnimationState;
 	private int indexOfTexture;
@@ -45,6 +46,10 @@ public class ImageAnimation : MonoBehaviour
 			{
 				Invoke("AnimationProcess", delayBetweenAnimation + delayBetweenLoop);
 			}
+			else
+			{
+				currentAnimationState = ImageState.FINISHED;
+			}
 		}
 		else
 		{
@@ -54,14 +59,15 @@ public class ImageAnimation : MonoBehaviour
 
 	internal void StartAnimation()
 	{
+		// Force state to NONE so this always runs even if StopAnimation wasn't called first
+		CancelInvoke("AnimationProcess");
+		currentAnimationState = ImageState.NONE;
+
 		indexOfTexture = 0;
-		if (currentAnimationState == ImageState.NONE)
-		{
-			RevertToInitialState();
-			delayBetweenAnimation = idealFrameRate * (float)textureArray.Count / AnimationSpeed;
-			currentAnimationState = ImageState.PLAYING;
-			Invoke("AnimationProcess", delayBetweenAnimation);
-		}
+		RevertToInitialState();
+		delayBetweenAnimation = idealFrameRate * (float)textureArray.Count / AnimationSpeed;
+		currentAnimationState = ImageState.PLAYING;
+		Invoke("AnimationProcess", delayBetweenAnimation);
 	}
 
 	internal void PauseAnimation()
@@ -84,12 +90,10 @@ public class ImageAnimation : MonoBehaviour
 
 	internal void StopAnimation()
 	{
-		if (currentAnimationState != 0)
-		{
+		CancelInvoke("AnimationProcess");
+		if (textureArray != null && textureArray.Count > 0)
 			rendererDelegate.sprite = textureArray[0];
-			CancelInvoke("AnimationProcess");
-			currentAnimationState = ImageState.NONE;
-		}
+		currentAnimationState = ImageState.NONE;
 	}
 
 	private void RevertToInitialState()

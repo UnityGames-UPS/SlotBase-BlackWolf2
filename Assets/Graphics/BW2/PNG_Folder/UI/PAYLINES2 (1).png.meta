@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 34f5b0ad886bf416fbdfe476a48aa340
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4843633264666297422
+    second: PAYLINES2 (1)_0
+  - first:
+      213: 1779923097916087666
+    second: PAYLINES2 (1)_1
+  - first:
+      213: 4418476823456612223
+    second: PAYLINES2 (1)_2
+  - first:
+      213: -753406019597414572
+    second: PAYLINES2 (1)_3
+  - first:
+      213: -1559819659318753135
+    second: PAYLINES2 (1)_4
+  - first:
+      213: -7758829526372484314
+    second: PAYLINES2 (1)_5
+  - first:
+      213: -1019218496220171627
+    second: PAYLINES2 (1)_6
+  - first:
+      213: -2355135224433305824
+    second: PAYLINES2 (1)_7
+  - first:
+      213: 1924893849549665100
+    second: PAYLINES2 (1)_8
+  - first:
+      213: 109771251763864035
+    second: PAYLINES2 (1)_9
+  - first:
+      213: -6129792656599547653
+    second: PAYLINES2 (1)_10
+  - first:
+      213: 8678293824623633040
+    second: PAYLINES2 (1)_11
+  - first:
+      213: 238093006376346699
+    second: PAYLINES2 (1)_12
+  - first:
+      213: -2618235647020086213
+    second: PAYLINES2 (1)_13
+  - first:
+      213: -7484089549656090178
+    second: PAYLINES2 (1)_14
+  - first:
+      213: -3395347415744265763
+    second: PAYLINES2 (1)_15
+  - first:
+      213: -5008509115983626964
+    second: PAYLINES2 (1)_16
+  - first:
+      213: 1473142441076040240
+    second: PAYLINES2 (1)_17
+  - first:
+      213: -1646118202727094460
+    second: PAYLINES2 (1)_18
+  - first:
+      213: 2537199660706775028
+    second: PAYLINES2 (1)_19
+  - first:
+      213: -2937296009484917999
+    second: PAYLINES2 (1)_20
+  - first:
+      213: 1089507935295542316
+    second: PAYLINES2 (1)_21
+  - first:
+      213: -468077135109456075
+    second: PAYLINES2 (1)_22
+  - first:
+      213: -767523304555806911
+    second: PAYLINES2 (1)_23
+  - first:
+      213: 1892428502708005254
+    second: PAYLINES2 (1)_24
+  - first:
+      213: -7979633758742534671
+    second: PAYLINES2 (1)_25
+  - first:
+      213: 4955443342309796223
+    second: PAYLINES2 (1)_26
+  - first:
+      213: 7418783540806180479
+    second: PAYLINES2 (1)_27
+  - first:
+      213: 41329247151809916
+    second: PAYLINES2 (1)_28
+  - first:
+      213: -1117033037771812196
+    second: PAYLINES2 (1)_29
+  - first:
+      213: 4330640204334970111
+    second: PAYLINES2 (1)_30
+  - first:
+      213: -5407550021037733771
+    second: PAYLINES2 (1)_31
+  - first:
+      213: -524886885287817781
+    second: PAYLINES2 (1)_32
+  - first:
+      213: -7098274420842272940
+    second: PAYLINES2 (1)_33
+  - first:
+      213: -9062382373271423514
+    second: PAYLINES2 (1)_34
+  - first:
+      213: 723147350948304753
+    second: PAYLINES2 (1)_35
+  - first:
+      213: -6501670856126092329
+    second: PAYLINES2 (1)_36
+  - first:
+      213: 4049690544678147890
+    second: PAYLINES2 (1)_37
+  - first:
+      213: -5889477644027083266
+    second: PAYLINES2 (1)_38
+  - first:
+      213: 8420523016985993297
+    second: PAYLINES2 (1)_39
+  - first:
+      213: -4285860199419020721
+    second: PAYLINES2 (1)_40
+  - first:
+      213: -4981710067576418481
+    second: PAYLINES2 (1)_41
+  - first:
+      213: 6812582228670922632
+    second: PAYLINES2 (1)_42
+  - first:
+      213: 3264925208751030777
+    second: PAYLINES2 (1)_43
+  - first:
+      213: -9156398651690198501
+    second: PAYLINES2 (1)_44
+  - first:
+      213: 123118786216376113
+    second: PAYLINES2 (1)_45
+  - first:
+      213: 3543203327996058487
+    second: PAYLINES2 (1)_46
+  - first:
+      213: -7534686020929561806
+    second: PAYLINES2 (1)_47
+  - first:
+      213: 4958346484532623006
+    second: PAYLINES2 (1)_48
+  - first:
+      213: -2374036175958420104
+    second: PAYLINES2 (1)_49
+  - first:
+      213: 6863574605215764299
+    second: PAYLINES2 (1)_50
+  - first:
+      213: 1604597351844657029
+    second: PAYLINES2 (1)_51
+  - first:
+      213: -6629606605034549328
+    second: PAYLINES2 (1)_52
+  - first:
+      213: -6552601668212092751
+    second: PAYLINES2 (1)_53
+  - first:
+      213: 6408116606302863692
+    second: PAYLINES2 (1)_54
+  - first:
+      213: 5248486278640649203
+    second: PAYLINES2 (1)_55
+  - first:
+      213: -8908310462821639308
+    second: PAYLINES2 (1)_56
+  - first:
+      213: 6672448404205822766
+    second: PAYLINES2 (1)_57
+  - first:
+      213: 2258259486654429669
+    second: PAYLINES2 (1)_58
+  - first:
+      213: 1701310407858328323
+    second: PAYLINES2 (1)_59
+  - first:
+      213: 7262129136738663171
+    second: PAYLINES2 (1)_60
+  - first:
+      213: -5554823347378419263
+    second: PAYLINES2 (1)_61
+  - first:
+      213: 4324146009819445148
+    second: PAYLINES2 (1)_62
+  - first:
+      213: -8464952809023338417
+    second: PAYLINES2 (1)_63
+  - first:
+      213: -971817242144482056
+    second: PAYLINES2 (1)_64
+  - first:
+      213: 8448087590842309859
+    second: PAYLINES2 (1)_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PAYLINES2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 194
+        width: 1374
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4443b2aaca083340800000000000000
+      internalID: 4843633264666297422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PAYLINES2 (1)_0: 4843633264666297422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

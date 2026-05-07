@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 81f17273afecf48bea358e6a9ebfdbdb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1659938450965642605
+    second: silver numbers_0
+  - first:
+      213: -5317684080751813513
+    second: silver numbers_1
+  - first:
+      213: 7095915863082060018
+    second: silver numbers_2
+  - first:
+      213: -9207363376710069369
+    second: silver numbers_3
+  - first:
+      213: 415069873672488256
+    second: silver numbers_4
+  - first:
+      213: 4049643421090876919
+    second: silver numbers_5
+  - first:
+      213: 1722517862264724850
+    second: silver numbers_6
+  - first:
+      213: -655051807541053081
+    second: silver numbers_7
+  - first:
+      213: 6117409269732787536
+    second: silver numbers_8
+  - first:
+      213: -948098478337334984
+    second: silver numbers_9
+  - first:
+      213: -8059487868213776848
+    second: silver numbers_10
+  - first:
+      213: 4867251589976213723
+    second: silver numbers_11
+  - first:
+      213: 6063050530964400899
+    second: silver numbers_12
+  - first:
+      213: -5225212842229295394
+    second: silver numbers_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: silver numbers_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 108
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3924e2906c6b6f8e0800000000000000
+      internalID: -1659938450965642605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 61
+        width: 208
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cd90bb08ac336b0800000000000000
+      internalID: -5317684080751813513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_2
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 50
+        width: 199
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8c017b1e1c97260800000000000000
+      internalID: 7095915863082060018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 57
+        width: 216
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7835145aacfd83080800000000000000
+      internalID: -9207363376710069369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_4
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 50
+        width: 199
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0450739d9df92c500800000000000000
+      internalID: 415069873672488256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_5
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 53
+        width: 213
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd8e1d4c39333830800000000000000
+      internalID: 4049643421090876919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_6
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 65
+        width: 187
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ddd839edc97e710800000000000000
+      internalID: 1722517862264724850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_7
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 61
+        width: 217
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769b9060ad9c8e6f0800000000000000
+      internalID: -655051807541053081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_8
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 60
+        width: 206
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055ca14c15765e450800000000000000
+      internalID: 6117409269732787536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_9
+      rect:
+        serializedVersion: 2
+        x: 2884
+        y: 58
+        width: 218
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8316d9a057da7d2f0800000000000000
+      internalID: -948098478337334984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_10
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 78
+        width: 87
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e2c8f1c72f62090800000000000000
+      internalID: -8059487868213776848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_11
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 51
+        width: 88
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8ccf48883fb8340800000000000000
+      internalID: 4867251589976213723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_12
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 68
+        width: 221
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b6061a558442450800000000000000
+      internalID: 6063050530964400899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silver numbers_13
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed61d17ba905c77b0800000000000000
+      internalID: -5225212842229295394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4b1269fcd48349c48b8d6257c05b0fe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      silver numbers_0: -1659938450965642605
+      silver numbers_1: -5317684080751813513
+      silver numbers_10: -8059487868213776848
+      silver numbers_11: 4867251589976213723
+      silver numbers_12: 6063050530964400899
+      silver numbers_13: -5225212842229295394
+      silver numbers_2: 7095915863082060018
+      silver numbers_3: -9207363376710069369
+      silver numbers_4: 415069873672488256
+      silver numbers_5: 4049643421090876919
+      silver numbers_6: 1722517862264724850
+      silver numbers_7: -655051807541053081
+      silver numbers_8: 6117409269732787536
+      silver numbers_9: -948098478337334984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

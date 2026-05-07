@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 520b0bcaecb4948838fd1b5fd3080755
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3304525397418041354
+    second: shiny numbers_0
+  - first:
+      213: 3527092674179624771
+    second: shiny numbers_1
+  - first:
+      213: -1872868230607573311
+    second: shiny numbers_2
+  - first:
+      213: 8855072142111805009
+    second: shiny numbers_3
+  - first:
+      213: -8328686492328359214
+    second: shiny numbers_4
+  - first:
+      213: 3225275188864712620
+    second: shiny numbers_5
+  - first:
+      213: 6598272339968034213
+    second: shiny numbers_6
+  - first:
+      213: -8588281227430398655
+    second: shiny numbers_7
+  - first:
+      213: 2684863433793429254
+    second: shiny numbers_8
+  - first:
+      213: 7485229376600224542
+    second: shiny numbers_9
+  - first:
+      213: 1082953195463154137
+    second: shiny numbers_10
+  - first:
+      213: -5642851390497117202
+    second: shiny numbers_11
+  - first:
+      213: 3748068401536257961
+    second: shiny numbers_12
+  - first:
+      213: -7319910013586025446
+    second: shiny numbers_13
+  - first:
+      213: 1048900922384567377
+    second: shiny numbers_14
+  - first:
+      213: -478409690599722308
+    second: shiny numbers_15
+  - first:
+      213: 4704904425521540365
+    second: shiny numbers_16
+  - first:
+      213: 5552330290065904089
+    second: shiny numbers_17
+  - first:
+      213: -4420379359254951093
+    second: shiny numbers_18
+  - first:
+      213: -707917357354778069
+    second: shiny numbers_19
+  - first:
+      213: -7666180491341021423
+    second: shiny numbers_20
+  - first:
+      213: -5185695627699288622
+    second: shiny numbers_21
+  - first:
+      213: -6010618184543158733
+    second: shiny numbers_22
+  - first:
+      213: -129313638436238117
+    second: shiny numbers_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shiny numbers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 148
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00eb5047580cdd20800000000000000
+      internalID: 3304525397418041354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 543
+        width: 107
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34feb5e8910c2f030800000000000000
+      internalID: 3527092674179624771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 301
+        width: 68
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce6583644c3206e0800000000000000
+      internalID: -1872868230607573311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 237
+        width: 121
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e0803723983ea70800000000000000
+      internalID: 8855072142111805009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 691
+        width: 116
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da8c2333cf8a6c80800000000000000
+      internalID: -8328686492328359214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_5
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 463
+        width: 149
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf792f22ba72cc20800000000000000
+      internalID: 3225275188864712620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 252
+        width: 119
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5841bebb5c19b50800000000000000
+      internalID: 6598272339968034213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 721
+        width: 104
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145fadfe9bb40d880800000000000000
+      internalID: -8588281227430398655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 531
+        width: 112
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f51b9611d824520800000000000000
+      internalID: 2684863433793429254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_9
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 248
+        width: 135
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e133396a570e0e760800000000000000
+      internalID: 7485229376600224542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 742
+        width: 115
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d994fb813c670f00800000000000000
+      internalID: 1082953195463154137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 459
+        width: 120
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeba915be8090b1b0800000000000000
+      internalID: -5642851390497117202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 608
+        width: 201
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af4f636a50d30430800000000000000
+      internalID: 3748068401536257961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 146
+        width: 143
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14516c00a47a6a90800000000000000
+      internalID: -7319910013586025446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_14
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 455
+        width: 60
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ccf43e4d17e8e00800000000000000
+      internalID: 1048900922384567377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_15
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 467
+        width: 88
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2f2becbe85c59f0800000000000000
+      internalID: -478409690599722308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_16
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 744
+        width: 117
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0def59b5ad2b4140800000000000000
+      internalID: 4704904425521540365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_17
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 67
+        width: 164
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d115073bf6dd0d40800000000000000
+      internalID: 5552330290065904089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_18
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 8
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bc3279468a7a2c0800000000000000
+      internalID: -4420379359254951093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1
+        width: 122
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2209880ae8fc26f0800000000000000
+      internalID: -707917357354778069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_20
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 122
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fb695d5714c9590800000000000000
+      internalID: -7666180491341021423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 137
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d500b53d45b808b0800000000000000
+      internalID: -5185695627699288622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_22
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 35
+        width: 58
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e3dc55b9ef59ca0800000000000000
+      internalID: -6010618184543158733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiny numbers_23
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 3
+        width: 81
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc05645ee5943ef0800000000000000
+      internalID: -129313638436238117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      shiny numbers_0: 3304525397418041354
+      shiny numbers_1: 3527092674179624771
+      shiny numbers_10: 1082953195463154137
+      shiny numbers_11: -5642851390497117202
+      shiny numbers_12: 3748068401536257961
+      shiny numbers_13: -7319910013586025446
+      shiny numbers_14: 1048900922384567377
+      shiny numbers_15: -478409690599722308
+      shiny numbers_16: 4704904425521540365
+      shiny numbers_17: 5552330290065904089
+      shiny numbers_18: -4420379359254951093
+      shiny numbers_19: -707917357354778069
+      shiny numbers_2: -1872868230607573311
+      shiny numbers_20: -7666180491341021423
+      shiny numbers_21: -5185695627699288622
+      shiny numbers_22: -6010618184543158733
+      shiny numbers_23: -129313638436238117
+      shiny numbers_3: 8855072142111805009
+      shiny numbers_4: -8328686492328359214
+      shiny numbers_5: 3225275188864712620
+      shiny numbers_6: 6598272339968034213
+      shiny numbers_7: -8588281227430398655
+      shiny numbers_8: 2684863433793429254
+      shiny numbers_9: 7485229376600224542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

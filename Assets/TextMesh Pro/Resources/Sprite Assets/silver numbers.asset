@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: silver numbers
+  m_EditorClassIdentifier: 
+  m_Version: 1.1.0
+  m_FaceInfo:
+    m_FaceIndex: 0
+    m_FamilyName: 
+    m_StyleName: 
+    m_PointSize: 0
+    m_Scale: 0
+    m_UnitsPerEM: 0
+    m_LineHeight: 0
+    m_AscentLine: 0
+    m_CapLine: 0
+    m_MeanLine: 0
+    m_Baseline: 0
+    m_DescentLine: 0
+    m_SuperscriptOffset: 0
+    m_SuperscriptSize: 0
+    m_SubscriptOffset: 0
+    m_SubscriptSize: 0
+    m_UnderlineOffset: 0
+    m_UnderlineThickness: 0
+    m_StrikethroughOffset: 0
+    m_StrikethroughThickness: 0
+    m_TabWidth: 0
+  m_Material: {fileID: 8466714479872060365}
+  spriteSheet: {fileID: 2800000, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  m_SpriteCharacterTable:
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: silver numbers_9
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: silver numbers_0
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: silver numbers_1
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 11
+    m_Scale: 1
+    m_Name: silver numbers_2
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: silver numbers_3
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 12
+    m_Scale: 1
+    m_Name: silver numbers_4
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 9
+    m_Scale: 1
+    m_Name: silver numbers_5
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: silver numbers_6
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: silver numbers_7
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: silver numbers_8
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 0
+    m_Scale: 0.4
+    m_Name: silver numbers_10
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 10
+    m_Scale: 0.4
+    m_Name: silver numbers_11
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: silver numbers_12
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 13
+    m_Scale: 1
+    m_Name: silver numbers_13
+  m_GlyphTable:
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 48.668667
+      m_Height: 40.344826
+      m_HorizontalBearingX: -24.334333
+      m_HorizontalBearingY: 20.172413
+      m_HorizontalAdvance: 48.668667
+    m_GlyphRect:
+      m_X: 1763
+      m_Y: 43
+      m_Width: 48
+      m_Height: 40
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -8059487868213776848, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 123.62961
+      m_Height: 114.87069
+      m_HorizontalBearingX: -61.814804
+      m_HorizontalBearingY: 57.435345
+      m_HorizontalAdvance: 123.62961
+    m_GlyphRect:
+      m_X: 1914
+      m_Y: 38
+      m_Width: 123
+      m_Height: 114
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 6063050530964400899, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 104.609665
+      m_Height: 121.594826
+      m_HorizontalBearingX: -52.304832
+      m_HorizontalBearingY: 60.797413
+      m_HorizontalAdvance: 104.609665
+    m_GlyphRect:
+      m_X: 1132
+      m_Y: 36
+      m_Width: 104
+      m_Height: 121
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 1722517862264724850, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 60.41628
+      m_Height: 130
+      m_HorizontalBearingX: -30.20814
+      m_HorizontalBearingY: 65
+      m_HorizontalAdvance: 60.41628
+    m_GlyphRect:
+      m_X: 72
+      m_Y: 35
+      m_Width: 60
+      m_Height: 130
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -1659938450965642605, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 116.35728
+      m_Height: 133.92241
+      m_HorizontalBearingX: -58.17864
+      m_HorizontalBearingY: 66.961205
+      m_HorizontalAdvance: 116.35728
+    m_GlyphRect:
+      m_X: 222
+      m_Y: 34
+      m_Width: 116
+      m_Height: 133
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -5317684080751813513, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 121.39197
+      m_Height: 128.31897
+      m_HorizontalBearingX: -60.695984
+      m_HorizontalBearingY: 64.159485
+      m_HorizontalAdvance: 121.39197
+    m_GlyphRect:
+      m_X: 1288
+      m_Y: 34
+      m_Width: 121
+      m_Height: 128
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -655051807541053081, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 115.23846
+      m_Height: 128.8793
+      m_HorizontalBearingX: -57.61923
+      m_HorizontalBearingY: 64.43965
+      m_HorizontalAdvance: 115.23846
+    m_GlyphRect:
+      m_X: 1457
+      m_Y: 33
+      m_Width: 115
+      m_Height: 128
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 6117409269732787536, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 121.95138
+      m_Height: 129.43965
+      m_HorizontalBearingX: -60.97569
+      m_HorizontalBearingY: 64.719826
+      m_HorizontalAdvance: 121.95138
+    m_GlyphRect:
+      m_X: 1613
+      m_Y: 32
+      m_Width: 121
+      m_Height: 129
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -948098478337334984, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 120.83256
+      m_Height: 130.56035
+      m_HorizontalBearingX: -60.41628
+      m_HorizontalBearingY: 65.280174
+      m_HorizontalAdvance: 120.83256
+    m_GlyphRect:
+      m_X: 604
+      m_Y: 31
+      m_Width: 120
+      m_Height: 130
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -9207363376710069369, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 119.15433
+      m_Height: 135.0431
+      m_HorizontalBearingX: -59.577164
+      m_HorizontalBearingY: 67.52155
+      m_HorizontalAdvance: 119.15433
+    m_GlyphRect:
+      m_X: 954
+      m_Y: 29
+      m_Width: 119
+      m_Height: 135
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 4049643421090876919, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 10
+    m_Metrics:
+      m_Width: 49.228077
+      m_Height: 61.077583
+      m_HorizontalBearingX: -24.614038
+      m_HorizontalBearingY: 30.538792
+      m_HorizontalAdvance: 49.228077
+    m_GlyphRect:
+      m_X: 1846
+      m_Y: 28
+      m_Width: 49
+      m_Height: 61
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 4867251589976213723, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 11
+    m_Metrics:
+      m_Width: 111.322586
+      m_Height: 135.0431
+      m_HorizontalBearingX: -55.661293
+      m_HorizontalBearingY: 67.52155
+      m_HorizontalAdvance: 111.322586
+    m_GlyphRect:
+      m_X: 423
+      m_Y: 28
+      m_Width: 111
+      m_Height: 135
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 7095915863082060018, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 12
+    m_Metrics:
+      m_Width: 111.322586
+      m_Height: 132.80173
+      m_HorizontalBearingX: -55.661293
+      m_HorizontalBearingY: 66.40086
+      m_HorizontalAdvance: 111.322586
+    m_GlyphRect:
+      m_X: 781
+      m_Y: 28
+      m_Width: 111
+      m_Height: 132
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 415069873672488256, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  - m_Index: 13
+    m_Metrics:
+      m_Width: 3.3564599
+      m_Height: 3.362069
+      m_HorizontalBearingX: -1.6782299
+      m_HorizontalBearingY: 1.6810344
+      m_HorizontalAdvance: 3.3564599
+    m_GlyphRect:
+      m_X: 1253
+      m_Y: 3
+      m_Width: 3
+      m_Height: 3
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -5225212842229295394, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+  spriteInfoList: []
+  fallbackSpriteAssets: []
+--- !u!21 &8466714479872060365
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: silver numbers Material
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
