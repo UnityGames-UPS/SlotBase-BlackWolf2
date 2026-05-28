@@ -70,6 +70,41 @@ public class ImageAnimation : MonoBehaviour
 		Invoke("AnimationProcess", delayBetweenAnimation);
 	}
 
+	internal void StartReverseAnimation()
+	{
+		// Force state to NONE so this always runs even if StopAnimation wasn't called first
+		CancelInvoke("AnimationProcess");
+		currentAnimationState = ImageState.NONE;
+
+		indexOfTexture = textureArray.Count - 1;
+		SetTextureOfIndex();
+		delayBetweenAnimation = idealFrameRate * (float)textureArray.Count / AnimationSpeed;
+		currentAnimationState = ImageState.PLAYING;
+		Invoke("ReverseAnimationProcess", delayBetweenAnimation);
+	}
+
+	private void ReverseAnimationProcess()
+	{
+		SetTextureOfIndex();
+		indexOfTexture--;
+		if (indexOfTexture < 0)
+		{
+			indexOfTexture = textureArray.Count - 1;
+			if (doLoopAnimation)
+			{
+				Invoke("ReverseAnimationProcess", delayBetweenAnimation + delayBetweenLoop);
+			}
+			else
+			{
+				currentAnimationState = ImageState.FINISHED;
+			}
+		}
+		else
+		{
+			Invoke("ReverseAnimationProcess", delayBetweenAnimation);
+		}
+	}
+
 	internal void PauseAnimation()
 	{
 		if (currentAnimationState == ImageState.PLAYING)

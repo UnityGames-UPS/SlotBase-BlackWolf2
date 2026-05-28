@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Collections;
 using FluffyUnderware.Curvy;
 using FluffyUnderware.Curvy.Controllers;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
 using TMPro;
 using System;
@@ -17,6 +16,7 @@ public class BonusManger : MonoBehaviour
     [SerializeField] private SlotManager slotManager;
     [SerializeField] private UIManager uIManager;
     [SerializeField] private AnimationManager animationManager;
+    [SerializeField] private WinPopupAnimation winPopupAnimation;
 
     [Header("Bonus Intro Animation")]
     [SerializeField] private GameObject MainBG;
@@ -28,7 +28,16 @@ public class BonusManger : MonoBehaviour
     [SerializeField] private Vector2 LeftTreeFinalPosition;
     [SerializeField] private GameObject RightTree;
     [SerializeField] private Vector2 RightTreeFinalPosition;
-  
+
+    [Header("Bonus Intro Page")]
+    [SerializeField] private GameObject BonusIntroPage;
+    [SerializeField] private GameObject BonusGameTextObject;
+    [SerializeField] private GameObject BoostSymbol;
+    [SerializeField] private GameObject PurpleMoonSymbol;
+    [SerializeField] private GameObject TransitionAnimationObject;
+    [SerializeField] private TMP_Text TimerText;
+    [SerializeField] private Button TimerSkipButton;
+
     [Header("Prefabs")]
     [SerializeField] private GameObject SlideObject;
 
@@ -37,15 +46,24 @@ public class BonusManger : MonoBehaviour
     [SerializeField] private GameObject SlideParentObject;
     [SerializeField] private GameObject FirstSlideOverlayImage;
     [SerializeField] private GameObject SlideAnimationParent;
+    [SerializeField] private Sprite SlideFirstMoonImage;
+    [SerializeField] private Sprite SlideSecondMoonImage;
+    [SerializeField] private Sprite SlideThirdMoonImage;
+    [SerializeField] private Sprite SliteOtherMoonImage;
+    [SerializeField] private Sprite MiniMoonImage;
+    [SerializeField] private Sprite MinorMoonImage;
+    [SerializeField] private Sprite MajorMoonImage;
+    [SerializeField] private Sprite BoostMoonImage;
 
     [Header("Bonus Paths")]
     [SerializeField] private List<BonusPath> BonusPaths;
 
     [Header("Slot Objects")]
     [SerializeField] private Sprite[] slotImages;
-    [SerializeField] private List<SlotImage> totalImages;     //class to store total images
-    [SerializeField] internal List<SlotImage> resultImages;     //class to store the result matrix
-    [SerializeField] private List<SlotImage> winSlotImages;     //class to store the winning line images
+    [SerializeField] private List<SlotImage> totalImages;
+    [SerializeField] internal List<SlotImage> resultImages;
+    [SerializeField] private List<SlotImage> winSlotImages;
+    [SerializeField] private List<SlotImage> MaskImages;
     [SerializeField] private Transform[] _slotTransforms;
 
     [SerializeField] private GameObject NormalSlotPanel;
@@ -62,20 +80,96 @@ public class BonusManger : MonoBehaviour
     private List<Tween> _alltweens = new List<Tween>();
     private bool _stopSpinToggle = true;
 
-    private int _numberOfSlots = 5;
+    private int _numberOfSlots = 20;
     internal bool isBonusFinished = false;
     private bool isBonusIntroAnimationFinished = false;
     private bool isSlideAnimationFinished = false;
     private bool isSlideFinished = false;
     private bool isFortuneSlideAnimationFinished = false;
     private bool isBonusMultiplierAnimationFinished = false;
+    private bool TimerSkipped = false;
+
+    private int _slideQueueConsumedCount = 0;
+
+    private List<string> _snapshotSlideQueue = new List<string>();
 
     void Start()
     {
-        //BonusStartButton.onClick.AddListener(delegate () { StartCoroutine(StartBonus()); });
-        
         shuffleSlotImages();
-        //StartCoroutine(BonusIntroAnimation());
+        TimerSkipButton.onClick.AddListener(TimerSkipButtonClicked);
+        //SpinIndicatorFrontAnimation(spinIndicators[2]);
+    }
+
+    private Sprite GetSpriteForSlideIndex(int index)
+    {
+        return index switch
+        {
+            0 => SlideFirstMoonImage,
+            1 => SlideSecondMoonImage,
+            2 => SlideThirdMoonImage,
+            _ => SliteOtherMoonImage
+        };
+    }
+
+    private Sprite GetJackpotSprite(string queueValue)
+    {
+        if (string.IsNullOrEmpty(queueValue)) return null;
+        return queueValue.ToUpperInvariant() switch
+        {
+            "MINI" => MiniMoonImage,
+            "MINOR" => MinorMoonImage,
+            "MAJOR" => MajorMoonImage,
+            "BOOST" => BoostMoonImage,
+            _ => null
+        };
+    }
+
+    private void ConfigureSlide(GameObject slideObj, int stackIndex, int queueIndex)
+    {
+        string queueValue = (queueIndex >= 0 && queueIndex < _snapshotSlideQueue.Count)
+                            ? _snapshotSlideQueue[queueIndex] : null;
+
+
+        Image slideImage = slideObj.GetComponent<Image>();
+        if (slideImage != null)
+        {
+            Sprite jackpotSprite = GetJackpotSprite(queueValue);
+            slideImage.sprite = jackpotSprite != null ? jackpotSprite : GetSpriteForSlideIndex(stackIndex);
+        }
+
+        TMP_Text valueText = slideObj.GetComponentInChildren<TMP_Text>(true);
+        if (valueText != null)
+        {
+            if (!string.IsNullOrEmpty(queueValue))
+            {
+                Sprite jp = GetJackpotSprite(queueValue);
+                valueText.text = jp != null ? "" : UIManager.ToSpriteString(queueValue);
+            }
+            else
+            {
+                valueText.text = "";
+            }
+        }
+
+        TrailRenderer tr = slideObj.GetComponentInChildren<TrailRenderer>(true);
+        if (tr != null)
+            tr.enabled = false;
+    }
+
+    private void RefreshSlideSprites()
+    {
+        for (int i = 0; i < currentSlideObjects.Count; i++)
+        {
+            Image img = currentSlideObjects[i].GetComponent<Image>();
+            if (img == null) continue;
+
+            int queueIndex = _slideQueueConsumedCount + i;
+            string queueValue = (queueIndex >= 0 && queueIndex < _snapshotSlideQueue.Count)
+                                ? _snapshotSlideQueue[queueIndex] : null;
+
+            Sprite jackpotSprite = GetJackpotSprite(queueValue);
+            img.sprite = jackpotSprite != null ? jackpotSprite : GetSpriteForSlideIndex(i);
+        }
     }
 
     private IEnumerator BonusIntroAnimation()
@@ -85,8 +179,8 @@ public class BonusManger : MonoBehaviour
         WolfImage.GetComponent<RectTransform>().localPosition = new Vector2(46f, -100f);
         LeftTree.GetComponent<RectTransform>().localPosition = new Vector2(-900f, 100f);
         RightTree.GetComponent<RectTransform>().localPosition = new Vector2(900f, 100f);
-        MoonImage.GetComponent<RectTransform>().localScale    = new Vector2(0.6f, 0.6f);
-        WolfImage.GetComponent<RectTransform>().localScale    = new Vector2(0.8f, 0.8f);
+        MoonImage.GetComponent<RectTransform>().localScale = new Vector2(0.6f, 0.6f);
+        WolfImage.GetComponent<RectTransform>().localScale = new Vector2(0.8f, 0.8f);
         WolfImage.GetComponent<CanvasGroup>().alpha = 0f;
         MoonImage.GetComponent<CanvasGroup>().alpha = 0f;
         LeftTree.GetComponent<CanvasGroup>().alpha = 0f;
@@ -94,11 +188,8 @@ public class BonusManger : MonoBehaviour
 
         Sequence seq = DOTween.Sequence();
 
-        // 0.0s — MainBG slides down
         seq.Append(MainBG.transform.DOLocalMoveY(-1080f, 2.2f).SetEase(Ease.InOutSine));
 
-        // 0.8s — All 6 tweens fire at the exact same time:
-        //        fade in + scale up + move to final position for both Wolf and Moon
         seq.Insert(0.8f, WolfImage.GetComponent<CanvasGroup>().DOFade(1f, 1.2f).SetEase(Ease.InOutSine));
         seq.Insert(0.8f, MoonImage.GetComponent<CanvasGroup>().DOFade(1f, 1.2f).SetEase(Ease.InOutSine));
         seq.Insert(0.8f, LeftTree.GetComponent<CanvasGroup>().DOFade(1f, 1.2f).SetEase(Ease.InOutSine));
@@ -111,22 +202,45 @@ public class BonusManger : MonoBehaviour
         seq.Insert(0.8f, RightTree.transform.DOLocalMove(RightTreeFinalPosition, 1.2f).SetEase(Ease.InOutSine));
 
         yield return seq.WaitForCompletion();
+        uIManager.ToggleFreeSpinUI(false);
         yield return new WaitForSeconds(2f);
+
+        BonusIntroPage.SetActive(true);
+        BonusIntroPage.GetComponent<CanvasGroup>().DOFade(1f, 1f).SetEase(Ease.InOutSine);
+        //BonusGameTextObject.GetComponent<ImageAnimation>().StartAnimation();
+        //PurpleMoonSymbol.GetComponent<ImageAnimation>().StartAnimation();
+        BoostSymbol.GetComponent<ImageAnimation>().StartAnimation();
+        TransitionAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
+
+        int timer = 5;
+        while (!TimerSkipped)
+        {
+            TimerText.text = timer.ToString();
+            yield return new WaitForSeconds(1f);
+            timer--;
+        }
+
         isBonusIntroAnimationFinished = true;
+        BonusIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
+        BonusIntroPage.SetActive(false);
+    }
+
+    private void TimerSkipButtonClicked()
+    {
+        TimerSkipped = true;
     }
 
     internal IEnumerator StartBonus()
     {
         isBonusIntroAnimationFinished = false;
         StartCoroutine(BonusIntroAnimation());
-
-        // Wait for the full intro before showing bonus UI
+        
+        yield return new WaitForSeconds(3f);
+        InitializeBonusUI();
+        uIManager.ToggleBonusBackground();
         yield return new WaitUntil(() => isBonusIntroAnimationFinished);
 
-        uIManager.ToggleBonusBackground();
-        InitializeBonusUI();
 
-        // Reset MainBG back to its resting position so it doesn't stay off-screen
         MainBG.GetComponent<RectTransform>().localPosition = new Vector2(0f, 0f);
 
         int currentSpinCount = socketManager.resultData.payload.state.respinsLeft;
@@ -140,11 +254,12 @@ public class BonusManger : MonoBehaviour
 
             if (currentSpinCount > 0)
             {
-                spinIndicators[currentSpinCount - 1].SetActive(false);
+                SpinIndicatorBackAnimation(spinIndicators[currentSpinCount - 1]);
                 currentSpinCount--;
+                yield return new WaitForSeconds(0.5f);
             }
 
-            socketManager.AccumulateResult(slotManager._betCounter);
+            socketManager.AccumulateResult(uIManager.betCounter);
             yield return new WaitUntil(() => socketManager.isResultdone);
 
             for (int j = 0; j < socketManager.resultData.matrix.Count; j++)
@@ -169,7 +284,8 @@ public class BonusManger : MonoBehaviour
                 {
                     int reel = bs.reel;
                     int position = bs.position;
-                    resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text = bs.value.ToString();
+                    resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text =
+                        UIManager.ToSpriteString(bs.value);
                 }
             }
 
@@ -186,8 +302,8 @@ public class BonusManger : MonoBehaviour
             {
                 for (int i = currentSpinCount; i < spinsAfter && i < spinIndicators.Count; i++)
                 {
-                    spinIndicators[i].SetActive(true);
-                    yield return new WaitForSeconds(0.5f);
+                    SpinIndicatorFrontAnimation(spinIndicators[i]);
+                    yield return new WaitForSeconds(0.6f);
                 }
                 currentSpinCount = spinsAfter;
             }
@@ -199,24 +315,66 @@ public class BonusManger : MonoBehaviour
             StartCoroutine(FortuneSlideAnimation());
             yield return new WaitUntil(() => isFortuneSlideAnimationFinished);
 
+            {
+                var newQueue = socketManager.resultData.payload.state.fortuneSlideQueue;
+                if (newQueue != null)
+                {
+                    for (int ni = 0; ni < newQueue.Count; ni++)
+                    {
+                        int snapIdx = _slideQueueConsumedCount + ni;
+                        if (snapIdx < _snapshotSlideQueue.Count)
+                        {
+                            // Overwrite existing unconsumed entry
+                            _snapshotSlideQueue[snapIdx] = newQueue[ni];
+                        }
+                        else
+                        {
+                            // Brand-new entry — append it
+                            _snapshotSlideQueue.Add(newQueue[ni]);
+                        }
+                    }
+                    // Refresh visible slides so sprites/text reflect synced snapshot
+                    RefreshSlideSprites();
+                }
+            }
+            // ─────────────────────────────────────────────────────────────────
+
             RefreshLockedSymbols();
+
+            if (socketManager.resultData.payload.is_boost)
+            {
+                yield return StartCoroutine(BonusBoostSequence());
+            }
+            if (socketManager.resultData.payload.is_grand)
+            {
+                break;
+            }
         }
 
-        // --- Bonus round finished ---
-        animationManager.isBonusWolfAnimationFinished = false;
-        animationManager.BonusWolfAnimation();
-        yield return new WaitUntil(() => animationManager.isBonusWolfAnimationFinished);
+        if (!socketManager.resultData.payload.is_grand)
+        {
+            // --- Bonus round finished ---
+            animationManager.isBonusWolfAnimationFinished = false;
+            animationManager.BonusWolfAnimation();
+            yield return new WaitUntil(() => animationManager.isBonusWolfAnimationFinished);
 
-        isBonusMultiplierAnimationFinished = false;
-        StartCoroutine(MultiplierAnimation());
-        yield return new WaitUntil(() => isBonusMultiplierAnimationFinished);
+            isBonusMultiplierAnimationFinished = false;
+            StartCoroutine(MultiplierAnimation());
+            yield return new WaitUntil(() => isBonusMultiplierAnimationFinished);
+        }
+        else
+        {
+            // --- Grand jackpot flow ---
+            double grandWinAmount = socketManager.resultData.payload.grand_win;
+            //winPopupAnimation.ShowGrandWinPopup(grandWinAmount);
+            winPopupAnimation.ShowBonusWinPopup(grandWinAmount);
+            yield return new WaitUntil(() => winPopupAnimation.popupDone);
+        }
 
-        // Clean up all spawned slide objects
         foreach (GameObject slide in currentSlideObjects)
             Destroy(slide);
         currentSlideObjects.Clear();
 
-        // Fix 3: Reset all win slot images so they don't bleed into the next spin
         for (int i = 0; i < winSlotImages.Count; i++)
         {
             for (int j = 0; j < winSlotImages[i].slotImages.Count; j++)
@@ -226,7 +384,6 @@ public class BonusManger : MonoBehaviour
             }
         }
 
-        // Reset bonus UI back to normal slot view
         BonusSlotPanel.SetActive(false);
         NormalSlotPanel.SetActive(true);
         MultiplierPanel.SetActive(false);
@@ -236,39 +393,106 @@ public class BonusManger : MonoBehaviour
         isBonusFinished = true;
     }
 
+    private IEnumerator BonusBoostSequence()
+    {
+
+        animationManager.isBonusBoostAnimationFinished = false;
+        StartCoroutine(animationManager.BonusBoostAnimation(socketManager.resultData.payload.boost_positions));
+        yield return new WaitUntil(() => animationManager.isBonusBoostAnimationFinished);
+
+
+        for (int i = 0; i < socketManager.resultData.payload.boost_positions.Count; i++)
+        {
+            int reel = socketManager.resultData.payload.boost_positions[i].reel;
+            int position = socketManager.resultData.payload.boost_positions[i].position;
+            resultImages[reel].slotImages[position].sprite = slotImages[slotImages.Length - 1];
+            winSlotImages[reel].slotImages[position].sprite = slotImages[slotImages.Length - 1];
+            winSlotImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text = "";
+        }
+
+        for (int i = 0; i < socketManager.resultData.payload.state.lockedSymbols.Count; i++)
+        {
+            if (!socketManager.resultData.payload.state.lockedSymbols[i].isBoost)
+            {
+                var sym = socketManager.resultData.payload.state.lockedSymbols[i];
+                int reel = sym.reel;
+                int position = sym.position;
+
+                MaskImages[reel].slotImages[position].gameObject.SetActive(true);
+
+                TrailObject trail = winSlotImages[reel].slotImages[position].GetComponentInChildren<TrailObject>(true);
+                if (trail != null)
+                {
+                    trail.ResetTrail();
+                    animationManager.isMultiplierAnimationFinished = false;
+                    StartCoroutine(trail.StartMultiplierAnimation(
+                        sym.value,
+                        winSlotImages[reel].slotImages[position].gameObject));
+                    yield return new WaitUntil(() => animationManager.isMultiplierAnimationFinished);
+                }
+            }
+        }
+
+        double boostTotal = UIManager.FromSpriteString(animationManager.GetBonusBoostMultiplierText());
+        winPopupAnimation.ShowBoostWinPopup(boostTotal, false);
+        yield return new WaitUntil(() => winPopupAnimation.popupDone);
+
+        MultiplierPanel.SetActive(false); // Hide the normal multiplier panel if it's still active
+
+        for (int k = 0; k < MaskImages.Count; k++)
+        {
+            for (int j = 0; j < MaskImages[k].slotImages.Count; j++)
+            {
+                MaskImages[k].slotImages[j].gameObject.SetActive(false);
+            }
+        }
+
+        animationManager.ResetBonusBoostAnimation();
+    }
+
     private IEnumerator MultiplierAnimation()
     {
         MultiplierPanel.SetActive(true);
+        MultiplierPanel.GetComponent<ImageAnimation>().StartAnimation();
+
+        MultiplierText.text = UIManager.ToSpriteString(0.0, "F3");
+
         for (int i = 0; i < socketManager.resultData.payload.state.lockedSymbols.Count; i++)
         {
-            int reel     = socketManager.resultData.payload.state.lockedSymbols[i].reel;
+            int reel = socketManager.resultData.payload.state.lockedSymbols[i].reel;
             int position = socketManager.resultData.payload.state.lockedSymbols[i].position;
             TrailObject trail = winSlotImages[reel].slotImages[position].GetComponentInChildren<TrailObject>(true);
-            animationManager.isMultiplierAnimationFinished = false;  // reset BEFORE starting each trail
-            StartCoroutine(trail.StartMultiplierAnimation(socketManager.resultData.payload.state.lockedSymbols[i].value , winSlotImages[reel].slotImages[position].gameObject));
+
+            trail.ResetTrail();
+
+            MaskImages[reel].slotImages[position].gameObject.SetActive(true);
+
+            animationManager.isMultiplierAnimationFinished = false;
+            StartCoroutine(trail.StartMultiplierAnimation(
+                socketManager.resultData.payload.state.lockedSymbols[i].value,
+                winSlotImages[reel].slotImages[position].gameObject));
             yield return new WaitUntil(() => animationManager.isMultiplierAnimationFinished);
         }
         isBonusMultiplierAnimationFinished = true;
+
+        double result = UIManager.FromSpriteString(MultiplierText.text);
+        winPopupAnimation.ShowBonusWinPopup(result);
     }
 
     private IEnumerator FortuneSlideAnimation()
     {
-        for (int i = 0; i < _numberOfSlots; i++)
+        for (int i = 0; i < resultImages.Count; i++)
         {
             for (int j = 0; j < resultImages[i].slotImages.Count; j++)
             {
                 if (resultImages[i].slotImages[j].sprite == slotImages[11] ||
                     resultImages[i].slotImages[j].sprite == slotImages[10])
                 {
-                    // Safety: nothing to send if queue is empty
-                    //if (currentSlideObjects.Count == 0) continue;
-
                     yield return new WaitForSeconds(0.4f);
 
                     isSlideFinished = false;
 
-                    // Remove the front slide from the tracked list BEFORE the spline
-                    // plays, so SlideMoveAnimation receives the already-updated list.
+                    // Remove the front slide from the tracked list BEFORE the spline plays
                     GameObject frontSlide = currentSlideObjects[0];
                     currentSlideObjects.RemoveAt(0);
 
@@ -278,126 +502,213 @@ public class BonusManger : MonoBehaviour
 
                     SplineController trail = frontSlide.GetComponent<SplineController>();
 
-                    // Refresh BEFORE assigning — Curvy needs a clean spline first
                     BonusPaths[i].splines[j].Refresh();
                     trail.Spline = BonusPaths[i].splines[j];
-
-                    // Reset controller state so it starts from position 0
                     trail.AbsolutePosition = 0f;
-                    trail.Speed            = 2f;   // MUST be > 0 or Play() does nothing
-                    trail.Clamping         = CurvyClamping.Clamp;
+                    trail.Speed = 2f;
+                    trail.Clamping = CurvyClamping.Clamp;
 
-                    // Wipe stale listeners every time
                     trail.OnPositionReachedList.Clear();
 
-                    // Capture loop vars so the closure is correct
                     int ci = i, cj = j;
                     GameObject capturedSlide = frontSlide;
 
                     var onReachedSettings = new OnPositionReachedSettings();
-                    onReachedSettings.Position     = 1f;
+                    onReachedSettings.Position = 1f;
                     onReachedSettings.PositionMode = CurvyPositionMode.Relative;
 
                     onReachedSettings.Event.AddListener((CurvySplineMoveEventArgs args) =>
                     {
-                        // Coroutine so we wait for shift tweens before signalling done
                         StartCoroutine(SlideMoveAnimation(capturedSlide, ci, cj));
                     });
 
                     trail.OnPositionReachedList.Add(onReachedSettings);
+
+                    TrailRenderer tr = frontSlide.GetComponentInChildren<TrailRenderer>(true);
+                    if (tr != null)
+                        tr.enabled = true;
+
+                    Image capturedImg = frontSlide.GetComponent<Image>();
+                    TMP_Text capturedTxt = frontSlide.GetComponentInChildren<TMP_Text>(true);
+                    Sprite slideSprite = capturedImg != null ? capturedImg.sprite : null;
+                    string slideText = capturedTxt != null ? capturedTxt.text : "";
+
                     yield return new WaitForSeconds(1f);
                     Debug.Log("Start Playing");
                     trail.Play();
                     Debug.Log("Started Playing....");
 
                     yield return new WaitUntil(() => isSlideFinished);
+
+                    if (slideSprite != null)
+                    {
+                        resultImages[ci].slotImages[cj].sprite = slideSprite;
+                        TMP_Text resultText = resultImages[ci].slotImages[cj].GetComponentInChildren<TMP_Text>(true);
+                        if (resultText != null)
+                            resultText.text = slideText;
+                    }
+
+                    UpdateWinSlotImageFromSlide(ci, cj);
+
+                    if (frontSlide != null)
+                    {
+                        TrailRenderer trAfter = frontSlide.GetComponentInChildren<TrailRenderer>(true);
+                        if (trAfter != null)
+                            trAfter.enabled = false;
+                    }
                 }
             }
         }
         isFortuneSlideAnimationFinished = true;
     }
 
-    // Converted to a coroutine so isSlideFinished is only set after
-    // the shift tweens have actually finished playing.
+    private void UpdateWinSlotImageFromSlide(int reelIndex, int posIndex)
+    {
+        int consumedQueueIndex = _slideQueueConsumedCount - 1;
+        string queueValue = (consumedQueueIndex >= 0 && consumedQueueIndex < _snapshotSlideQueue.Count)
+                            ? _snapshotSlideQueue[consumedQueueIndex] : null;
+
+        Image winImg = winSlotImages[reelIndex].slotImages[posIndex];
+        TMP_Text winText = winImg.GetComponentInChildren<TMP_Text>(true);
+
+        Sprite jackpotSprite = GetJackpotSprite(queueValue);
+        if (jackpotSprite != null)
+        {
+            winImg.sprite = jackpotSprite;
+            if (winText != null) winText.text = "";
+        }
+        else
+        {
+            var lockedList = socketManager.resultData.payload.state.lockedSymbols;
+            for (int k = 0; k < lockedList.Count; k++)
+            {
+                if (lockedList[k].reel == reelIndex && lockedList[k].position == posIndex)
+                {
+                    if (winText != null)
+                        winText.text = UIManager.ToSpriteString(lockedList[k].value);
+                    break;
+                }
+            }
+        }
+    }
+
     private IEnumerator SlideMoveAnimation(GameObject landedSlide, int reelIndex, int posIndex)
     {
         const float shiftDuration = 0.3f;
 
-        // 1. Notify the game that this symbol has been filled
         animationManager.SlideSymbolFinishedAnimation(
             resultImages[reelIndex].slotImages[posIndex].gameObject);
 
-        // 2. Shift every remaining slide forward and scale it up to its new position.
-        //    currentSlideObjects already has the landed slide removed.
         for (int i = 0; i < currentSlideObjects.Count; i++)
         {
-            RectTransform rt    = currentSlideObjects[i].GetComponent<RectTransform>();
+            RectTransform rt = currentSlideObjects[i].GetComponent<RectTransform>();
             rt.DOAnchorPos(slideObjectPositions[i].anchoredPosition, shiftDuration).SetEase(Ease.OutQuad);
-            rt.DOScale(ScaleForIndex(i),                             shiftDuration).SetEase(Ease.OutQuad);
+            rt.DOScale(ScaleForIndex(i), shiftDuration).SetEase(Ease.OutQuad);
+
+            Image img = currentSlideObjects[i].GetComponent<Image>();
+            TMP_Text txt = currentSlideObjects[i].GetComponentInChildren<TMP_Text>(true);
+
+            int qi = _slideQueueConsumedCount + 1 + i; // +1 because front slide was already consumed
+            string qv = (qi >= 0 && qi < _snapshotSlideQueue.Count) ? _snapshotSlideQueue[qi] : null;
+            Sprite jp = GetJackpotSprite(qv);
+
+            if (img != null)
+                img.sprite = jp != null ? jp : GetSpriteForSlideIndex(i);
+
+            if (txt != null)
+            {
+                if (!string.IsNullOrEmpty(qv))
+                    txt.text = jp != null ? "" : UIManager.ToSpriteString(qv);
+                else
+                    txt.text = "";
+            }
         }
 
-        // 3. Spawn a fresh slide at the back — sibling index 0 so it is behind
-        //    all the slides that just shifted forward.
         int newIndex = currentSlideObjects.Count;
         if (newIndex < slideObjectPositions.Count)
         {
+            int queueIndex = _slideQueueConsumedCount + newIndex;
+
             GameObject newSlide = Instantiate(SlideObject, SlideParentObject.transform);
-            newSlide.transform.SetSiblingIndex(0);       // behind all existing slides
+            newSlide.transform.SetSiblingIndex(0);
             RectTransform newRt = newSlide.GetComponent<RectTransform>();
             newRt.anchoredPosition = slideObjectPositions[newIndex].anchoredPosition;
-            newRt.localScale       = Vector3.one * ScaleForIndex(newIndex);
-            currentSlideObjects.Add(newSlide);           // appended to back of list
+            newRt.localScale = Vector3.one * ScaleForIndex(newIndex);
+
+            ConfigureSlide(newSlide, newIndex, queueIndex);
+
+            currentSlideObjects.Add(newSlide);
         }
 
-        // 4. Wait one frame so Curvy's event callback has fully returned before
-        //    we destroy the object it fired from — avoids a use-after-free crash.
+        _slideQueueConsumedCount++;
+
         yield return null;
         Destroy(landedSlide);
 
-        // 5. Wait for the shift tweens, then signal the outer coroutine.
         yield return new WaitForSeconds(shiftDuration);
         isSlideFinished = true;
     }
 
+    private void SpinIndicatorBackAnimation(GameObject indicator)
+    {
+        ImageAnimation imgAnim = indicator.GetComponent<ImageAnimation>();
+        GameObject numObj = indicator.transform.GetChild(0).gameObject;
+        Sequence seq = DOTween.Sequence();
+        imgAnim.StartAnimation();
+        //seq.Insert(0f , numObj.transform.DOScale(1.6f, 0.5f).SetEase(Ease.InOutSine));
+        seq.Insert(0.2f , numObj.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine));
+    }
+
+    private void SpinIndicatorFrontAnimation(GameObject indicator)
+    {
+        ImageAnimation imgAnim = indicator.GetComponent<ImageAnimation>();
+        GameObject numObj = indicator.transform.GetChild(0).gameObject;
+        numObj.transform.localScale = Vector3.one * 2.5f;
+        numObj.GetComponent<CanvasGroup>().alpha = 0f;
+        Sequence seq = DOTween.Sequence();
+        imgAnim.StartReverseAnimation();
+        seq.Insert(0f , numObj.transform.DOScale(1f, 0.5f).SetEase(Ease.InOutSine));
+        seq.Insert(0f , numObj.GetComponent<CanvasGroup>().DOFade(1f, 0.2f).SetEase(Ease.InOutSine));
+    }
+
     private void InitializeBonusUI()
     {
+        RefreshLockedSymbols();
         NormalSlotPanel.SetActive(false);
         BonusSlotPanel.SetActive(true);
         MultiplierPanel.SetActive(false);
         SpinIndicatorObject.SetActive(true);
         InitializeSlide();
         for (int i = 0; i < spinIndicators.Count; i++)
-        {
             spinIndicators[i].SetActive(true);
-        }
-        RefreshLockedSymbols();
     }
 
-    // Returns the scale a slide should have when it occupies slot index i.
-    // Index 0 = front (scale 1.0), index 1 = 0.9, index 2 = 0.8, …
     private float ScaleForIndex(int i) => Mathf.Max(0f, 1f - i * 0.1f);
 
     private void InitializeSlide()
     {
-        // Destroy any leftover slides from a previous bonus round
         foreach (GameObject old in currentSlideObjects)
             if (old != null) Destroy(old);
         currentSlideObjects.Clear();
 
-        int count = socketManager.resultData.payload.state.fortuneSlideQueue.Count;
+        _slideQueueConsumedCount = 0;
 
-        // Forward loop: i=0 is the FRONT slide (scale 1.0, renders on top).
-        // Each new slide is inserted at sibling index 0 (behind everything already spawned),
-        // so the first-spawned (front) keeps getting pushed UP the hierarchy and ends up
-        // at the highest sibling index = drawn on top. List order: Add() keeps list[0]=front.
+        _snapshotSlideQueue = new List<string>(
+            socketManager.resultData.payload.state.fortuneSlideQueue ?? new List<string>());
+
+        int count = _snapshotSlideQueue.Count;
+
         for (int i = 0; i < count; i++)
         {
             GameObject slideObj = Instantiate(SlideObject, SlideParentObject.transform);
-            slideObj.transform.SetSiblingIndex(0);       // push to bottom; earlier slides move up
+            slideObj.transform.SetSiblingIndex(0);
             RectTransform rt = slideObj.GetComponent<RectTransform>();
             rt.anchoredPosition = slideObjectPositions[i].anchoredPosition;
-            rt.localScale       = Vector3.one * ScaleForIndex(i);
-            currentSlideObjects.Add(slideObj);           // list[0]=front, list[count-1]=back
+            rt.localScale = Vector3.one * ScaleForIndex(i);
+
+            ConfigureSlide(slideObj, i, i);
+
+            currentSlideObjects.Add(slideObj);
         }
     }
 
@@ -405,12 +716,27 @@ public class BonusManger : MonoBehaviour
     {
         for (int i = 0; i < socketManager.resultData.payload.state.lockedSymbols.Count; i++)
         {
-            int reel = socketManager.resultData.payload.state.lockedSymbols[i].reel;
-            int position = socketManager.resultData.payload.state.lockedSymbols[i].position;
-            winSlotImages[reel].slotImages[position].color = new Color(255,255,255);
-            winSlotImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text = socketManager.resultData.payload.state.lockedSymbols[i].value.ToString();
+            var sym = socketManager.resultData.payload.state.lockedSymbols[i];
+            int reel = sym.reel;
+            int position = sym.position;
 
-            winSlotImages[reel].slotImages[position].gameObject.SetActive(true);
+            Image slotImg = winSlotImages[reel].slotImages[position];
+            slotImg.color = new Color(255, 255, 255);
+            slotImg.gameObject.SetActive(true);
+
+            if (sym.isJackpot && !string.IsNullOrEmpty(sym.jackpotName))
+            {
+                Sprite jp = GetJackpotSprite(sym.jackpotName);
+                if (jp != null)
+                {
+                    slotImg.sprite = jp;
+                    slotImg.GetComponentInChildren<TMP_Text>().text = "";
+                    continue; // skip the numeric text assignment below
+                }
+            }
+
+            slotImg.GetComponentInChildren<TMP_Text>().text =
+                UIManager.ToSpriteString(sym.value);
         }
     }
 
@@ -420,11 +746,9 @@ public class BonusManger : MonoBehaviour
         {
             for (int j = 0; j < totalImages[i].slotImages.Count; j++)
             {
-                Sprite image = slotImages[slotImages.Length-1];
+                Sprite image = slotImages[slotImages.Length - 1];
                 if (!midTween)
-                {
                     totalImages[i].slotImages[j].sprite = image;
-                }
             }
         }
     }
@@ -446,16 +770,12 @@ public class BonusManger : MonoBehaviour
             yield return new WaitUntil(() => isComplete);
         }
         _alltweens[index].Kill();
-        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 101f);
+        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
         _alltweens[index] = slotTransform.DOLocalMoveY(397f, 0.5f).SetEase(Ease.OutElastic);
         if (!isStop)
-        {
             yield return new WaitForSeconds(0.2f);
-        }
         else
-        {
             yield return null;
-        }
     }
 
     private void KillAllTweens()
@@ -463,9 +783,7 @@ public class BonusManger : MonoBehaviour
         if (_alltweens.Count > 0)
         {
             for (int i = 0; i < _alltweens.Count; i++)
-            {
                 _alltweens[i].Kill();
-            }
             _alltweens.Clear();
         }
     }

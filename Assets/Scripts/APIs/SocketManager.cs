@@ -61,7 +61,7 @@ public class SocketIOManager : MonoBehaviour
     OpenSocket();
   }
 
-  void ReceiveAuthToken(string jsonData)
+  public void ReceiveAuthToken(string jsonData)
   {
     Debug.Log("Received Auth Token Data: " + jsonData);
     // Parse the JSON data
@@ -130,7 +130,7 @@ public class SocketIOManager : MonoBehaviour
   {
     // Create and setup SocketManager
 #if UNITY_EDITOR
-    Debug.Log("yo-yo");
+    //Debug.Log("yo-yo");
     this.manager = new SocketManager(new Uri(TestSocketURI), options);
 #else
         this.manager = new SocketManager(new Uri(SocketURI), options);

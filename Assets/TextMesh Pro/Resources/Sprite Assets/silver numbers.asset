@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!21 &-8221772167999550833
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: silver numbers Material
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +77,7 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  m_Material: {fileID: 8466714479872060365}
+  m_Material: {fileID: -8221772167999550833}
   spriteSheet: {fileID: 2800000, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
@@ -91,37 +133,32 @@ MonoBehaviour:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
-    m_Scale: 0.4
+    m_Scale: 1
     m_Name: silver numbers_10
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
-    m_Scale: 0.4
+    m_Scale: 1
     m_Name: silver numbers_11
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
     m_Scale: 1
     m_Name: silver numbers_12
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 13
-    m_Scale: 1
-    m_Name: silver numbers_13
   m_GlyphTable:
   - m_Index: 0
     m_Metrics:
       m_Width: 48.668667
       m_Height: 40.344826
-      m_HorizontalBearingX: -24.334333
-      m_HorizontalBearingY: 20.172413
-      m_HorizontalAdvance: 48.668667
+      m_HorizontalBearingX: -40.4
+      m_HorizontalBearingY: -14.5
+      m_HorizontalAdvance: 55.4
     m_GlyphRect:
       m_X: 1763
       m_Y: 43
       m_Width: 48
       m_Height: 40
-    m_Scale: 1
+    m_Scale: 0.4
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: -8059487868213776848, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
@@ -161,9 +198,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 60.41628
       m_Height: 130
-      m_HorizontalBearingX: -30.20814
+      m_HorizontalBearingX: -43.2
       m_HorizontalBearingY: 65
-      m_HorizontalAdvance: 60.41628
+      m_HorizontalAdvance: 99.9
     m_GlyphRect:
       m_X: 72
       m_Y: 35
@@ -177,9 +214,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 116.35728
       m_Height: 133.92241
-      m_HorizontalBearingX: -58.17864
+      m_HorizontalBearingX: -54.4
       m_HorizontalBearingY: 66.961205
-      m_HorizontalAdvance: 116.35728
+      m_HorizontalAdvance: 118.4
     m_GlyphRect:
       m_X: 222
       m_Y: 34
@@ -243,7 +280,7 @@ MonoBehaviour:
       m_Height: 130.56035
       m_HorizontalBearingX: -60.41628
       m_HorizontalBearingY: 65.280174
-      m_HorizontalAdvance: 120.83256
+      m_HorizontalAdvance: 125.8
     m_GlyphRect:
       m_X: 604
       m_Y: 31
@@ -259,7 +296,7 @@ MonoBehaviour:
       m_Height: 135.0431
       m_HorizontalBearingX: -59.577164
       m_HorizontalBearingY: 67.52155
-      m_HorizontalAdvance: 119.15433
+      m_HorizontalAdvance: 116.9
     m_GlyphRect:
       m_X: 954
       m_Y: 29
@@ -273,15 +310,15 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 49.228077
       m_Height: 61.077583
-      m_HorizontalBearingX: -24.614038
-      m_HorizontalBearingY: 30.538792
-      m_HorizontalAdvance: 49.228077
+      m_HorizontalBearingX: -33.5
+      m_HorizontalBearingY: -10
+      m_HorizontalAdvance: 52.9
     m_GlyphRect:
       m_X: 1846
       m_Y: 28
       m_Width: 49
       m_Height: 61
-    m_Scale: 1
+    m_Scale: 0.6
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: 4867251589976213723, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
@@ -289,9 +326,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 111.322586
       m_Height: 135.0431
-      m_HorizontalBearingX: -55.661293
+      m_HorizontalBearingX: -43.9
       m_HorizontalBearingY: 67.52155
-      m_HorizontalAdvance: 111.322586
+      m_HorizontalAdvance: 126.7
     m_GlyphRect:
       m_X: 423
       m_Y: 28
@@ -306,7 +343,7 @@ MonoBehaviour:
       m_Width: 111.322586
       m_Height: 132.80173
       m_HorizontalBearingX: -55.661293
-      m_HorizontalBearingY: 66.40086
+      m_HorizontalBearingY: 62.4
       m_HorizontalAdvance: 111.322586
     m_GlyphRect:
       m_X: 781
@@ -317,63 +354,5 @@ MonoBehaviour:
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: 415069873672488256, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
-  - m_Index: 13
-    m_Metrics:
-      m_Width: 3.3564599
-      m_Height: 3.362069
-      m_HorizontalBearingX: -1.6782299
-      m_HorizontalBearingY: 1.6810344
-      m_HorizontalAdvance: 3.3564599
-    m_GlyphRect:
-      m_X: 1253
-      m_Y: 3
-      m_Width: 3
-      m_Height: 3
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-    sprite: {fileID: -5225212842229295394, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
---- !u!21 &8466714479872060365
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: silver numbers Material
-  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 81f17273afecf48bea358e6a9ebfdbdb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _CullMode: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1

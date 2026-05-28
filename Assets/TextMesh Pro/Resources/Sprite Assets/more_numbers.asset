@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!21 &-6052036531857521471
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: more_numbers Material
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e7b1e537caa85414fa37a6eb961a5218, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +77,7 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  m_Material: {fileID: 8295808742033687309}
+  m_Material: {fileID: -6052036531857521471}
   spriteSheet: {fileID: 2800000, guid: e7b1e537caa85414fa37a6eb961a5218, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
@@ -93,7 +135,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 126.988945
       m_Height: 156.63115
-      m_HorizontalBearingX: 15.3
+      m_HorizontalBearingX: -63.494473
       m_HorizontalBearingY: 78.315575
       m_HorizontalAdvance: 126.988945
     m_GlyphRect:
@@ -109,7 +151,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 69.56082
       m_Height: 156.63115
-      m_HorizontalBearingX: 4
+      m_HorizontalBearingX: -67.1
       m_HorizontalBearingY: 78.315575
       m_HorizontalAdvance: 69.56082
     m_GlyphRect:
@@ -125,7 +167,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 144.78357
       m_Height: 154.20901
-      m_HorizontalBearingX: 39.2
+      m_HorizontalBearingX: -50.7
       m_HorizontalBearingY: 77.10451
       m_HorizontalAdvance: 144.78357
     m_GlyphRect:
@@ -141,8 +183,8 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128.60664
       m_Height: 159.05328
-      m_HorizontalBearingX: 27.1
-      m_HorizontalBearingY: 76.7
+      m_HorizontalBearingX: -64.30332
+      m_HorizontalBearingY: 79.52664
       m_HorizontalAdvance: 128.60664
     m_GlyphRect:
       m_X: 627
@@ -157,7 +199,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 131.03317
       m_Height: 154.20901
-      m_HorizontalBearingX: 54.4
+      m_HorizontalBearingX: -62
       m_HorizontalBearingY: 77.10451
       m_HorizontalAdvance: 131.03317
     m_GlyphRect:
@@ -173,7 +215,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 138.3128
       m_Height: 160.66803
-      m_HorizontalBearingX: 3.5
+      m_HorizontalBearingX: -69.1564
       m_HorizontalBearingY: 80.334015
       m_HorizontalAdvance: 138.3128
     m_GlyphRect:
@@ -189,8 +231,8 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 139.9305
       m_Height: 163.89754
-      m_HorizontalBearingX: 63.8
-      m_HorizontalBearingY: 87.1
+      m_HorizontalBearingX: -69.96525
+      m_HorizontalBearingY: 81.94877
       m_HorizontalAdvance: 139.9305
     m_GlyphRect:
       m_X: 1852
@@ -205,7 +247,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 142.35703
       m_Height: 163.09016
-      m_HorizontalBearingX: 57.6
+      m_HorizontalBearingX: -71.17851
       m_HorizontalBearingY: 81.54508
       m_HorizontalAdvance: 142.35703
     m_GlyphRect:
@@ -221,7 +263,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 130.22433
       m_Height: 158.2459
-      m_HorizontalBearingX: 44.1
+      m_HorizontalBearingX: -65.11217
       m_HorizontalBearingY: 79.12295
       m_HorizontalAdvance: 130.22433
     m_GlyphRect:
@@ -237,7 +279,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 133.45972
       m_Height: 159.86066
-      m_HorizontalBearingX: 51.6
+      m_HorizontalBearingX: -66.72986
       m_HorizontalBearingY: 79.93033
       m_HorizontalAdvance: 133.45972
     m_GlyphRect:
@@ -251,45 +293,3 @@ MonoBehaviour:
     sprite: {fileID: 1862845547, guid: e7b1e537caa85414fa37a6eb961a5218, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
---- !u!21 &8295808742033687309
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: more_numbers Material
-  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e7b1e537caa85414fa37a6eb961a5218, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _CullMode: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1

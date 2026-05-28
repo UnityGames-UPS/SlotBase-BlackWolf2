@@ -34,12 +34,11 @@ public class PayLineManager : MonoBehaviour
 
     private IEnumerator StartWinningLineAnimation(List<LineWin> lineWins)
     {
-        // Darken everything first
         for (int r = 0; r < winSlotImages.Count; r++)
             for (int s = 0; s < winSlotImages[r].slotImages.Count; s++)
                 winSlotImages[r].slotImages[s].GetComponent<Mask>().showMaskGraphic = true;
 
-        // Start ALL win animations across ALL lines simultaneously
+
         for (int i = 0; i < lineWins.Count; i++)
         {
             List<List<int>> winPositions = lineWins[i].positions;
@@ -50,19 +49,17 @@ public class PayLineManager : MonoBehaviour
 
                 winSlotImages[positionIndex].slotImages[reelIndex].GetComponent<Mask>().showMaskGraphic = false;
 
-                // Border — loops until stopped
-                ImageAnimation borderAnim = resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(2).GetComponent<ImageAnimation>();
-                resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(2).gameObject.SetActive(true);
+                ImageAnimation borderAnim = resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(1).GetComponent<ImageAnimation>();
+                resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(1).gameObject.SetActive(true);
                 borderAnim.textureArray = BorderAnimation;
                 borderAnim.AnimationSpeed = 45f;
                 borderAnim.doLoopAnimation = true;
                 borderAnim.StartAnimation();
 
-                // Symbol — loops until next spin
-                ImageAnimation anim = resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(3).GetComponent<ImageAnimation>();
-                resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(3).gameObject.SetActive(true);
+                ImageAnimation anim = resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(2).GetComponent<ImageAnimation>();
+                resultSlotImages[positionIndex].slotImages[reelIndex].transform.GetChild(2).gameObject.SetActive(true);
                 int symbolID = int.Parse(socketManager.resultData.matrix[reelIndex][positionIndex]);
-                Debug.Log(symbolID);
+                //Debug.Log(symbolID);
                 anim.textureArray = winLineAnimationImages[symbolID].Images;
                 anim.AnimationSpeed = 45f;
                 anim.doLoopAnimation = true;
@@ -70,15 +67,13 @@ public class PayLineManager : MonoBehaviour
             }
         }
 
-        // Hold until next spin kills the flag
         yield return new WaitUntil(() => !isDisplayingWinningLines);
 
-        // Clean up
         for (int j = 0; j < resultSlotImages.Count; j++)
             for (int k = 0; k < resultSlotImages[j].slotImages.Count; k++)
             {
+                resultSlotImages[j].slotImages[k].transform.GetChild(1).gameObject.SetActive(false);
                 resultSlotImages[j].slotImages[k].transform.GetChild(2).gameObject.SetActive(false);
-                resultSlotImages[j].slotImages[k].transform.GetChild(3).gameObject.SetActive(false);
             }
 
         for (int r = 0; r < winSlotImages.Count; r++)

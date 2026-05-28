@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: e7de86276243e45449a5368d55e07ed0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2529884283305643517
+    second: Boost circle effect 14_00048_0
+  - first:
+      213: -6331395766312452924
+    second: Boost circle effect 14_00048_1
+  - first:
+      213: 5477076705285677719
+    second: Boost circle effect 14_00048_2
+  - first:
+      213: 6809856766167345937
+    second: Boost circle effect 14_00048_3
+  - first:
+      213: 8895034990173152998
+    second: Boost circle effect 14_00048_4
+  - first:
+      213: -1418903569074514029
+    second: Boost circle effect 14_00048_5
+  - first:
+      213: 5684765759649777481
+    second: Boost circle effect 14_00048_6
+  - first:
+      213: 5007275985152557952
+    second: Boost circle effect 14_00048_7
+  - first:
+      213: 9139749443489251811
+    second: Boost circle effect 14_00048_8
+  - first:
+      213: 4671439717369842858
+    second: Boost circle effect 14_00048_9
+  - first:
+      213: -3472196926591378526
+    second: Boost circle effect 14_00048_10
+  - first:
+      213: -5554215090999429390
+    second: Boost circle effect 14_00048_11
+  - first:
+      213: -7342686816564181498
+    second: Boost circle effect 14_00048_12
+  - first:
+      213: -2744733600639489958
+    second: Boost circle effect 14_00048_13
+  - first:
+      213: -2787040966913793613
+    second: Boost circle effect 14_00048_14
+  - first:
+      213: 1536562382950572773
+    second: Boost circle effect 14_00048_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30239b2f5ab04ecd0800000000000000
+      internalID: -2529884283305643517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 804
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccb880881d5228a0800000000000000
+      internalID: -6331395766312452924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 1126
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792ae12ae3c720c40800000000000000
+      internalID: 5477076705285677719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 776
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11be1be06a8718e50800000000000000
+      internalID: 6809856766167345937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 747
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6e0f51233817b70800000000000000
+      internalID: 8895034990173152998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 728
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39797cab8ba0f4ce0800000000000000
+      internalID: -1418903569074514029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 709
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9478a37d65854ee40800000000000000
+      internalID: 5684765759649777481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 709
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083cc539afa6d7540800000000000000
+      internalID: 5007275985152557952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 690
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e14043c1b9e6de70800000000000000
+      internalID: 9139749443489251811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 630
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac0b7f2ca944d040800000000000000
+      internalID: 4671439717369842858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 652
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab5150ba4740dfc0800000000000000
+      internalID: -3472196926591378526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 537
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f67dde5dc67be2b0800000000000000
+      internalID: -5554215090999429390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 107
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6068fb95e39891a90800000000000000
+      internalID: -7342686816564181498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 69
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58edca155fb8e9d0800000000000000
+      internalID: -2744733600639489958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b164a8c1017259d0800000000000000
+      internalID: -2787040966913793613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boost circle effect 14_00048_15
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e22ff2a857f25510800000000000000
+      internalID: 1536562382950572773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boost circle effect 14_00048_0: -2529884283305643517
+      Boost circle effect 14_00048_1: -6331395766312452924
+      Boost circle effect 14_00048_10: -3472196926591378526
+      Boost circle effect 14_00048_11: -5554215090999429390
+      Boost circle effect 14_00048_12: -7342686816564181498
+      Boost circle effect 14_00048_13: -2744733600639489958
+      Boost circle effect 14_00048_14: -2787040966913793613
+      Boost circle effect 14_00048_15: 1536562382950572773
+      Boost circle effect 14_00048_2: 5477076705285677719
+      Boost circle effect 14_00048_3: 6809856766167345937
+      Boost circle effect 14_00048_4: 8895034990173152998
+      Boost circle effect 14_00048_5: -1418903569074514029
+      Boost circle effect 14_00048_6: 5684765759649777481
+      Boost circle effect 14_00048_7: 5007275985152557952
+      Boost circle effect 14_00048_8: 9139749443489251811
+      Boost circle effect 14_00048_9: 4671439717369842858
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

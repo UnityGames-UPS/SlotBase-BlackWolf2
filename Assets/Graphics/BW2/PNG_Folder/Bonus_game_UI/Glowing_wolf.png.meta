@@ -121,7 +121,7 @@ TextureImporter:
         width: 426
         height: 445
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +134,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Glowing_wolf_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 388
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb244a982e1649ac8ac8b49020a061c
+      internalID: 1847670750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d421c84b579040ee8e04173d56bfd90
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Glowing_wolf_0: -4092040973588550032
+      Glowing_wolf_1: 1847670750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

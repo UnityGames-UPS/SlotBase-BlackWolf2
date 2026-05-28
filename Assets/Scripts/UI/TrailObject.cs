@@ -16,6 +16,7 @@ public class TrailObject : MonoBehaviour
     [Header("Managers")]
     [SerializeField] private AnimationManager AnimationManager;
 
+    // ── Logo trail ─────────────────────────────────────────────────────────────
     internal IEnumerator StartLogoAnimation(Action onComplete = null)
     {
         TrailController.Spline = LogoPathCurvySpline;
@@ -49,31 +50,30 @@ public class TrailObject : MonoBehaviour
         onComplete?.Invoke();
     }
 
-    internal IEnumerator StartBoostAnimation(double bonusAmont , GameObject slotObject)
+    // ── Boost trail ────────────────────────────────────────────────────────────
+    internal IEnumerator StartBoostAnimation(double bonusAmont, GameObject slotObject)
     {
         TrailController.Spline = MultiplierPathCurvySpline;
         MultiplierPathCurvySpline.Refresh();
 
-        yield return new WaitForSeconds(0.5f); // Wait one frame for TrailController to register the new spline
+        yield return new WaitForSeconds(0.5f);
 
         var onBoostAnimationFinishedSettings = new OnPositionReachedSettings();
-        onBoostAnimationFinishedSettings.Position = 1f;                              // end of spline (TF = 1)
+        onBoostAnimationFinishedSettings.Position = 1f;
         onBoostAnimationFinishedSettings.PositionMode = CurvyPositionMode.Relative;
 
         onBoostAnimationFinishedSettings.Event.AddListener((CurvySplineMoveEventArgs args) =>
         {
             StartCoroutine(OnBoostFinished(bonusAmont));
-            //ResetTrail();
         });
 
         TrailController.OnPositionReachedList.Add(onBoostAnimationFinishedSettings);
-
         TrailController.Clamping = CurvyClamping.Clamp;
 
         gameObject.SetActive(true);
-
         TrailController.Play();
         slotObject.SetActive(true);
+
         yield return null;
     }
 
@@ -84,32 +84,34 @@ public class TrailObject : MonoBehaviour
         AnimationManager.BoostBlastAnimation(bonusAmont);
     }
 
-    internal IEnumerator StartMultiplierAnimation(double bonusAmont , GameObject slotObject)
+    internal IEnumerator StartMultiplierAnimation(double bonusAmont, GameObject slotObject)
     {
+        TrailController.OnPositionReachedList.Clear();
+
         TrailController.Spline = MultiplierPathCurvySpline;
         MultiplierPathCurvySpline.Refresh();
 
-        yield return new WaitForSeconds(0.5f); // Wait one frame for TrailController to register the new spline
+        yield return new WaitForSeconds(0.5f);
 
-        var onBoostAnimationFinishedSettings = new OnPositionReachedSettings();
-        onBoostAnimationFinishedSettings.Position = 1f;                              // end of spline (TF = 1)
-        onBoostAnimationFinishedSettings.PositionMode = CurvyPositionMode.Relative;
+        var onMultiplierAnimationFinishedSettings = new OnPositionReachedSettings();
+        onMultiplierAnimationFinishedSettings.Position = 1f;
+        onMultiplierAnimationFinishedSettings.PositionMode = CurvyPositionMode.Relative;
 
-        onBoostAnimationFinishedSettings.Event.AddListener((CurvySplineMoveEventArgs args) =>
+        onMultiplierAnimationFinishedSettings.Event.AddListener((CurvySplineMoveEventArgs args) =>
         {
             StartCoroutine(OnMultiplierFinished(bonusAmont));
-            //ResetTrail();
         });
 
-        TrailController.OnPositionReachedList.Add(onBoostAnimationFinishedSettings);
-
+        TrailController.OnPositionReachedList.Add(onMultiplierAnimationFinishedSettings);
         TrailController.Clamping = CurvyClamping.Clamp;
 
         gameObject.SetActive(true);
-
         TrailController.Play();
-        //slotObject.GetComponent<Image>().color = new Color();
-        Debug.Log("Color changed");
+
+        // Activate the win-slot overlay so it's visible when the trail lands
+        slotObject.SetActive(true);
+        Debug.Log("Multiplier trail started for amount: " + bonusAmont);
+
         yield return null;
     }
 
@@ -120,6 +122,7 @@ public class TrailObject : MonoBehaviour
         AnimationManager.MultiplierAnimation(bonusAmont);
     }
 
+    // ── Utility ────────────────────────────────────────────────────────────────
     internal void ResetTrail()
     {
         TrailController.Stop();

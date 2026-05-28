@@ -50,7 +50,7 @@ public class Player
 public class GameData
 {
     public List<List<int>> lines { get; set; }
-    public List<int> bets { get; set; }
+    public List<double> bets { get; set; }
 }
 
 [Serializable]
@@ -70,7 +70,7 @@ public class Symbol
 {
     public int id { get; set; }
     public string name { get; set; }
-    public List<int> multiplier { get; set; }
+    public List<double> multiplier { get; set; }
     public string description { get; set; }
 }
 
@@ -83,10 +83,10 @@ public class Features
 [Serializable]
 public class Jackpots
 {
-    public int mini { get; set; }
-    public int minor { get; set; }
-    public int major { get; set; }
-    public int grand { get; set; }
+    public double mini { get; set; }
+    public double minor { get; set; }
+    public double major { get; set; }
+    public double grand { get; set; }
 }
 
 //Result Data Classes
@@ -94,7 +94,7 @@ public class Jackpots
 [Serializable]
 public class Payload
 {
-    public int winAmount { get; set; }
+    public double winAmount { get; set; }
 
     // All list fields default to empty so missing JSON fields never produce null.
     // BonusResultData omits lineWins, mysteryRevealed, boost_positions, and bs entirely —
@@ -104,12 +104,15 @@ public class Payload
     public int bs_count { get; set; }
     public bool is_boost { get; set; }
     public List<BoostPosition> boost_positions { get; set; } = new List<BoostPosition>();
-    public int boostWin { get; set; }
+    public double boostWin { get; set; }
     public int scatterCount { get; set; }
     public bool freeSpinTriggered { get; set; }
     public List<MysteryRevealed> mysteryRevealed { get; set; } = new List<MysteryRevealed>();
     public LevelProgress levelProgress { get; set; }
     public State state { get; set; }
+    public bool is_grand { get; set; }
+    public double grand_win { get; set; }
+
 }
 
 [Serializable]
@@ -125,6 +128,8 @@ public class MysteryRevealed
     public int reel { get; set; }
     public int position { get; set; }
     public double value { get; set; }
+    public string jackpotName { get; set; }
+    public bool isBoost { get; set; }
 }
 
 [Serializable]
@@ -143,7 +148,7 @@ public class B
 {
     public int reel { get; set; }
     public int position { get; set; }
-    public int value { get; set; }
+    public double value { get; set; }
     public bool isJackpot { get; set; }
     public string jackpotName { get; set; }
 }
@@ -153,7 +158,7 @@ public class LevelProgress
 {
     public int level { get; set; }
     public double level_percent { get; set; }
-    public int totalMoonsCollected { get; set; }
+    public double totalMoonsCollected { get; set; }
     public double total_progress { get; set; }
 }
 
@@ -163,7 +168,7 @@ public class State
     public string mode { get; set; }
     public int respinsLeft { get; set; }
     public int freeSpinsLeft { get; set; }
-    public int totalFreeSpinWin { get; set; }                                        // added — present in BonusResultData
+    public double totalFreeSpinWin { get; set; }                                        // added — present in BonusResultData
     public List<LockedSymbol> lockedSymbols { get; set; } = new List<LockedSymbol>();
     public List<string> fortuneSlideQueue { get; set; } = new List<string>();
 }
@@ -173,7 +178,9 @@ public class LockedSymbol
 {
     public int reel { get; set; }
     public int position { get; set; }
-    public int value { get; set; }
+    public double value { get; set; }
     public bool isJackpot { get; set; }
+    public string jackpotName { get; set; }
     public bool isMystery { get; set; }
+    public bool isBoost { get; set; }
 }

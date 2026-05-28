@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 9f26e11bcd488422aa4cb3ebce4a59af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3687228380569193674
+    second: black wolf big win _00063_0
+  - first:
+      213: 7611664053985771770
+    second: black wolf big win _00063_1
+  - first:
+      213: 8597297094374504757
+    second: black wolf big win _00063_2
+  - first:
+      213: -1425352229399211793
+    second: black wolf big win _00063_3
+  - first:
+      213: -7218109117196030145
+    second: black wolf big win _00063_4
+  - first:
+      213: 6697163441110699757
+    second: black wolf big win _00063_5
+  - first:
+      213: -94045702445472299
+    second: black wolf big win _00063_6
+  - first:
+      213: 5151520630530627964
+    second: black wolf big win _00063_7
+  - first:
+      213: -1600617158499535857
+    second: black wolf big win _00063_8
+  - first:
+      213: 1769812263056846951
+    second: black wolf big win _00063_9
+  - first:
+      213: 482012935664861940
+    second: black wolf big win _00063_10
+  - first:
+      213: -6316100746894557697
+    second: black wolf big win _00063_11
+  - first:
+      213: 1066212142257353159
+    second: black wolf big win _00063_12
+  - first:
+      213: 6377186011211867215
+    second: black wolf big win _00063_13
+  - first:
+      213: 8658123019590398735
+    second: black wolf big win _00063_14
+  - first:
+      213: 2594886719336553948
+    second: black wolf big win _00063_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black wolf big win _00063_0
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 956
+        width: 132
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6333f6ad25554dcc0800000000000000
+      internalID: -3687228380569193674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 824
+        width: 134
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af08e67f02012a960800000000000000
+      internalID: 7611664053985771770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_2
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 510
+        width: 918
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539b0ba282cbf4770800000000000000
+      internalID: 8597297094374504757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_3
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 856
+        width: 128
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe059def2b1283ce0800000000000000
+      internalID: -1425352229399211793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 635
+        width: 318
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fa587400024db90800000000000000
+      internalID: -7218109117196030145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_5
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 656
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deec226aaaa11fc50800000000000000
+      internalID: 6697163441110699757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_6
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 623
+        width: 141
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5e5119ee1e1bef0800000000000000
+      internalID: -94045702445472299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_7
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 591
+        width: 83
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79dfd338b0ed7740800000000000000
+      internalID: 5151520630530627964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 387
+        width: 80
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f047d3ebc2779c9e0800000000000000
+      internalID: -1600617158499535857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 370
+        width: 72
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76032aa50e2af8810800000000000000
+      internalID: 1769812263056846951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_10
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 388
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2827f063470b600800000000000000
+      internalID: 482012935664861940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_11
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 305
+        width: 304
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd35c7b5d3b858a0800000000000000
+      internalID: -6316100746894557697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_12
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 399
+        width: 118
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1357a5b42fbce00800000000000000
+      internalID: 1066212142257353159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_13
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 198
+        width: 187
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44afd0b3e0508850800000000000000
+      internalID: 6377186011211867215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_14
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 396
+        width: 108
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03715c7305d72870800000000000000
+      internalID: 8658123019590398735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black wolf big win _00063_15
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 86
+        width: 165
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd1f6219b3e20420800000000000000
+      internalID: 2594886719336553948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      black wolf big win _00063_0: -3687228380569193674
+      black wolf big win _00063_1: 7611664053985771770
+      black wolf big win _00063_10: 482012935664861940
+      black wolf big win _00063_11: -6316100746894557697
+      black wolf big win _00063_12: 1066212142257353159
+      black wolf big win _00063_13: 6377186011211867215
+      black wolf big win _00063_14: 8658123019590398735
+      black wolf big win _00063_15: 2594886719336553948
+      black wolf big win _00063_2: 8597297094374504757
+      black wolf big win _00063_3: -1425352229399211793
+      black wolf big win _00063_4: -7218109117196030145
+      black wolf big win _00063_5: 6697163441110699757
+      black wolf big win _00063_6: -94045702445472299
+      black wolf big win _00063_7: 5151520630530627964
+      black wolf big win _00063_8: -1600617158499535857
+      black wolf big win _00063_9: 1769812263056846951
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
