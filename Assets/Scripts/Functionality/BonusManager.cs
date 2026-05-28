@@ -218,6 +218,7 @@ public class BonusManger : MonoBehaviour
             TimerText.text = timer.ToString();
             yield return new WaitForSeconds(1f);
             timer--;
+            if(timer < 0) break;
         }
 
         isBonusIntroAnimationFinished = true;

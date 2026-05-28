@@ -622,6 +622,7 @@ public class SlotManager : MonoBehaviour
     private IEnumerator FreeSpinStartAnimation()
     {
         // Placeholder — add banner / sound effect here when ready.
+        FreeSpinIntroPage.SetActive(true);
         FreeSpinIntroPage.GetComponent<CanvasGroup>().DOFade(1f, 0.5f).SetEase(Ease.InOutSine);
         FreeSpinTextAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
         FreeSpinMoonAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
@@ -632,10 +633,11 @@ public class SlotManager : MonoBehaviour
             TimerText.text = timer.ToString();
             yield return new WaitForSeconds(1f);
             timer--;
+            if(timer < 0) break;
         }
         FreeSpinIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
-
         FreeSpinIntroFinished = true;
+        FreeSpinIntroPage.SetActive(false);
     }
 
     private void TimerSkipButtonClicked()
