@@ -10,6 +10,7 @@ public class WinPopupAnimation : MonoBehaviour
     [Header("Managers")]
     [SerializeField] private SlotManager slotManager;
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private AudioController audioController;
 
     [Header("UI References")]
     [SerializeField] private TMP_Text WinAmountText;
@@ -58,6 +59,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     internal void ShowNormalWinPopup(double winAmount, bool animateBalance = true)
     {
+        audioController.PlayNormalWin();
         popupDone = false;
         StopActiveRoutine();
         _activeRoutine = StartCoroutine(NormalWinRoutine(winAmount, animateBalance));
@@ -65,6 +67,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     internal void ShowBoostWinPopup(double winAmount, bool animateBalance = true)
     {
+        audioController.PlayBoostWin();
         popupDone = false;
         StopActiveRoutine();
         SetWinTextSprites(BoostWinSprites);
@@ -73,6 +76,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     internal void ShowBonusWinPopup(double winAmount)
     {
+        audioController.PlayBonusWin();
         popupDone = false;
         StopActiveRoutine();
         SetWinTextSprites(BonusWinSprites);
@@ -81,6 +85,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     internal void ShowTotalWinPopup(double winAmount)
     {
+        audioController.PlayAnotherWin();
         popupDone = false;
         StopActiveRoutine();
         SetWinTextSprites(TotalWinSprites);

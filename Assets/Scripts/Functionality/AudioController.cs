@@ -25,79 +25,79 @@ internal class AudioController : MonoBehaviour
     [SerializeField] private AudioClip ReelHit;
     //[SerializeField] private AudioClip SpinStops;
 
-    [Header("UI Sounds")]
-    [SerializeField] private AudioClip uiButton;
+    // [Header("UI Sounds")]
+    // [SerializeField] private AudioClip uiButton;
 
-    [Header("Sound Buttons")]
-    [SerializeField] private Button SoundButton;
-    [SerializeField] private Button SoundMuteButton;
-    [SerializeField] private Button MusicButton;
-    [SerializeField] private Button MusicMuteButton;
+    // [Header("Sound Buttons")]
+    // [SerializeField] private Button SoundButton;
+    // [SerializeField] private Button SoundMuteButton;
+    // [SerializeField] private Button MusicButton;
+    // [SerializeField] private Button MusicMuteButton;
 
     private bool isGameMuted = false;
     private bool isMusicMuted = false;
 
     private void Start()
     {
-        if (SoundButton)
-        {
-            SoundButton.onClick.RemoveAllListeners();
-            SoundButton.onClick.AddListener(ToggleGameSound);
-        }
+        // if (SoundButton)
+        // {
+        //     SoundButton.onClick.RemoveAllListeners();
+        //     SoundButton.onClick.AddListener(ToggleGameSound);
+        // }
 
-        if (MusicButton)
-        {
-            MusicButton.onClick.RemoveAllListeners();
-            MusicButton.onClick.AddListener(ToggleBackgroundMusic);
-        }
+        // if (MusicButton)
+        // {
+        //     MusicButton.onClick.RemoveAllListeners();
+        //     MusicButton.onClick.AddListener(ToggleBackgroundMusic);
+        // }
 
-        if (SoundMuteButton)
-        {
-            SoundMuteButton.onClick.RemoveAllListeners();
-            SoundMuteButton.onClick.AddListener(ToggleGameSound);
-        }
+        // if (SoundMuteButton)
+        // {
+        //     SoundMuteButton.onClick.RemoveAllListeners();
+        //     SoundMuteButton.onClick.AddListener(ToggleGameSound);
+        // }
 
-        if (MusicMuteButton)
-        {
-            MusicMuteButton.onClick.RemoveAllListeners();
-            MusicMuteButton.onClick.AddListener(ToggleBackgroundMusic);
-        }
+        // if (MusicMuteButton)
+        // {
+        //     MusicMuteButton.onClick.RemoveAllListeners();
+        //     MusicMuteButton.onClick.AddListener(ToggleBackgroundMusic);
+        // }
 
         PlayBackground();
     }
 
-    private void ToggleGameSound()
-    {
-        Debug.Log("button pressed!");
-        if (!isGameMuted)
-        {
-            SoundMuteButton.gameObject.SetActive(true);
-            SoundButton.gameObject.SetActive(false);
-        }
-        else
-        {
-            SoundButton.gameObject.SetActive(true);
-            SoundMuteButton.gameObject.SetActive(false);
-        }
-        isGameMuted = !isGameMuted;
-        MuteGame(isGameMuted);
-    }
+    // private void ToggleGameSound()
+    // {
+    //     Debug.Log("button pressed!");
+    //     if (!isGameMuted)
+    //     {
+    //         SoundMuteButton.gameObject.SetActive(true);
+    //         SoundButton.gameObject.SetActive(false);
+    //     }
+    //     else
+    //     {
+    //         SoundButton.gameObject.SetActive(true);
+    //         SoundMuteButton.gameObject.SetActive(false);
+    //     }
+    //     isGameMuted = !isGameMuted;
+    //     MuteGame(isGameMuted);
+    // }
 
-    private void ToggleBackgroundMusic()
-    {
-        if (!isMusicMuted)
-        {
-            MusicMuteButton.gameObject.SetActive(true);
-            MusicButton.gameObject.SetActive(false);
-        }
-        else
-        {
-            MusicButton.gameObject.SetActive(true);
-            MusicMuteButton.gameObject.SetActive(false);
-        }
-        isMusicMuted = !isMusicMuted;
-        MuteBackground(isMusicMuted);
-    }
+    // private void ToggleBackgroundMusic()
+    // {
+    //     if (!isMusicMuted)
+    //     {
+    //         MusicMuteButton.gameObject.SetActive(true);
+    //         MusicButton.gameObject.SetActive(false);
+    //     }
+    //     else
+    //     {
+    //         MusicButton.gameObject.SetActive(true);
+    //         MusicMuteButton.gameObject.SetActive(false);
+    //     }
+    //     isMusicMuted = !isMusicMuted;
+    //     MuteBackground(isMusicMuted);
+    // }
 
 
     internal void PlayBackground()
@@ -105,6 +105,16 @@ internal class AudioController : MonoBehaviour
         if (!bgMusic) return;
 
         bgMusicSource.clip = bgMusic;
+        bgMusicSource.loop = true;
+        if (!bgMusicSource.isPlaying)
+            bgMusicSource.Play();
+    }
+
+    internal void PlayBonusBackground()
+    {
+        if (!bonusbgMusic) return;
+
+        bgMusicSource.clip = bonusbgMusic;
         bgMusicSource.loop = true;
         if (!bgMusicSource.isPlaying)
             bgMusicSource.Play();
@@ -175,24 +185,9 @@ internal class AudioController : MonoBehaviour
         gameSoundSource.loop = false;
     }
 
-    // internal void PlayChip()
+    // internal void PlayUIButton()
     // {
-    //     gameSoundSource.PlayOneShot(chipSound);
-    // }
-
-    // internal void PlayCardPlaced()
-    // {
-    //     gameSoundSource.PlayOneShot(cardPlaced);
-    // }
-
-    internal void PlayUIButton()
-    {
-        gameSoundSource.PlayOneShot(uiButton);
-    }
-
-    // internal void PlayNavigation()
-    // {
-    //     uiSource.PlayOneShot(navigation);
+    //     gameSoundSource.PlayOneShot(uiButton);
     // }
 
     internal void MuteAll(bool mute)

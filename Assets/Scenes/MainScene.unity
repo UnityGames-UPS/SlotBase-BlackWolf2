@@ -53341,7 +53341,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 1920, y: 1983.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670026341
 MonoBehaviour:
@@ -53363,9 +53363,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -565365224244653030, guid: a08e2a111119843edbe87a2e936b0646, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fd402debb9f24dc5945ff1e2458724b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -62796,6 +62796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotManager: {fileID: 1472552266}
   uiManager: {fileID: 377874625}
+  audioController: {fileID: 1030743558465206379}
   WinAmountText: {fileID: 1923262452}
   BalanceText: {fileID: 103851657}
   WinPopup_Object: {fileID: 105965025}
@@ -74295,7 +74296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a48a0a7ad3e416bbec0af059204b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestToken: 22b2683c1ac442cca6fc2794272dc275
+  TestToken: e8ce814fdf974742bbb702fa0a9fa4f6
   _slotManager: {fileID: 1472552266}
   _uiManager: {fileID: 377874625}
   JSManager: {fileID: 1148238420}
@@ -124792,6 +124793,7 @@ MonoBehaviour:
   uIManager: {fileID: 377874625}
   animationManager: {fileID: 973382412}
   winPopupAnimation: {fileID: 791126294}
+  audioController: {fileID: 1030743558465206379}
   MainBG: {fileID: 1485219721}
   WolfImage: {fileID: 1033577699}
   WolfFinalPosition: {x: 50, y: 420}
@@ -132438,7 +132440,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682330696}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -168515,30 +168517,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363731846522446734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 782a047ea6ad54319834e4c76486aab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgMusicSource: {fileID: 0}
-  gameSoundSource: {fileID: 0}
-  bgMusic: {fileID: 0}
-  bonusbgMusic: {fileID: 0}
-  anotherWin: {fileID: 0}
-  normalWin: {fileID: 0}
-  betButton: {fileID: 0}
-  WolfAppear: {fileID: 0}
-  BonusWin: {fileID: 0}
-  BoostWin: {fileID: 0}
-  MoonIconPop: {fileID: 0}
-  LightSound: {fileID: 0}
-  SpinStarts: {fileID: 0}
-  ReelHit: {fileID: 0}
-  uiButton: {fileID: 0}
-  SoundButton: {fileID: 0}
-  SoundMuteButton: {fileID: 0}
-  MusicButton: {fileID: 0}
-  MusicMuteButton: {fileID: 0}
+  bgMusicSource: {fileID: 5767972125323714644}
+  gameSoundSource: {fileID: 1099861978960025974}
+  bgMusic: {fileID: 8300000, guid: 28f2f106563754551aa01490bec446f4, type: 3}
+  bonusbgMusic: {fileID: 8300000, guid: 80ebbd116e69c4ed6956a0d752d9d3f7, type: 3}
+  anotherWin: {fileID: 8300000, guid: f33359dfc4ab34bfdab971b1127b6eb8, type: 3}
+  normalWin: {fileID: 8300000, guid: 5de2d81d074634a45ae9e99cb2da6095, type: 3}
+  betButton: {fileID: 8300000, guid: e1bab68aaedce46e69d57a217290ec6c, type: 3}
+  WolfAppear: {fileID: 8300000, guid: 149f81d241051489780f2fb05c552269, type: 3}
+  BonusWin: {fileID: 8300000, guid: 810725288dc554f279695ce902c19fee, type: 3}
+  BoostWin: {fileID: 8300000, guid: ac49999df5e03400498de90e1715b24b, type: 3}
+  MoonIconPop: {fileID: 8300000, guid: 0eb3a728bfc534849a507f1381ce6143, type: 3}
+  LightSound: {fileID: 8300000, guid: c53f5ce51f8a3468abde5c5459080d29, type: 3}
+  SpinStarts: {fileID: 8300000, guid: 2a92e7c90b0d3489aa2476cc36b4a12e, type: 3}
+  ReelHit: {fileID: 8300000, guid: a71cc6e1d7eb5410f9e974810daed682, type: 3}
 --- !u!82 &1099861978960025974
 AudioSource:
   m_ObjectHideFlags: 0
@@ -168546,7 +168543,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363731846522446734}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -168654,7 +168651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &5767972125323714644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -168662,7 +168659,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363731846522446734}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}

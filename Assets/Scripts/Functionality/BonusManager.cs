@@ -17,6 +17,7 @@ public class BonusManger : MonoBehaviour
     [SerializeField] private UIManager uIManager;
     [SerializeField] private AnimationManager animationManager;
     [SerializeField] private WinPopupAnimation winPopupAnimation;
+    [SerializeField] private AudioController audioController;
 
     [Header("Bonus Intro Animation")]
     [SerializeField] private GameObject MainBG;
@@ -189,6 +190,7 @@ public class BonusManger : MonoBehaviour
         Sequence seq = DOTween.Sequence();
 
         seq.Append(MainBG.transform.DOLocalMoveY(-1080f, 2.2f).SetEase(Ease.InOutSine));
+        audioController.PlayWolfAppear();
 
         seq.Insert(0.8f, WolfImage.GetComponent<CanvasGroup>().DOFade(1f, 1.2f).SetEase(Ease.InOutSine));
         seq.Insert(0.8f, MoonImage.GetComponent<CanvasGroup>().DOFade(1f, 1.2f).SetEase(Ease.InOutSine));
@@ -218,12 +220,15 @@ public class BonusManger : MonoBehaviour
             TimerText.text = timer.ToString();
             yield return new WaitForSeconds(1f);
             timer--;
-            if(timer < 0) break;
+            if (timer < 0) break;
         }
 
-        isBonusIntroAnimationFinished = true;
         BonusIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
+        yield return new WaitForSeconds(0.3f);
+        audioController.PlayBonusBackground();
+        MainBG.GetComponent<RectTransform>().localPosition = new Vector2(0f, 0f);
         BonusIntroPage.SetActive(false);
+        isBonusIntroAnimationFinished = true;
     }
 
     private void TimerSkipButtonClicked()
@@ -235,14 +240,13 @@ public class BonusManger : MonoBehaviour
     {
         isBonusIntroAnimationFinished = false;
         StartCoroutine(BonusIntroAnimation());
-        
+
         yield return new WaitForSeconds(3f);
         InitializeBonusUI();
         uIManager.ToggleBonusBackground();
         yield return new WaitUntil(() => isBonusIntroAnimationFinished);
-
-
-        MainBG.GetComponent<RectTransform>().localPosition = new Vector2(0f, 0f);
+        
+        yield return new WaitForSeconds(1f);
 
         int currentSpinCount = socketManager.resultData.payload.state.respinsLeft;
         while (socketManager.resultData.payload.state.respinsLeft > 0)
@@ -294,6 +298,7 @@ public class BonusManger : MonoBehaviour
             {
                 yield return StopTweening(_slotTransforms[i], i, _stopSpinToggle);
             }
+            audioController.PlayReelHit();
 
             _stopSpinToggle = true;
 
@@ -426,9 +431,8 @@ public class BonusManger : MonoBehaviour
                 {
                     trail.ResetTrail();
                     animationManager.isMultiplierAnimationFinished = false;
-                    StartCoroutine(trail.StartMultiplierAnimation(
-                        sym.value,
-                        winSlotImages[reel].slotImages[position].gameObject));
+                    StartCoroutine(trail.StartMultiplierAnimation(sym.value, winSlotImages[reel].slotImages[position].gameObject));
+                    audioController.PlayLightSound();
                     yield return new WaitUntil(() => animationManager.isMultiplierAnimationFinished);
                 }
             }
@@ -469,9 +473,8 @@ public class BonusManger : MonoBehaviour
             MaskImages[reel].slotImages[position].gameObject.SetActive(true);
 
             animationManager.isMultiplierAnimationFinished = false;
-            StartCoroutine(trail.StartMultiplierAnimation(
-                socketManager.resultData.payload.state.lockedSymbols[i].value,
-                winSlotImages[reel].slotImages[position].gameObject));
+            StartCoroutine(trail.StartMultiplierAnimation(socketManager.resultData.payload.state.lockedSymbols[i].value, winSlotImages[reel].slotImages[position].gameObject));
+            audioController.PlayLightSound();
             yield return new WaitUntil(() => animationManager.isMultiplierAnimationFinished);
         }
         isBonusMultiplierAnimationFinished = true;
@@ -657,7 +660,7 @@ public class BonusManger : MonoBehaviour
         Sequence seq = DOTween.Sequence();
         imgAnim.StartAnimation();
         //seq.Insert(0f , numObj.transform.DOScale(1.6f, 0.5f).SetEase(Ease.InOutSine));
-        seq.Insert(0.2f , numObj.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine));
+        seq.Insert(0.2f, numObj.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine));
     }
 
     private void SpinIndicatorFrontAnimation(GameObject indicator)
@@ -668,8 +671,8 @@ public class BonusManger : MonoBehaviour
         numObj.GetComponent<CanvasGroup>().alpha = 0f;
         Sequence seq = DOTween.Sequence();
         imgAnim.StartReverseAnimation();
-        seq.Insert(0f , numObj.transform.DOScale(1f, 0.5f).SetEase(Ease.InOutSine));
-        seq.Insert(0f , numObj.GetComponent<CanvasGroup>().DOFade(1f, 0.2f).SetEase(Ease.InOutSine));
+        seq.Insert(0f, numObj.transform.DOScale(1f, 0.5f).SetEase(Ease.InOutSine));
+        seq.Insert(0f, numObj.GetComponent<CanvasGroup>().DOFade(1f, 0.2f).SetEase(Ease.InOutSine));
     }
 
     private void InitializeBonusUI()

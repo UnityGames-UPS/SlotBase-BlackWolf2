@@ -251,6 +251,7 @@ public class SlotManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
 
+
         if (isFirstFreeSpin)
         {
             // first free spin animation placeholder
@@ -321,6 +322,7 @@ public class SlotManager : MonoBehaviour
             }
 
             yield return StopTweening(_slotTransforms[i], i, _stopSpinToggle);
+            _audioController.PlayReelHit();
 
             for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
             {
@@ -353,6 +355,7 @@ public class SlotManager : MonoBehaviour
                     {
                         pendingTrails++;
                         StartCoroutine(trail.StartLogoAnimation(() => finishedTrails++));
+                        _audioController.PlayLightSound();
                     }
                 }
             }
@@ -397,8 +400,10 @@ public class SlotManager : MonoBehaviour
                             _resultImages[i].slotImages[j].gameObject.GetComponentInChildren<TMP_Text>().text);
                         TrailObject trail = _resultImages[i].slotImages[j].gameObject.GetComponentInChildren<TrailObject>(true);
                         if (trail != null)
-                            StartCoroutine(trail.StartBoostAnimation(
-                                boostAmount, _resultImages[i].slotImages[j].transform.GetChild(4).gameObject));
+                        {
+                            StartCoroutine(trail.StartBoostAnimation(boostAmount, _resultImages[i].slotImages[j].transform.GetChild(4).gameObject));
+                            _audioController.PlayLightSound();
+                        }
                         yield return new WaitUntil(() => animationManager.isBoostBlastAnimationFinished);
                     }
                 }
@@ -422,6 +427,8 @@ public class SlotManager : MonoBehaviour
             StartCoroutine(bonusManger.StartBonus());
             yield return new WaitUntil(() => bonusManger.isBonusFinished);
 
+            _audioController.PlayBackground();
+            
             if (_socketManager.resultData.payload.state.freeSpinsLeft > 0)
             {
                 _isFreeSpin = true;
@@ -527,6 +534,7 @@ public class SlotManager : MonoBehaviour
 
     private IEnumerator MoonSymbolAnimation(Image slotImage)
     {
+        _audioController.PlayMoonIconPop();
         Transform child = slotImage.transform.GetChild(2);
         RectTransform childRect = child.GetComponent<RectTransform>();
         ImageAnimation imgAnim = child.GetComponent<ImageAnimation>();
@@ -633,7 +641,7 @@ public class SlotManager : MonoBehaviour
             TimerText.text = timer.ToString();
             yield return new WaitForSeconds(1f);
             timer--;
-            if(timer < 0) break;
+            if (timer < 0) break;
         }
         FreeSpinIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
         FreeSpinIntroFinished = true;

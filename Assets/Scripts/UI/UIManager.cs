@@ -310,7 +310,7 @@ public class UIManager : MonoBehaviour
 
     private void ChangeBet(bool IncDec)
     {
-        //if (_audioController) _audioController.PlayButtonAudio();
+        if (_audioController) _audioController.PlayBetButton();
         if (IncDec)
         {
             betCounter++;
@@ -362,36 +362,38 @@ public class UIManager : MonoBehaviour
 
     private void ToggleMusic()
     {
-        //_audioController.PlayButtonAudio();
+        _audioController.PlayBetButton();
         if (isMusic)
         {
             Music_Button.image.sprite = MusicOff_Sprite;
-            //_audioController.ToggleMute(true, "bg");
+            if (_audioController) _audioController.PlayBetButton();
+            if (_audioController) _audioController.MuteBackground(true);
             isMusic = false;
         }
         else
         {
             Music_Button.image.sprite = MusicOn_Sprite;
-            //_audioController.ToggleMute(false, "bg");
+            if (_audioController) _audioController.PlayBetButton();
+            if (_audioController) _audioController.MuteBackground(false);
             isMusic = true;
         }
     }
 
     private void ToggleSound()
     {
-        //_audioController.PlayButtonAudio();
+        _audioController.PlayBetButton();
         if (isSound)
         {
             Sound_Button.image.sprite = SoundOff_Sprite;
-            //if (_audioController) _audioController.ToggleMute(true, "button");
-            //if (_audioController) _audioController.ToggleMute(true, "wl");
+            if (_audioController) _audioController.PlayBetButton();
+            if (_audioController) _audioController.MuteGame(true);
             isSound = false;
         }
         else
         {
             Sound_Button.image.sprite = SoundOn_Sprite;
-            //if (_audioController) _audioController.ToggleMute(false, "button");
-            //if (_audioController) _audioController.ToggleMute(false, "wl");
+            if (_audioController) _audioController.PlayBetButton();
+            if (_audioController) _audioController.MuteGame(false);
             isSound = true;
         }
     }
@@ -401,6 +403,7 @@ public class UIManager : MonoBehaviour
     {
         // Lock the spin button immediately — OnStopSpinButtonPressed re-enables it
         // only after the slots have fully settled.
+        _audioController.PlaySpinStarts();
         SpinButton.interactable = false;
         SetBetButtonsInteractable(false);
 
@@ -411,6 +414,7 @@ public class UIManager : MonoBehaviour
 
     internal void OnStopSpinButtonPressed()
     {
+        _audioController.PlayBetButton();
         _slotManager.RequestInstantStop();
 
         if (_slotManager._isAutoSpin)
@@ -439,6 +443,7 @@ public class UIManager : MonoBehaviour
 
     private void OnAutoSpinButtonPressed()
     {
+        _audioController.PlayBetButton();
         if (!_slotManager._isAutoSpin)
         {
             _slotManager.AutoSpin();
