@@ -862,7 +862,7 @@ public class BonusManger : MonoBehaviour
         }
         _alltweens[index].Kill();
         slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
-        _alltweens[index] = slotTransform.DOLocalMoveY(400f, 0.5f).SetEase(Ease.OutBack).SetSpeedBased(false);
+        _alltweens[index] = slotTransform.DOLocalMoveY(400f, 0.5f).SetEase(Ease.OutSine).SetSpeedBased(false);
         if (!isStop)
             yield return new WaitForSeconds(0.2f);
         else
