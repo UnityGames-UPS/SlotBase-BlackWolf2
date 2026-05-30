@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     [Header("Slot UI")]
     [SerializeField] private Button SpinButton;
     [SerializeField] private Button StopSpinButton;
-    [SerializeField] private Button AutoSpinButton;
+    [SerializeField] internal Button AutoSpinButton;
 
     [Header("Main UI Text")]
     [SerializeField] private TMP_Text Balance_Text;
@@ -422,9 +422,12 @@ public class UIManager : MonoBehaviour
             _slotManager.StopAutoSpin();
         }
 
-        SpinButton.interactable = false;
-        SpinButton.gameObject.SetActive(true);
-        StopSpinButton.gameObject.SetActive(false);
+        // Keep the stop button visible but non-interactable while reels and post-spin
+        // logic finish. SetSpinButtonReady() is the only place that switches back to
+        // the spin button, and only once everything is truly done.
+        StopSpinButton.interactable = false;
+        StopSpinButton.gameObject.SetActive(true);
+        SpinButton.gameObject.SetActive(false);
     }
 
     internal void OnStopSpinButtonTrigger()
@@ -434,11 +437,24 @@ public class UIManager : MonoBehaviour
 
     internal void SetSpinButtonReady()
     {
-        SpinButton.interactable = true;
-        SpinButton.gameObject.SetActive(true);
+        // Always reset stop button interactability so it works next spin.
         StopSpinButton.interactable = true;
-        StopSpinButton.gameObject.SetActive(false);
-        SetBetButtonsInteractable(true);
+
+        if (_slotManager._isAutoSpin)
+        {
+            // Autospin is still active — next spin is about to start.
+            // Keep showing the interactable stop button; spin button stays hidden.
+            StopSpinButton.gameObject.SetActive(true);
+            SpinButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            // Truly idle — show the spin button and hide stop.
+            SpinButton.interactable = true;
+            SpinButton.gameObject.SetActive(true);
+            StopSpinButton.gameObject.SetActive(false);
+            SetBetButtonsInteractable(true);
+        }
     }
 
     private void OnAutoSpinButtonPressed()
@@ -450,13 +466,18 @@ public class UIManager : MonoBehaviour
             SetBetButtonsInteractable(false);
             StopSpinButton.gameObject.SetActive(true);
             SpinButton.gameObject.SetActive(false);
+            AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StartAnimation();
         }
         else
         {
+            AutoSpinButton.interactable = false;
             _slotManager.StopAutoSpin();
-            SpinButton.interactable = false;
-            SpinButton.gameObject.SetActive(true);
-            StopSpinButton.gameObject.SetActive(false);
+            // Keep stop button visible but non-interactable while the current
+            // spin finishes. SetSpinButtonReady() restores the spin button once done.
+            StopSpinButton.interactable = false;
+            StopSpinButton.gameObject.SetActive(true);
+            SpinButton.gameObject.SetActive(false);
+            AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StopAnimation();
         }
     }
 
@@ -468,6 +489,18 @@ public class UIManager : MonoBehaviour
     internal void ToggleBonusBackground()
     {
         Bg_Image.sprite = Bonus_Sprite;
+    }
+
+    // Ticks the displayed free-spin counter down by 1 at the moment the spin
+    // starts. The server-authoritative count is then reconfirmed by
+    // ToggleFreeSpinUI at the end of the spin, so it can never drift.
+    internal void DecrementFreeSpinCount()
+    {
+        if (FreeSpinText != null &&
+            int.TryParse(FreeSpinText.text, out int current) && current > 0)
+        {
+            FreeSpinText.text = (current - 1).ToString();
+        }
     }
 
     internal void ToggleFreeSpinUI(bool isFreeSpin, int freeSpinLeft = 0)

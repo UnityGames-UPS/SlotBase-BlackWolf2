@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1967689857088325666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626497971616738055}
+  - component: {fileID: 1480833759658758750}
+  - component: {fileID: 7047613745729898417}
+  - component: {fileID: 6325338777385335199}
+  m_Layer: 5
+  m_Name: BlastEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &626497971616738055
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967689857088325666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1480833759658758750
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967689857088325666}
+  m_CullTransparentMesh: 1
+--- !u!114 &7047613745729898417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967689857088325666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43f9c53a65df64b95a571bdf696aea83, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6325338777385335199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967689857088325666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9ae1bf2ec654621a0c3eaff2a909fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureArray:
+  - {fileID: 21300000, guid: 43f9c53a65df64b95a571bdf696aea83, type: 3}
+  - {fileID: 21300000, guid: 238b841d7e6334136ab975f079d352b2, type: 3}
+  - {fileID: 21300000, guid: dc1037a60e22e486c91cf0cb068b6d6f, type: 3}
+  - {fileID: 21300000, guid: 8f19cba7739434ca98a7255181f1abd6, type: 3}
+  - {fileID: 21300000, guid: 4d1e30408cb06482194df76f1d18992c, type: 3}
+  - {fileID: 21300000, guid: 52199f72a423e4d74a2fbc50981865bf, type: 3}
+  - {fileID: 21300000, guid: e710f039458ee4a46803c094a2e3985c, type: 3}
+  - {fileID: 21300000, guid: a236ef451d538468b933cbdeee7241c2, type: 3}
+  - {fileID: 21300000, guid: 2c016744634044646bafb4d5498a0e76, type: 3}
+  - {fileID: 21300000, guid: 63f954d1518f24906b4170e8aad49e92, type: 3}
+  - {fileID: 21300000, guid: 9998d1ee85b39431493d760b66bea06c, type: 3}
+  - {fileID: 21300000, guid: 6106c7244e9cf4e7e82b304c6280b37f, type: 3}
+  - {fileID: 21300000, guid: 9a83d94f1bb0d4caba3492f4c1a4435f, type: 3}
+  - {fileID: 21300000, guid: 5e0804822b65d4726a7694ce10802a10, type: 3}
+  - {fileID: 21300000, guid: ff5aab99e444d4e15b30e203fc42d71d, type: 3}
+  - {fileID: 21300000, guid: a77b8ee7aaebb45348938d49c6e25c5f, type: 3}
+  - {fileID: 21300000, guid: c74d36ac6c52444b3a7c2c0e963e59ce, type: 3}
+  rendererDelegate: {fileID: 7047613745729898417}
+  useSharedMaterial: 1
+  doLoopAnimation: 0
+  StartOnAwake: 0
+  AnimationSpeed: 15
+  delayBetweenLoop: 0
+  currentAnimationState: 0

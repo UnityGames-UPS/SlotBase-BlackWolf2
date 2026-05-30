@@ -14,17 +14,22 @@ public class AnimationManager : MonoBehaviour
     [SerializeField] private BonusManger bonusManger;
     [SerializeField] private SlotManager slotManager;
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private MoonPhases moonPhases;
+    [SerializeField] private AudioController audioController;
 
     [SerializeField] private GameObject GameLogo;
     [SerializeField] private GameObject BoostMiltiplierObject;
+    [SerializeField] private GameObject BoostAnimationObject;
     [SerializeField] private TMP_Text BoostMultiplierText;
-    [SerializeField] private List<GameObject> BoostObjects;
+    [SerializeField] private List<BoostObject> BoostObjects;
     [SerializeField] private List<BoostObject> BonusBoostObjects;
     [SerializeField] private Sprite BoostEnabledSprite;
     [SerializeField] private Sprite BoostDisabledSprite;
+    [SerializeField] private GameObject WolfAnimationObject;
 
     [Header("Bonus References")]
     [SerializeField] private GameObject BonusBoostMiltiplierObject;
+    [SerializeField] private GameObject BonusBoostAnimationObject;
     [SerializeField] private TMP_Text BonusBoostMultiplierText;
 
 
@@ -40,21 +45,26 @@ public class AnimationManager : MonoBehaviour
 
     void Start()
     {
-        BoostMiltiplierObject.GetComponent<ImageAnimation>().StartAnimation();
+        //BoostMiltiplierObject.GetComponent<ImageAnimation>().StartAnimation();
+        // WolfAnimationObject.SetActive(true);
+        // WolfAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
+        //yield return new WaitUntil(() => WolfAnimationObject.GetComponent<ImageAnimation>().currentAnimationState == ImageAnimation.ImageState.FINISHED);
     }
 
     internal void LogoBlastAnimation()
     {
         Debug.Log("L O G O");
+        StartCoroutine(moonPhases.BlastAnimation());
         isLogoBlastAnimationFinished = true;
     }
 
     internal void BoostBlastAnimation(double boostAmount)
     {
         Debug.Log("Starting Multiplier Animation with amount: " + boostAmount);
+        BoostAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
         double initAmount = UIManager.FromSpriteString(BoostMultiplierText.text);
         double finalAmount = initAmount + boostAmount;
-        MultiplierTextTween = DOTween.To(() => initAmount, (val) => initAmount = val, finalAmount, 0.4f)
+        MultiplierTextTween = DOTween.To(() => initAmount, (val) => initAmount = val, finalAmount, 0.2f)
             .OnUpdate(() =>
             {
                 BoostMultiplierText.text = UIManager.ToSpriteString(initAmount, "F3");
@@ -67,8 +77,9 @@ public class AnimationManager : MonoBehaviour
 
     internal void MultiplierAnimation(double boostAmount)
     {
-        Debug.Log("Starting Multiplier Animation with boost amount: " + boostAmount);
 
+        Debug.Log("Starting Multiplier Animation with boost amount: " + boostAmount);
+        BonusBoostAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
         double initAmount = UIManager.FromSpriteString(bonusManger.MultiplierText.text);
         double finalAmount = initAmount + boostAmount;
 
@@ -95,10 +106,10 @@ public class AnimationManager : MonoBehaviour
     {
         foreach (BoostPosition boostPosition in boostPositions)
         {
-            GameObject boostSymbol = BoostObjects[boostPosition.position];
+            GameObject boostSymbol = BoostObjects[boostPosition.reel].boostObject[boostPosition.position].gameObject;
             boostSymbol.SetActive(true);
-            boostSymbol.GetComponent<Image>().sprite = BoostDisabledSprite;
-            yield return new WaitForSeconds(0.3f);
+            boostSymbol.GetComponent<ImageAnimation>().StartAnimation();
+            yield return new WaitUntil(()=> boostSymbol.GetComponent<ImageAnimation>().currentAnimationState == ImageAnimation.ImageState.FINISHED);
         }
         BoostMiltiplierObject.SetActive(true);
         BoostMiltiplierObject.GetComponent<ImageAnimation>().StartAnimation();
@@ -139,11 +150,14 @@ public class AnimationManager : MonoBehaviour
         {
             MultiplierTextTween.Kill();
         }
-        foreach (GameObject boostObj in BoostObjects)
+        foreach (BoostObject boostObjList in BoostObjects)
         {
-            boostObj.SetActive(false);
-            boostObj.GetComponent<Image>().sprite = BoostEnabledSprite;
-            boostObj.GetComponent<ImageAnimation>().currentAnimationState = ImageAnimation.ImageState.NONE;
+            foreach (GameObject boostObj in boostObjList.boostObject)
+            {
+                boostObj.SetActive(false);
+                boostObj.GetComponent<Image>().sprite = BoostEnabledSprite;
+                boostObj.GetComponent<ImageAnimation>().currentAnimationState = ImageAnimation.ImageState.NONE;
+            }
         }
         for (int i = 0; i < slotManager._numberOfSlots; i++)
         {
@@ -177,8 +191,12 @@ public class AnimationManager : MonoBehaviour
         isBonusBoostAnimationFinished = false;
     }
 
-    internal void BonusWolfAnimation()
+    internal IEnumerator BonusWolfAnimation()
     {
+        WolfAnimationObject.SetActive(true);
+        audioController.PlayWolfAppear();
+        WolfAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
+        yield return new WaitUntil(() => WolfAnimationObject.GetComponent<ImageAnimation>().currentAnimationState == ImageAnimation.ImageState.FINISHED);
         isBonusWolfAnimationFinished = true;
     }
 

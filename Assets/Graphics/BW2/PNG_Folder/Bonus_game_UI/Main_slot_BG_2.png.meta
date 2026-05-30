@@ -117,11 +117,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 14
-        y: 7
+        y: 0
         width: 1060
         height: 832
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +134,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Main_slot_BG_2_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 579
+        width: 199
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c55b0f020bba4b7bb7f9fdcafb26631
+      internalID: -1151767167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bac67d082e86e4f608712dca201351d2
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Main_slot_BG_2_0: -8842913363739735430
+      Main_slot_BG_2_1: -1151767167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

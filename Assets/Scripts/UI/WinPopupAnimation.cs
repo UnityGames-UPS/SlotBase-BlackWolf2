@@ -25,6 +25,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     // ── Extra cinematic objects (total / bonus win only) ──
     [Header("Cinematic Objects")]
+    [SerializeField] private GameObject TranslucentBackground;
     [SerializeField] private GameObject WinPopupGlowObject;     // has CanvasGroup for fade
     [SerializeField] private GameObject WinPopupCoinObject;     // has ImageAnimation
     [SerializeField] private GameObject WinBlastObject;         // one-shot blast effect
@@ -50,6 +51,9 @@ public class WinPopupAnimation : MonoBehaviour
     private Tween _glowFadeTween;
     private Coroutine   _activeRoutine;
     private CanvasGroup _glowCanvasGroup;
+
+    // Tracks the coin ImageAnimation so SkipWin can stop it
+    private ImageAnimation _activeCoinAnim;
 
     private void Awake()
     {
@@ -171,9 +175,13 @@ public class WinPopupAnimation : MonoBehaviour
 
     private IEnumerator CinematicWinRoutine(double winAmount, bool animateBalance)
     {
-        _isSkipped    = false;
-        _targetAmount = winAmount;
+        _isSkipped      = false;
+        _activeCoinAnim = null;
+        _targetAmount   = winAmount;
 
+        // BUG FIX 1: Capture the current balance from the text BEFORE ResetPopupState
+        // so it always reflects what is actually displayed, not a stale _targetBalance
+        // from a previous popup run.
         double startBalance = 0;
         if (animateBalance && BalanceText != null)
             startBalance = UIManager.FromSpriteString(BalanceText.text);
@@ -182,6 +190,7 @@ public class WinPopupAnimation : MonoBehaviour
         ResetPopupState();
 
         if (WinPopup_Object) WinPopup_Object.SetActive(true);
+        if (TranslucentBackground) TranslucentBackground.SetActive(true);
 
         if (WinTextObject)
         {
@@ -201,7 +210,11 @@ public class WinPopupAnimation : MonoBehaviour
             .SetEase(Ease.OutBack)
             .OnComplete(() => textLanded = true);
 
-        yield return new WaitUntil(() => textLanded);
+        // BUG FIX 3: Also exit the wait if the user skipped — killing the tween
+        // means OnComplete never fires, so without _isSkipped the coroutine hangs here.
+        yield return new WaitUntil(() => textLanded || _isSkipped);
+
+        if (_isSkipped) { yield return FinishSkip(); yield break; }
 
         if (WinBlastObject)
         {
@@ -263,14 +276,19 @@ public class WinPopupAnimation : MonoBehaviour
         {
             WinPopupCoinObject.SetActive(true);
             ImageAnimation coinAnim = WinPopupCoinObject.GetComponent<ImageAnimation>();
+            _activeCoinAnim = coinAnim;   // expose so SkipWin can stop it
             if (coinAnim != null && CoinStartingSprites.Count > 0)
             {
                 coinAnim.textureArray    = CoinStartingSprites;
                 coinAnim.doLoopAnimation = false;
                 coinAnim.StartAnimation();
 
+                // BUG FIX 2: Also exit this wait on skip so the coroutine never hangs here.
                 yield return new WaitUntil(() =>
-                    coinAnim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
+                    coinAnim.currentAnimationState == ImageAnimation.ImageState.FINISHED ||
+                    _isSkipped);
+
+                if (_isSkipped) { yield return FinishSkip(); yield break; }
 
                 if (CoinLoopSprites.Count > 0)
                 {
@@ -282,6 +300,9 @@ public class WinPopupAnimation : MonoBehaviour
         }
 
         yield return _amountCountTween.WaitForCompletion();
+
+        if (_isSkipped) { yield return FinishSkip(); yield break; }
+
         if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(winAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(winAmount, "F2");
         if (animateBalance && BalanceText != null)
@@ -298,21 +319,60 @@ public class WinPopupAnimation : MonoBehaviour
         popupDone = true;
     }
 
+    // Shared close path after a skip: snaps values, waits 0.5 s, then closes.
+    private IEnumerator FinishSkip()
+    {
+        // Stop coin animation if it is still running
+        if (_activeCoinAnim != null)
+        {
+            _activeCoinAnim.StopAnimation();
+            _activeCoinAnim = null;
+        }
+        if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
+
+        // Snap all text to final values
+        if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(_targetAmount, "F2");
+        if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
+        if (BalanceText)   BalanceText.text   = UIManager.ToSpriteString(_targetBalance, "F2");
+
+        // Brief pause so the snapped values are visible, then close
+        yield return new WaitForSeconds(0.5f);
+        yield return CloseMainPopup();
+        popupDone = true;
+    }
+
 
     private void SkipWin()
     {
+        if (_isSkipped) return;   // guard against double-tap
         _isSkipped = true;
 
+        // Kill all in-flight tweens — the coroutine's WaitUntil checks will unblock via _isSkipped
         _amountCountTween?.Kill();
         _balanceCountTween?.Kill();
         _closeDelayTween?.Kill();
         _textScaleTween?.Kill();
         _glowFadeTween?.Kill();
 
-        // Snap to final values immediately
+        // Stop coin animation immediately so it doesn't keep running
+        if (_activeCoinAnim != null)
+        {
+            _activeCoinAnim.StopAnimation();
+            _activeCoinAnim = null;
+        }
+        if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
+
+        // Snap all text to final values immediately
         if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(_targetAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
         if (BalanceText)   BalanceText.text   = UIManager.ToSpriteString(_targetBalance, "F2");
+
+        // The active coroutine will detect _isSkipped and call FinishSkip/CloseMainPopup itself.
+        // If the coroutine hasn't started yet (extremely early tap), kick it off manually.
+        if (_activeRoutine == null)
+        {
+            _activeRoutine = StartCoroutine(FinishSkip());
+        }
     }
 
 
@@ -351,6 +411,7 @@ public class WinPopupAnimation : MonoBehaviour
     private void HideAllPopupObjects()
     {
         if (WinPopup_Object)    WinPopup_Object.SetActive(false);
+        if (TranslucentBackground) TranslucentBackground.SetActive(false);
         if (WinPopupGlowObject) WinPopupGlowObject.SetActive(false);
         if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
         if (WinBlastObject)     WinBlastObject.SetActive(false);

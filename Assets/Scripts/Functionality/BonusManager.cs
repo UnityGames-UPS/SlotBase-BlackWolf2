@@ -21,6 +21,7 @@ public class BonusManger : MonoBehaviour
 
     [Header("Bonus Intro Animation")]
     [SerializeField] private GameObject MainBG;
+    [SerializeField] private GameObject BonusSlotBG;
     [SerializeField] private GameObject WolfImage;
     [SerializeField] private Vector2 WolfFinalPosition;
     [SerializeField] private GameObject MoonImage;
@@ -42,10 +43,21 @@ public class BonusManger : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] private GameObject SlideObject;
 
+    [Header("Moon Animations")]
+    [SerializeField] private List<Sprite> PurpleToYellowMoonSprites;
+    [SerializeField] private List<Sprite> PurpleToBoostMoonSprites;
+    [SerializeField] private List<Sprite> YellowMoonAnimation;
+    [SerializeField] private List<Sprite> YellowMoonLoopAnimation;
+    [SerializeField] private List<Sprite> PurpleMoonAnimation;
+    [SerializeField] private List<Sprite> PurpleMoonLoopAnimation;
+
+
     [Header("Slide GameObject Position")]
+    [SerializeField] private GameObject SlideAnimationObject;
     [SerializeField] private List<RectTransform> slideObjectPositions;
     [SerializeField] private GameObject SlideParentObject;
     [SerializeField] private GameObject FirstSlideOverlayImage;
+    [SerializeField] private GameObject FirstSlideOverlayAnimation;
     [SerializeField] private GameObject SlideAnimationParent;
     [SerializeField] private Sprite SlideFirstMoonImage;
     [SerializeField] private Sprite SlideSecondMoonImage;
@@ -75,7 +87,9 @@ public class BonusManger : MonoBehaviour
     [SerializeField] internal TMP_Text MultiplierText;
     [SerializeField] private GameObject SpinIndicatorObject;
     [SerializeField] private List<GameObject> spinIndicators;
-    [SerializeField] private Button BonusStartButton;
+    [SerializeField] private GameObject SpinIndicatorGlowObject;
+    [SerializeField] private GameObject SpinIndicatorAnimationObject;
+    private bool isSpinIndicatorAnimationdone = false;
 
     private List<GameObject> currentSlideObjects = new List<GameObject>();
     private List<Tween> _alltweens = new List<Tween>();
@@ -98,6 +112,7 @@ public class BonusManger : MonoBehaviour
     {
         shuffleSlotImages();
         TimerSkipButton.onClick.AddListener(TimerSkipButtonClicked);
+        //SpinIndicatorAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
         //SpinIndicatorFrontAnimation(spinIndicators[2]);
     }
 
@@ -175,6 +190,7 @@ public class BonusManger : MonoBehaviour
 
     private IEnumerator BonusIntroAnimation()
     {
+        TimerSkipped = false;
         // Reset starting state
         MoonImage.GetComponent<RectTransform>().localPosition = new Vector2(540f, 1000f);
         WolfImage.GetComponent<RectTransform>().localPosition = new Vector2(46f, -100f);
@@ -224,7 +240,7 @@ public class BonusManger : MonoBehaviour
         }
 
         BonusIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         audioController.PlayBonusBackground();
         MainBG.GetComponent<RectTransform>().localPosition = new Vector2(0f, 0f);
         BonusIntroPage.SetActive(false);
@@ -245,16 +261,17 @@ public class BonusManger : MonoBehaviour
         InitializeBonusUI();
         uIManager.ToggleBonusBackground();
         yield return new WaitUntil(() => isBonusIntroAnimationFinished);
-        
+
         yield return new WaitForSeconds(1f);
 
         int currentSpinCount = socketManager.resultData.payload.state.respinsLeft;
         while (socketManager.resultData.payload.state.respinsLeft > 0)
         {
+            isSpinIndicatorAnimationdone = false;
             for (int i = 0; i < _numberOfSlots; i++)
             {
                 InitializeTweening(_slotTransforms[i]);
-                yield return new WaitForSeconds(0.1f);
+                //yield return new WaitForSeconds(0.1f);
             }
 
             if (currentSpinCount > 0)
@@ -274,7 +291,7 @@ public class BonusManger : MonoBehaviour
                     if (int.TryParse(socketManager.resultData.matrix[j][i], out int symbolId))
                     {
                         resultImages[i].slotImages[j].sprite = slotImages[symbolId];
-                        resultImages[i].slotImages[j].GetComponentInChildren<TMP_Text>().text = "";
+                        resultImages[i].slotImages[j].transform.parent.GetComponentInChildren<TMP_Text>().text = "";
                     }
                     if (socketManager.resultData.matrix[j][i] == "Blank")
                     {
@@ -289,7 +306,7 @@ public class BonusManger : MonoBehaviour
                 {
                     int reel = bs.reel;
                     int position = bs.position;
-                    resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text =
+                    resultImages[reel].slotImages[position].transform.parent.GetComponentInChildren<TMP_Text>().text =
                         UIManager.ToSpriteString(bs.value);
                 }
             }
@@ -306,12 +323,14 @@ public class BonusManger : MonoBehaviour
 
             if (spinsAfter > currentSpinCount)
             {
+                SpinIndicatorGlowObject.SetActive(true);
                 for (int i = currentSpinCount; i < spinsAfter && i < spinIndicators.Count; i++)
                 {
                     SpinIndicatorFrontAnimation(spinIndicators[i]);
                     yield return new WaitForSeconds(0.6f);
                 }
                 currentSpinCount = spinsAfter;
+                SpinIndicatorGlowObject.SetActive(false);
             }
 
             yield return _alltweens[^1].WaitForCompletion();
@@ -361,7 +380,7 @@ public class BonusManger : MonoBehaviour
         {
             // --- Bonus round finished ---
             animationManager.isBonusWolfAnimationFinished = false;
-            animationManager.BonusWolfAnimation();
+            StartCoroutine(animationManager.BonusWolfAnimation());
             yield return new WaitUntil(() => animationManager.isBonusWolfAnimationFinished);
 
             isBonusMultiplierAnimationFinished = false;
@@ -412,7 +431,7 @@ public class BonusManger : MonoBehaviour
             int reel = socketManager.resultData.payload.boost_positions[i].reel;
             int position = socketManager.resultData.payload.boost_positions[i].position;
             resultImages[reel].slotImages[position].sprite = slotImages[slotImages.Length - 1];
-            winSlotImages[reel].slotImages[position].sprite = slotImages[slotImages.Length - 1];
+            winSlotImages[reel].slotImages[position].gameObject.SetActive(false);
             winSlotImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text = "";
         }
 
@@ -477,10 +496,12 @@ public class BonusManger : MonoBehaviour
             audioController.PlayLightSound();
             yield return new WaitUntil(() => animationManager.isMultiplierAnimationFinished);
         }
-        isBonusMultiplierAnimationFinished = true;
 
         double result = UIManager.FromSpriteString(MultiplierText.text);
+        winPopupAnimation.popupDone = false;
         winPopupAnimation.ShowBonusWinPopup(result);
+        yield return new WaitUntil(() => winPopupAnimation.popupDone);
+        isBonusMultiplierAnimationFinished = true;
     }
 
     private IEnumerator FortuneSlideAnimation()
@@ -492,6 +513,12 @@ public class BonusManger : MonoBehaviour
                 if (resultImages[i].slotImages[j].sprite == slotImages[11] ||
                     resultImages[i].slotImages[j].sprite == slotImages[10])
                 {
+                    if (!isSpinIndicatorAnimationdone)
+                    {
+                        SpinIndicatorAnimationObject.SetActive(true);
+                        SpinIndicatorAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
+                        isSpinIndicatorAnimationdone = true;
+                    }
                     yield return new WaitForSeconds(0.4f);
 
                     isSlideFinished = false;
@@ -499,6 +526,11 @@ public class BonusManger : MonoBehaviour
                     // Remove the front slide from the tracked list BEFORE the spline plays
                     GameObject frontSlide = currentSlideObjects[0];
                     currentSlideObjects.RemoveAt(0);
+
+                    FirstSlideOverlayAnimation.SetActive(true);
+                    FirstSlideOverlayAnimation.GetComponent<ImageAnimation>().StartAnimation();
+
+                    //yield return new WaitForSeconds(0.3f);
 
                     // Re-parent so it can travel freely above everything else
                     frontSlide.transform.SetParent(SlideAnimationParent.transform, true);
@@ -516,6 +548,7 @@ public class BonusManger : MonoBehaviour
 
                     int ci = i, cj = j;
                     GameObject capturedSlide = frontSlide;
+
 
                     var onReachedSettings = new OnPositionReachedSettings();
                     onReachedSettings.Position = 1f;
@@ -537,17 +570,39 @@ public class BonusManger : MonoBehaviour
                     Sprite slideSprite = capturedImg != null ? capturedImg.sprite : null;
                     string slideText = capturedTxt != null ? capturedTxt.text : "";
 
-                    yield return new WaitForSeconds(1f);
+
+
+                    yield return new WaitForSeconds(0.1f);
                     Debug.Log("Start Playing");
                     trail.Play();
                     Debug.Log("Started Playing....");
+
+                    yield return new WaitForSeconds(0.5f);
+
+                    //Debug.Log("Midway reached on slide for reel " + ci + " position " + cj);
+                    if (slideSprite == SlideFirstMoonImage || slideSprite == MiniMoonImage || slideSprite == MinorMoonImage || slideSprite == MajorMoonImage)
+                    {
+                        ImageAnimation imgAnim = resultImages[ci].slotImages[cj].GetComponent<ImageAnimation>();
+                        imgAnim.textureArray = PurpleToYellowMoonSprites;
+                        imgAnim.doLoopAnimation = false;
+                        imgAnim.AnimationSpeed = 25;
+                        imgAnim.StartAnimation();
+                    }
+                    if (slideSprite == BoostMoonImage)
+                    {
+                        ImageAnimation imgAnim = resultImages[ci].slotImages[cj].GetComponent<ImageAnimation>();
+                        imgAnim.textureArray = PurpleToBoostMoonSprites;
+                        imgAnim.doLoopAnimation = false;
+                        imgAnim.AnimationSpeed = 25;
+                        imgAnim.StartAnimation();
+                    }
 
                     yield return new WaitUntil(() => isSlideFinished);
 
                     if (slideSprite != null)
                     {
-                        resultImages[ci].slotImages[cj].sprite = slideSprite;
-                        TMP_Text resultText = resultImages[ci].slotImages[cj].GetComponentInChildren<TMP_Text>(true);
+                        //resultImages[ci].slotImages[cj].sprite = slideSprite;
+                        TMP_Text resultText = resultImages[ci].slotImages[cj].transform.parent.GetComponentInChildren<TMP_Text>(true);
                         if (resultText != null)
                             resultText.text = slideText;
                     }
@@ -572,8 +627,8 @@ public class BonusManger : MonoBehaviour
         string queueValue = (consumedQueueIndex >= 0 && consumedQueueIndex < _snapshotSlideQueue.Count)
                             ? _snapshotSlideQueue[consumedQueueIndex] : null;
 
-        Image winImg = winSlotImages[reelIndex].slotImages[posIndex];
-        TMP_Text winText = winImg.GetComponentInChildren<TMP_Text>(true);
+        Image winImg = winSlotImages[reelIndex].slotImages[posIndex].transform.GetChild(1).GetComponent<Image>();
+        TMP_Text winText = winSlotImages[reelIndex].slotImages[posIndex].GetComponentInChildren<TMP_Text>(true);
 
         Sprite jackpotSprite = GetJackpotSprite(queueValue);
         if (jackpotSprite != null)
@@ -600,8 +655,9 @@ public class BonusManger : MonoBehaviour
     {
         const float shiftDuration = 0.3f;
 
-        animationManager.SlideSymbolFinishedAnimation(
-            resultImages[reelIndex].slotImages[posIndex].gameObject);
+        animationManager.SlideSymbolFinishedAnimation(resultImages[reelIndex].slotImages[posIndex].gameObject);
+
+        SlideAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
 
         for (int i = 0; i < currentSlideObjects.Count; i++)
         {
@@ -683,8 +739,21 @@ public class BonusManger : MonoBehaviour
         MultiplierPanel.SetActive(false);
         SpinIndicatorObject.SetActive(true);
         InitializeSlide();
+        shuffleSlotImages();
+        BonusSlotBG.GetComponent<ImageAnimation>().StartAnimation();
         for (int i = 0; i < spinIndicators.Count; i++)
+        {
             spinIndicators[i].SetActive(true);
+            spinIndicators[i].GetComponentInChildren<CanvasGroup>().alpha = 1f;
+        }
+
+        for (int i = 0; i < MaskImages.Count; i++)
+        {
+            for (int j = 0; j < MaskImages[i].slotImages.Count; j++)
+            {
+                MaskImages[i].slotImages[j].gameObject.SetActive(false);
+            }
+        }
     }
 
     private float ScaleForIndex(int i) => Mathf.Max(0f, 1f - i * 0.1f);
@@ -724,8 +793,9 @@ public class BonusManger : MonoBehaviour
             int reel = sym.reel;
             int position = sym.position;
 
-            Image slotImg = winSlotImages[reel].slotImages[position];
+            Image slotImg = winSlotImages[reel].slotImages[position].transform.GetChild(1).GetComponent<Image>();
             slotImg.color = new Color(255, 255, 255);
+            winSlotImages[reel].slotImages[position].gameObject.SetActive(true);
             slotImg.gameObject.SetActive(true);
 
             if (sym.isJackpot && !string.IsNullOrEmpty(sym.jackpotName))
@@ -738,6 +808,10 @@ public class BonusManger : MonoBehaviour
                     continue; // skip the numeric text assignment below
                 }
             }
+            // else
+            // {
+            //     slotImg.GetComponent<ImageAnimation>().StartAnimation();
+            // }
 
             slotImg.GetComponentInChildren<TMP_Text>().text =
                 UIManager.ToSpriteString(sym.value);
@@ -755,13 +829,24 @@ public class BonusManger : MonoBehaviour
                     totalImages[i].slotImages[j].sprite = image;
             }
         }
+        for (int i = 0; i < resultImages.Count; i++)
+        {
+            for (int j = 0; j < resultImages[i].slotImages.Count; j++)
+            {
+                Sprite image = slotImages[slotImages.Length - 1];
+                if (!midTween)
+                    resultImages[i].slotImages[j].sprite = image;
+                resultImages[i].slotImages[j].transform.parent.GetComponentInChildren<TMP_Text>().text = "";
+
+            }
+        }
     }
 
     #region TweeningCode
     private void InitializeTweening(Transform slotTransform)
     {
-        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 1786.5f);
-        Tween tween = slotTransform.DOLocalMoveY(0f, 0.5f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Linear);
+        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
+        Tween tween = slotTransform.DOLocalMoveY(0f, 0.7f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Flash);
         _alltweens.Add(tween);
     }
 
@@ -775,7 +860,7 @@ public class BonusManger : MonoBehaviour
         }
         _alltweens[index].Kill();
         slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
-        _alltweens[index] = slotTransform.DOLocalMoveY(397f, 0.5f).SetEase(Ease.OutElastic);
+        _alltweens[index] = slotTransform.DOLocalMoveY(400f, 0.5f).SetEase(Ease.OutBack).SetSpeedBased(false);
         if (!isStop)
             yield return new WaitForSeconds(0.2f);
         else
@@ -792,6 +877,73 @@ public class BonusManger : MonoBehaviour
         }
     }
     #endregion
+
+    private IEnumerator MoonSymbolAnimation(Image slotImage)
+    {
+        audioController.PlayMoonIconPop();
+        Transform child = slotImage.transform.GetChild(2);
+        RectTransform childRect = child.GetComponent<RectTransform>();
+        ImageAnimation imgAnim = child.GetComponent<ImageAnimation>();
+
+        if (imgAnim == null) yield break;
+
+        List<Sprite> introSprites;
+        List<Sprite> loopSprites;
+        float entryScale;
+
+        if (slotImage.sprite == slotImages[9])          // Yellow Moon
+        {
+            introSprites = YellowMoonAnimation;
+            loopSprites = YellowMoonLoopAnimation;
+            entryScale = 1.6f;
+        }
+        else if (slotImage.sprite == slotImages[11])    // Purple Moon
+        {
+            introSprites = PurpleMoonAnimation;
+            loopSprites = PurpleMoonLoopAnimation;
+            entryScale = 1.4f;
+        }
+        else yield break;
+
+        child.gameObject.SetActive(true);
+        childRect.localScale = new Vector3(entryScale, entryScale, entryScale);
+
+        // ── Play intro animation (one-shot) ──
+        imgAnim.textureArray = introSprites;
+        imgAnim.doLoopAnimation = false;
+        imgAnim.AnimationSpeed = 9f;
+        // if (slotImage.sprite == _symbolSprites[12])    // Free Spin
+        // {
+        //     imgAnim.AnimationSpeed = 33f;
+        // }
+        // if (slotImage.sprite == _symbolSprites[10])    // Boost Spin
+        // {
+        //     imgAnim.AnimationSpeed = 21f;
+        // }
+        imgAnim.StartAnimation();
+
+        // Wait for intro to finish
+        yield return new WaitUntil(() =>
+            imgAnim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
+
+        // ── Switch to loop animation ──
+        if (slotImage.sprite == slotImages[9])
+        {
+            childRect.localScale = new Vector3(1.18f, 1.18f, 1.18f);
+            imgAnim.textureArray = loopSprites;
+            imgAnim.doLoopAnimation = true;
+            imgAnim.StartAnimation();
+        }
+
+        // if (slotImage.sprite == slotImages[11])
+        // {
+        //     childRect.localScale = new Vector3(2f, 2f, 2f);
+        //     imgAnim.textureArray = loopSprites;
+        //     imgAnim.doLoopAnimation = true;
+        //     imgAnim.AnimationSpeed = 25f;
+        //     imgAnim.StartAnimation();
+        // }
+    }
 }
 
 [Serializable]

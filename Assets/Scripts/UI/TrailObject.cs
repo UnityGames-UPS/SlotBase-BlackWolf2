@@ -44,9 +44,10 @@ public class TrailObject : MonoBehaviour
 
     private IEnumerator OnLogoFinished(Action onComplete)
     {
-        yield return new WaitForSeconds(2f);
-        gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
         AnimationManager.LogoBlastAnimation();
+        yield return new WaitForSeconds(1.5f);
+        gameObject.SetActive(false);
         onComplete?.Invoke();
     }
 
