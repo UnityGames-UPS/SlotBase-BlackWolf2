@@ -197,6 +197,7 @@ public class AnimationManager : MonoBehaviour
         audioController.PlayWolfAppear();
         WolfAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
         yield return new WaitUntil(() => WolfAnimationObject.GetComponent<ImageAnimation>().currentAnimationState == ImageAnimation.ImageState.FINISHED);
+        WolfAnimationObject.SetActive(false);
         isBonusWolfAnimationFinished = true;
     }
 

@@ -80,9 +80,10 @@ public class TrailObject : MonoBehaviour
 
     private IEnumerator OnBoostFinished(double bonusAmont)
     {
-        yield return new WaitForSeconds(1f);
-        gameObject.SetActive(false);
+        //yield return new WaitForSeconds(1f);
         AnimationManager.BoostBlastAnimation(bonusAmont);
+        gameObject.SetActive(false);
+        yield return null;
     }
 
     internal IEnumerator StartMultiplierAnimation(double bonusAmont, GameObject slotObject)
@@ -92,7 +93,7 @@ public class TrailObject : MonoBehaviour
         TrailController.Spline = MultiplierPathCurvySpline;
         MultiplierPathCurvySpline.Refresh();
 
-        yield return new WaitForSeconds(0.5f);
+        //yield return new WaitForSeconds(0.5f);
 
         var onMultiplierAnimationFinishedSettings = new OnPositionReachedSettings();
         onMultiplierAnimationFinishedSettings.Position = 1f;
@@ -104,6 +105,7 @@ public class TrailObject : MonoBehaviour
         });
 
         TrailController.OnPositionReachedList.Add(onMultiplierAnimationFinishedSettings);
+        TrailController.Speed = 2f;
         TrailController.Clamping = CurvyClamping.Clamp;
 
         gameObject.SetActive(true);
@@ -118,9 +120,11 @@ public class TrailObject : MonoBehaviour
 
     private IEnumerator OnMultiplierFinished(double bonusAmont)
     {
-        yield return new WaitForSeconds(1f);
-        gameObject.SetActive(false);
+        //yield return new WaitForSeconds(1f);
         AnimationManager.MultiplierAnimation(bonusAmont);
+        yield return new WaitForSeconds(0.3f);
+        gameObject.SetActive(false);
+        yield return null;
     }
 
     // ── Utility ────────────────────────────────────────────────────────────────

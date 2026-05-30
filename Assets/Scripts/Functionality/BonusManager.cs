@@ -321,6 +321,8 @@ public class BonusManger : MonoBehaviour
 
             int spinsAfter = socketManager.resultData.payload.state.respinsLeft;
 
+            yield return new WaitForSeconds(1f);
+
             if (spinsAfter > currentSpinCount)
             {
                 SpinIndicatorGlowObject.SetActive(true);
@@ -541,7 +543,7 @@ public class BonusManger : MonoBehaviour
                     BonusPaths[i].splines[j].Refresh();
                     trail.Spline = BonusPaths[i].splines[j];
                     trail.AbsolutePosition = 0f;
-                    trail.Speed = 2f;
+                    trail.Speed = 1.5f;
                     trail.Clamping = CurvyClamping.Clamp;
 
                     trail.OnPositionReachedList.Clear();
@@ -793,9 +795,9 @@ public class BonusManger : MonoBehaviour
             int reel = sym.reel;
             int position = sym.position;
 
-            Image slotImg = winSlotImages[reel].slotImages[position].transform.GetChild(1).GetComponent<Image>();
+            Image slotImg = winSlotImages[reel].slotImages[position];
             slotImg.color = new Color(255, 255, 255);
-            winSlotImages[reel].slotImages[position].gameObject.SetActive(true);
+            winSlotImages[reel].slotImages[position].transform.GetChild(1).GetComponent<Image>().gameObject.SetActive(true);
             slotImg.gameObject.SetActive(true);
 
             if (sym.isJackpot && !string.IsNullOrEmpty(sym.jackpotName))
@@ -845,8 +847,8 @@ public class BonusManger : MonoBehaviour
     #region TweeningCode
     private void InitializeTweening(Transform slotTransform)
     {
-        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
-        Tween tween = slotTransform.DOLocalMoveY(0f, 0.7f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Flash);
+        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 400f);
+        Tween tween = slotTransform.DOLocalMoveY(0f, 1f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Flash);
         _alltweens.Add(tween);
     }
 

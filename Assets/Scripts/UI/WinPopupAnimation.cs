@@ -19,9 +19,9 @@ public class WinPopupAnimation : MonoBehaviour
     // ── Popup structure (mirrors UIManager's WinPopupParent / WinPopup_Object) ──
     [Header("Win Popup Structure")]
     [SerializeField] private GameObject WinPopup_Object;        // root that gets shown/hidden
-    [SerializeField] private Transform  WinPopupParent;         // the transform that scales in/out
-    [SerializeField] private TMP_Text   Win_Text;               // sprite-font text (uses ToSpriteString)
-    [SerializeField] private Button     SkipWinAnimation;
+    [SerializeField] private Transform WinPopupParent;         // the transform that scales in/out
+    [SerializeField] private TMP_Text Win_Text;               // sprite-font text (uses ToSpriteString)
+    [SerializeField] private Button SkipWinAnimation;
 
     // ── Extra cinematic objects (total / bonus win only) ──
     [Header("Cinematic Objects")]
@@ -35,13 +35,13 @@ public class WinPopupAnimation : MonoBehaviour
     [SerializeField] private List<Sprite> CoinStartingSprites;
     [SerializeField] private List<Sprite> CoinLoopSprites;
     [SerializeField] private List<Sprite> TotalWinSprites;
-    [SerializeField] private List<Sprite>BoostWinSprites;
-    [SerializeField] private List<Sprite>BonusWinSprites;
+    [SerializeField] private List<Sprite> BoostWinSprites;
+    [SerializeField] private List<Sprite> BonusWinSprites;
 
     // ── Private state ──
     private double _targetAmount;
     private double _targetBalance;
-    private bool   _isSkipped;
+    private bool _isSkipped;
     internal bool popupDone;
 
     private Tween _amountCountTween;
@@ -49,7 +49,7 @@ public class WinPopupAnimation : MonoBehaviour
     private Tween _closeDelayTween;
     private Tween _textScaleTween;
     private Tween _glowFadeTween;
-    private Coroutine   _activeRoutine;
+    private Coroutine _activeRoutine;
     private CanvasGroup _glowCanvasGroup;
 
     // Tracks the coin ImageAnimation so SkipWin can stop it
@@ -98,7 +98,7 @@ public class WinPopupAnimation : MonoBehaviour
 
     private IEnumerator NormalWinRoutine(double winAmount, bool animateBalance)
     {
-        _isSkipped    = false;
+        _isSkipped = false;
         _targetAmount = winAmount;
 
         double startBalance = 0;
@@ -111,13 +111,13 @@ public class WinPopupAnimation : MonoBehaviour
         if (WinPopup_Object) WinPopup_Object.SetActive(true);
 
         WinPopupParent.localScale = Vector3.zero;
-        WinPopupParent.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+        WinPopupParent.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack);
 
         if (WinPopupGlowObject)
         {
             WinPopupGlowObject.SetActive(true);
             _glowCanvasGroup.alpha = 0f;
-            _glowFadeTween = _glowCanvasGroup.DOFade(1f, 0.5f).OnComplete(() =>
+            _glowFadeTween = _glowCanvasGroup.DOFade(1f, 0.3f).OnComplete(() =>
             {
                 ImageAnimation glowAnim = WinPopupGlowObject.GetComponent<ImageAnimation>();
                 if (glowAnim != null)
@@ -134,29 +134,29 @@ public class WinPopupAnimation : MonoBehaviour
 
         double displayAmount = 0;
         _amountCountTween = DOTween.To(
-            ()  => displayAmount,
+            () => displayAmount,
             val =>
             {
                 displayAmount = val;
-                if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(val, "F2");
+                if (Win_Text) Win_Text.text = UIManager.ToSpriteString(val, "F2");
                 if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(val, "F2");
             },
-            winAmount, 1.5f
+            winAmount, 0.7f
         );
 
         if (animateBalance && BalanceText != null)
         {
             double displayBalance = startBalance;
             _balanceCountTween = DOTween.To(
-                ()  => displayBalance,
+                () => displayBalance,
                 val => { displayBalance = val; BalanceText.text = UIManager.ToSpriteString(val, "F2"); },
-                _targetBalance, 1.5f
+                _targetBalance, 0.7f
             );
         }
 
         yield return _amountCountTween.WaitForCompletion();
 
-        if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(winAmount, "F2");
+        if (Win_Text) Win_Text.text = UIManager.ToSpriteString(winAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(winAmount, "F2");
         if (animateBalance && BalanceText != null)
             BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
@@ -164,7 +164,7 @@ public class WinPopupAnimation : MonoBehaviour
         if (!_isSkipped)
         {
             bool holdDone = false;
-            _closeDelayTween = DOVirtual.DelayedCall(2f, () => holdDone = true);
+            _closeDelayTween = DOVirtual.DelayedCall(1.1f, () => holdDone = true);
             yield return new WaitUntil(() => holdDone || _isSkipped);
         }
 
@@ -175,9 +175,9 @@ public class WinPopupAnimation : MonoBehaviour
 
     private IEnumerator CinematicWinRoutine(double winAmount, bool animateBalance)
     {
-        _isSkipped      = false;
+        _isSkipped = false;
         _activeCoinAnim = null;
-        _targetAmount   = winAmount;
+        _targetAmount = winAmount;
 
         // BUG FIX 1: Capture the current balance from the text BEFORE ResetPopupState
         // so it always reflects what is actually displayed, not a stale _targetBalance
@@ -190,8 +190,9 @@ public class WinPopupAnimation : MonoBehaviour
         ResetPopupState();
 
         if (WinPopup_Object) WinPopup_Object.SetActive(true);
+        TranslucentBackground.GetComponent<CanvasGroup>().alpha = 0f;
         if (TranslucentBackground) TranslucentBackground.SetActive(true);
-
+        TranslucentBackground.GetComponent<CanvasGroup>().DOFade(1f, 0.2f);
         if (WinTextObject)
         {
             WinTextObject.SetActive(true);
@@ -206,7 +207,7 @@ public class WinPopupAnimation : MonoBehaviour
         WinPopupParent.localScale = Vector3.one * 3f;
         bool textLanded = false;
         _textScaleTween = WinPopupParent
-            .DOScale(Vector3.one, 0.45f)
+            .DOScale(Vector3.one, 0.3f)
             .SetEase(Ease.OutBack)
             .OnComplete(() => textLanded = true);
 
@@ -237,23 +238,23 @@ public class WinPopupAnimation : MonoBehaviour
 
         double displayAmount = 0;
         _amountCountTween = DOTween.To(
-            ()  => displayAmount,
+            () => displayAmount,
             val =>
             {
                 displayAmount = val;
-                if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(val, "F2");
+                if (Win_Text) Win_Text.text = UIManager.ToSpriteString(val, "F2");
                 if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(val, "F2");
             },
-            winAmount, 2f
+            winAmount, 0.7f
         );
 
         if (animateBalance && BalanceText != null)
         {
             double displayBalance = startBalance;
             _balanceCountTween = DOTween.To(
-                ()  => displayBalance,
+                () => displayBalance,
                 val => { displayBalance = val; BalanceText.text = UIManager.ToSpriteString(val, "F2"); },
-                _targetBalance, 2f
+                _targetBalance, 0.7f
             );
         }
 
@@ -279,7 +280,7 @@ public class WinPopupAnimation : MonoBehaviour
             _activeCoinAnim = coinAnim;   // expose so SkipWin can stop it
             if (coinAnim != null && CoinStartingSprites.Count > 0)
             {
-                coinAnim.textureArray    = CoinStartingSprites;
+                coinAnim.textureArray = CoinStartingSprites;
                 coinAnim.doLoopAnimation = false;
                 coinAnim.StartAnimation();
 
@@ -292,7 +293,7 @@ public class WinPopupAnimation : MonoBehaviour
 
                 if (CoinLoopSprites.Count > 0)
                 {
-                    coinAnim.textureArray    = CoinLoopSprites;
+                    coinAnim.textureArray = CoinLoopSprites;
                     coinAnim.doLoopAnimation = true;
                     coinAnim.StartAnimation();
                 }
@@ -303,7 +304,7 @@ public class WinPopupAnimation : MonoBehaviour
 
         if (_isSkipped) { yield return FinishSkip(); yield break; }
 
-        if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(winAmount, "F2");
+        if (Win_Text) Win_Text.text = UIManager.ToSpriteString(winAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(winAmount, "F2");
         if (animateBalance && BalanceText != null)
             BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
@@ -311,7 +312,7 @@ public class WinPopupAnimation : MonoBehaviour
         if (!_isSkipped)
         {
             bool holdDone = false;
-            _closeDelayTween = DOVirtual.DelayedCall(2f, () => holdDone = true);
+            _closeDelayTween = DOVirtual.DelayedCall(1.1f, () => holdDone = true);
             yield return new WaitUntil(() => holdDone || _isSkipped);
         }
 
@@ -331,9 +332,9 @@ public class WinPopupAnimation : MonoBehaviour
         if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
 
         // Snap all text to final values
-        if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(_targetAmount, "F2");
+        if (Win_Text) Win_Text.text = UIManager.ToSpriteString(_targetAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
-        if (BalanceText)   BalanceText.text   = UIManager.ToSpriteString(_targetBalance, "F2");
+        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
 
         // Brief pause so the snapped values are visible, then close
         yield return new WaitForSeconds(0.5f);
@@ -363,9 +364,9 @@ public class WinPopupAnimation : MonoBehaviour
         if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
 
         // Snap all text to final values immediately
-        if (Win_Text)      Win_Text.text      = UIManager.ToSpriteString(_targetAmount, "F2");
+        if (Win_Text) Win_Text.text = UIManager.ToSpriteString(_targetAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
-        if (BalanceText)   BalanceText.text   = UIManager.ToSpriteString(_targetBalance, "F2");
+        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
 
         // The active coroutine will detect _isSkipped and call FinishSkip/CloseMainPopup itself.
         // If the coroutine hasn't started yet (extremely early tap), kick it off manually.
@@ -410,12 +411,16 @@ public class WinPopupAnimation : MonoBehaviour
 
     private void HideAllPopupObjects()
     {
-        if (WinPopup_Object)    WinPopup_Object.SetActive(false);
-        if (TranslucentBackground) TranslucentBackground.SetActive(false);
+        if (WinPopup_Object) WinPopup_Object.SetActive(false);
+        if (TranslucentBackground)
+        {
+            TranslucentBackground.GetComponent<CanvasGroup>().DOFade(0f, 0.2f);
+            TranslucentBackground.SetActive(false);
+        }
         if (WinPopupGlowObject) WinPopupGlowObject.SetActive(false);
         if (WinPopupCoinObject) WinPopupCoinObject.SetActive(false);
-        if (WinBlastObject)     WinBlastObject.SetActive(false);
-        if (WinTextObject)      WinTextObject.SetActive(false);
+        if (WinBlastObject) WinBlastObject.SetActive(false);
+        if (WinTextObject) WinTextObject.SetActive(false);
     }
 
     private void SetWinTextSprites(List<Sprite> sprites)

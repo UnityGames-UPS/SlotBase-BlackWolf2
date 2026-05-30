@@ -17004,7 +17004,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9c372bf28394e4abba18994b814a2a05, type: 3}
   rendererDelegate: {fileID: 190097485}
   useSharedMaterial: 1
-  doLoopAnimation: 1
+  doLoopAnimation: 0
   StartOnAwake: 0
   AnimationSpeed: 25
   delayBetweenLoop: 0
@@ -38266,7 +38266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103, y: 298}
+  m_AnchoredPosition: {x: 103, y: 297}
   m_SizeDelta: {x: 206, y: 198.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443570324
@@ -44493,7 +44493,7 @@ MonoBehaviour:
   useSharedMaterial: 1
   doLoopAnimation: 0
   StartOnAwake: 0
-  AnimationSpeed: 25
+  AnimationSpeed: 40
   delayBetweenLoop: 0
   currentAnimationState: 0
 --- !u!1 &510594297
@@ -63023,6 +63023,7 @@ GameObject:
   - component: {fileID: 739691846}
   - component: {fileID: 739691848}
   - component: {fileID: 739691847}
+  - component: {fileID: 739691849}
   m_Layer: 5
   m_Name: WinPopupBg
   m_TagString: Untagged
@@ -63087,6 +63088,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739691845}
   m_CullTransparentMesh: 1
+--- !u!225 &739691849
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739691845}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &742783996
 GameObject:
   m_ObjectHideFlags: 0
@@ -80370,7 +80383,7 @@ MonoBehaviour:
   useSharedMaterial: 1
   doLoopAnimation: 1
   StartOnAwake: 0
-  AnimationSpeed: 21
+  AnimationSpeed: 35
   delayBetweenLoop: 0
   currentAnimationState: 0
 --- !u!114 &945682860
@@ -82989,7 +83002,7 @@ MonoBehaviour:
   slotManager: {fileID: 1472552266}
   uiManager: {fileID: 377874625}
   moonPhases: {fileID: 216202111}
-  audioController: {fileID: 0}
+  audioController: {fileID: 1030743558465206379}
   GameLogo: {fileID: 1096778642}
   BoostMiltiplierObject: {fileID: 70949650}
   BoostAnimationObject: {fileID: 508872227}
@@ -118751,7 +118764,7 @@ MonoBehaviour:
   useSharedMaterial: 1
   doLoopAnimation: 0
   StartOnAwake: 0
-  AnimationSpeed: 25
+  AnimationSpeed: 40
   delayBetweenLoop: 0
   currentAnimationState: 0
 --- !u!1 &1429567293
@@ -161899,7 +161912,7 @@ RectTransform:
   m_GameObject: {fileID: 1948721242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.18, y: 1.18, z: 1.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2106217498}

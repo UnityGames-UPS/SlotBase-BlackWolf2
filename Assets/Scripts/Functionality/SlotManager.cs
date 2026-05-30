@@ -638,6 +638,11 @@ public class SlotManager : MonoBehaviour
         imgAnim.textureArray = introSprites;
         imgAnim.doLoopAnimation = false;
         imgAnim.AnimationSpeed = 9f;
+        
+        if (slotImage.sprite == _symbolSprites[9])    // Yellow Moon
+        {
+            imgAnim.AnimationSpeed = 7f;
+        }
         if (slotImage.sprite == _symbolSprites[12])    // Free Spin
         {
             imgAnim.AnimationSpeed = 33f;
