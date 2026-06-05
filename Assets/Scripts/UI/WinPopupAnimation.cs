@@ -282,6 +282,7 @@ public class WinPopupAnimation : MonoBehaviour
             {
                 coinAnim.textureArray = CoinStartingSprites;
                 coinAnim.doLoopAnimation = false;
+                coinAnim.AnimationSpeed = 33f;
                 coinAnim.StartAnimation();
 
                 // BUG FIX 2: Also exit this wait on skip so the coroutine never hangs here.
@@ -295,6 +296,7 @@ public class WinPopupAnimation : MonoBehaviour
                 {
                     coinAnim.textureArray = CoinLoopSprites;
                     coinAnim.doLoopAnimation = true;
+                    coinAnim.AnimationSpeed = 31f;
                     coinAnim.StartAnimation();
                 }
             }

@@ -115,9 +115,28 @@ public class SlotManager : MonoBehaviour
         {
             for (int j = 0; j < _totalImages[i].slotImages.Count; j++)
             {
-                Sprite image = _symbolSprites[UnityEngine.Random.Range(0, 9)];
+                Sprite image = _symbolSprites[UnityEngine.Random.Range(0, 8)];
                 if (!midTween)
                     _totalImages[i].slotImages[j].sprite = image;
+            }
+        }
+        for (int i = 0; i < _resultImages.Count; i++)
+        {
+            for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
+            {
+                _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<RectTransform>().localScale = Vector3.one;
+                Sprite image = _symbolSprites[UnityEngine.Random.Range(0, 9)];
+                if (!midTween)
+                {
+                    _resultImages[i].slotImages[j].sprite = BlankSprite;
+                    _resultImages[i].slotImages[j].transform.GetChild(2).gameObject.SetActive(true);
+                    if (image == _symbolSprites[8])
+                    {
+                        _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<RectTransform>().localScale = Vector3.one * 1.4f;
+                    }
+                    _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<Image>().preserveAspect = true;
+                    _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<Image>().sprite = image;
+                }
             }
         }
     }
@@ -471,7 +490,7 @@ public class SlotManager : MonoBehaviour
             StartCoroutine(bonusManger.StartBonus());
             yield return new WaitUntil(() => bonusManger.isBonusFinished);
 
-            if(_socketManager.resultData.payload.levelProgress.total_progress == 0)
+            if (_socketManager.resultData.payload.levelProgress.total_progress == 0)
             {
                 moonPhases.ResetMoon();
             }
@@ -653,7 +672,7 @@ public class SlotManager : MonoBehaviour
         imgAnim.textureArray = introSprites;
         imgAnim.doLoopAnimation = false;
         imgAnim.AnimationSpeed = 9f;
-        
+
         if (img.sprite == _symbolSprites[9])    // Yellow Moon
         {
             imgAnim.AnimationSpeed = 15f;
@@ -677,19 +696,19 @@ public class SlotManager : MonoBehaviour
             imgAnim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
 
         // ── Switch to loop animation ──
-        if (currentSprite== _symbolSprites[10])
+        if (currentSprite == _symbolSprites[10])
         {
             childRect.localScale = new Vector3(0.97f, 0.97f, 0.97f);
             imgAnim.textureArray = loopSprites;
             imgAnim.doLoopAnimation = true;
             imgAnim.StartAnimation();
         }
-        if (currentSprite== _symbolSprites[11])
+        if (currentSprite == _symbolSprites[11])
         {
             childRect.localScale = new Vector3(1f, 1f, 1f);
             img.sprite = currentSprite;
         }
-        if (currentSprite== _symbolSprites[9])
+        if (currentSprite == _symbolSprites[9])
         {
             childRect.localScale = new Vector3(1f, 1f, 1f);
             img.sprite = currentSprite;
@@ -706,7 +725,7 @@ public class SlotManager : MonoBehaviour
         }
     }
 
-    private IEnumerator SymbolSize(Image slotImage , Sprite symbol)
+    private IEnumerator SymbolSize(Image slotImage, Sprite symbol)
     {
         //_audioController.PlayMoonIconPop();
         Transform child = slotImage.transform.GetChild(2);
@@ -847,15 +866,15 @@ public class SlotManager : MonoBehaviour
     private IEnumerator FreeSpinStartAnimation()
     {
 
-        for(int i = 0; i < _resultImages.Count; i++)
+        for (int i = 0; i < _resultImages.Count; i++)
         {
             for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
             {
-                 if (_resultImages[i].slotImages[j].sprite == _symbolSprites[12])
-                 {
+                if (_resultImages[i].slotImages[j].sprite == _symbolSprites[12])
+                {
                     _resultImages[i].slotImages[j].transform.GetChild(2).gameObject.SetActive(true);
-                     _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<ImageAnimation>().StartAnimation();
-                 }
+                    _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<ImageAnimation>().StartAnimation();
+                }
             }
         }
 
