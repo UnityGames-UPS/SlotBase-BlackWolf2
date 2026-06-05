@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: 6499dcc8d198748afbd0639d6d92f41e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7767218327611179277
+    second: GirlArrow_SpriteSheet_0
+  - first:
+      213: -5092276058267241097
+    second: GirlArrow_SpriteSheet_1
+  - first:
+      213: -1657613231950824014
+    second: GirlArrow_SpriteSheet_2
+  - first:
+      213: -4021416082524896773
+    second: GirlArrow_SpriteSheet_3
+  - first:
+      213: 3666903434639883571
+    second: GirlArrow_SpriteSheet_4
+  - first:
+      213: -7367212828783215619
+    second: GirlArrow_SpriteSheet_5
+  - first:
+      213: -7851690653883249009
+    second: GirlArrow_SpriteSheet_6
+  - first:
+      213: -8160971373543525212
+    second: GirlArrow_SpriteSheet_7
+  - first:
+      213: 54938639663293323
+    second: GirlArrow_SpriteSheet_8
+  - first:
+      213: 2538613586666803508
+    second: GirlArrow_SpriteSheet_9
+  - first:
+      213: 2285983656260160265
+    second: GirlArrow_SpriteSheet_10
+  - first:
+      213: 9114976995680405766
+    second: GirlArrow_SpriteSheet_11
+  - first:
+      213: -1262115042691682760
+    second: GirlArrow_SpriteSheet_12
+  - first:
+      213: 7893731781422366208
+    second: GirlArrow_SpriteSheet_13
+  - first:
+      213: -7580286578749594454
+    second: GirlArrow_SpriteSheet_14
+  - first:
+      213: 1546060505115949882
+    second: GirlArrow_SpriteSheet_15
+  - first:
+      213: 7136472802535268739
+    second: GirlArrow_SpriteSheet_16
+  - first:
+      213: 3716307775016716656
+    second: GirlArrow_SpriteSheet_17
+  - first:
+      213: 8937327139395979318
+    second: GirlArrow_SpriteSheet_18
+  - first:
+      213: -767338306799710199
+    second: GirlArrow_SpriteSheet_19
+  - first:
+      213: 4689526503899946605
+    second: GirlArrow_SpriteSheet_20
+  - first:
+      213: 4830668826545092395
+    second: GirlArrow_SpriteSheet_21
+  - first:
+      213: 8396307354058878993
+    second: GirlArrow_SpriteSheet_22
+  - first:
+      213: -2543728805241048070
+    second: GirlArrow_SpriteSheet_23
+  - first:
+      213: 2203958115756496084
+    second: GirlArrow_SpriteSheet_24
+  - first:
+      213: -7460815984479753726
+    second: GirlArrow_SpriteSheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fef4d1651c453490800000000000000
+      internalID: -7767218327611179277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 3696
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77531c0b7e99459b0800000000000000
+      internalID: -5092276058267241097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 3696
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd75964c89fef8e0800000000000000
+      internalID: -1657613231950824014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 3696
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf18f0b116f0138c0800000000000000
+      internalID: -4021416082524896773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 3696
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dbe57ee3573e230800000000000000
+      internalID: 3666903434639883571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2772
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbfca327f662c990800000000000000
+      internalID: -7367212828783215619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 2772
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ec80943f0390390800000000000000
+      internalID: -7851690653883249009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 2772
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a47ec146c76ebe80800000000000000
+      internalID: -8160971373543525212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 2772
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83e295d66e23c000800000000000000
+      internalID: 54938639663293323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 2772
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431514f5b97fa3320800000000000000
+      internalID: 2538613586666803508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b4cb1160279bf10800000000000000
+      internalID: 2285983656260160265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1848
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609436bc847ee7e70800000000000000
+      internalID: 9114976995680405766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1848
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e6fae3e011c7ee0800000000000000
+      internalID: -1262115042691682760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 1848
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e34ef7b3b2c8d60800000000000000
+      internalID: 7893731781422366208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 1848
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa428f9c4896dc690800000000000000
+      internalID: -7580286578749594454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b72b886d5b47510800000000000000
+      internalID: 1546060505115949882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 924
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381e9580438d90360800000000000000
+      internalID: 7136472802535268739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 924
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079c4e54b3af29330800000000000000
+      internalID: 3716307775016716656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 924
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638c7296ea3c70c70800000000000000
+      internalID: 8937327139395979318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 924
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90057a020edd955f0800000000000000
+      internalID: -767338306799710199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e5cb5528b841140800000000000000
+      internalID: 4689526503899946605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27f5c924bbf90340800000000000000
+      internalID: 4830668826545092395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110fdaf8d0da58470800000000000000
+      internalID: 8396307354058878993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3bdaef02cd2bcd0800000000000000
+      internalID: -2543728805241048070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlArrow_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4518daa38069e10800000000000000
+      internalID: 2203958115756496084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1dd9bfad0a2bc4892a1496d63898227b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GirlArrow_SpriteSheet_0: -7767218327611179277
+      GirlArrow_SpriteSheet_1: -5092276058267241097
+      GirlArrow_SpriteSheet_10: 2285983656260160265
+      GirlArrow_SpriteSheet_11: 9114976995680405766
+      GirlArrow_SpriteSheet_12: -1262115042691682760
+      GirlArrow_SpriteSheet_13: 7893731781422366208
+      GirlArrow_SpriteSheet_14: -7580286578749594454
+      GirlArrow_SpriteSheet_15: 1546060505115949882
+      GirlArrow_SpriteSheet_16: 7136472802535268739
+      GirlArrow_SpriteSheet_17: 3716307775016716656
+      GirlArrow_SpriteSheet_18: 8937327139395979318
+      GirlArrow_SpriteSheet_19: -767338306799710199
+      GirlArrow_SpriteSheet_2: -1657613231950824014
+      GirlArrow_SpriteSheet_20: 4689526503899946605
+      GirlArrow_SpriteSheet_21: 4830668826545092395
+      GirlArrow_SpriteSheet_22: 8396307354058878993
+      GirlArrow_SpriteSheet_23: -2543728805241048070
+      GirlArrow_SpriteSheet_24: 2203958115756496084
+      GirlArrow_SpriteSheet_3: -4021416082524896773
+      GirlArrow_SpriteSheet_4: 3666903434639883571
+      GirlArrow_SpriteSheet_5: -7367212828783215619
+      GirlArrow_SpriteSheet_6: -7851690653883249009
+      GirlArrow_SpriteSheet_7: -8160971373543525212
+      GirlArrow_SpriteSheet_8: 54938639663293323
+      GirlArrow_SpriteSheet_9: 2538613586666803508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

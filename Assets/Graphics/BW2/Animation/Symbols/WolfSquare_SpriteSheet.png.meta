@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 149fb3862f0754a48a40941e1c7fa438
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3734870691505462724
+    second: WolfSquare_SpriteSheet_0
+  - first:
+      213: 3535436195981288860
+    second: WolfSquare_SpriteSheet_1
+  - first:
+      213: -7902403625825354454
+    second: WolfSquare_SpriteSheet_2
+  - first:
+      213: 338581555358652420
+    second: WolfSquare_SpriteSheet_3
+  - first:
+      213: -8229533325151738029
+    second: WolfSquare_SpriteSheet_4
+  - first:
+      213: -6646825243092699970
+    second: WolfSquare_SpriteSheet_5
+  - first:
+      213: -5709676039798640109
+    second: WolfSquare_SpriteSheet_6
+  - first:
+      213: -1750820817042106803
+    second: WolfSquare_SpriteSheet_7
+  - first:
+      213: -6623437184063470477
+    second: WolfSquare_SpriteSheet_8
+  - first:
+      213: 5689335465593421226
+    second: WolfSquare_SpriteSheet_9
+  - first:
+      213: 7193670682911224618
+    second: WolfSquare_SpriteSheet_10
+  - first:
+      213: -2876188357296423794
+    second: WolfSquare_SpriteSheet_11
+  - first:
+      213: 482713727742532933
+    second: WolfSquare_SpriteSheet_12
+  - first:
+      213: 4935847098864247087
+    second: WolfSquare_SpriteSheet_13
+  - first:
+      213: 6882702054131225032
+    second: WolfSquare_SpriteSheet_14
+  - first:
+      213: 3330578844399836082
+    second: WolfSquare_SpriteSheet_15
+  - first:
+      213: 2777608267386433855
+    second: WolfSquare_SpriteSheet_16
+  - first:
+      213: 6483164496739216791
+    second: WolfSquare_SpriteSheet_17
+  - first:
+      213: -1989839392502866608
+    second: WolfSquare_SpriteSheet_18
+  - first:
+      213: 8933036177647175953
+    second: WolfSquare_SpriteSheet_19
+  - first:
+      213: 5238151378750313044
+    second: WolfSquare_SpriteSheet_20
+  - first:
+      213: 1346934586827849912
+    second: WolfSquare_SpriteSheet_21
+  - first:
+      213: -3477618443657329892
+    second: WolfSquare_SpriteSheet_22
+  - first:
+      213: -1084317631496957225
+    second: WolfSquare_SpriteSheet_23
+  - first:
+      213: 501758836818902676
+    second: WolfSquare_SpriteSheet_24
+  - first:
+      213: -625509417823118181
+    second: WolfSquare_SpriteSheet_25
+  - first:
+      213: -8997332971170908223
+    second: WolfSquare_SpriteSheet_26
+  - first:
+      213: 7989874859956184671
+    second: WolfSquare_SpriteSheet_27
+  - first:
+      213: 7493414431457763943
+    second: WolfSquare_SpriteSheet_28
+  - first:
+      213: 8172110515747519297
+    second: WolfSquare_SpriteSheet_29
+  - first:
+      213: -6467380372815966241
+    second: WolfSquare_SpriteSheet_30
+  - first:
+      213: -9102568994582838079
+    second: WolfSquare_SpriteSheet_31
+  - first:
+      213: 1767674254486179743
+    second: WolfSquare_SpriteSheet_32
+  - first:
+      213: -6815712036045760122
+    second: WolfSquare_SpriteSheet_33
+  - first:
+      213: 625495342965971605
+    second: WolfSquare_SpriteSheet_34
+  - first:
+      213: -6233286641217385953
+    second: WolfSquare_SpriteSheet_35
+  - first:
+      213: 1604611046412536332
+    second: WolfSquare_SpriteSheet_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32accee4e21b2cc0800000000000000
+      internalID: -3734870691505462724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95e58b1d74601130800000000000000
+      internalID: 3535436195981288860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dbbe265c5055290800000000000000
+      internalID: -7902403625825354454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408d6a67122e2b400800000000000000
+      internalID: 338581555358652420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357671fea03dacd80800000000000000
+      internalID: -8229533325151738029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb43c5568abb1c3a0800000000000000
+      internalID: -6646825243092699970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 2650
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3123e3994e723c0b0800000000000000
+      internalID: -5709676039798640109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4698de3eb5d3b7e0800000000000000
+      internalID: -1750820817042106803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37488cb39f2d414a0800000000000000
+      internalID: -6623437184063470477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad3aba667494fe40800000000000000
+      internalID: 5689335465593421226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23b0165f5d05d360800000000000000
+      internalID: 7193670682911224618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c7b308de9b518d0800000000000000
+      internalID: -2876188357296423794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d5c4ee391f2b600800000000000000
+      internalID: 482713727742532933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 2120
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21227109c6af7440800000000000000
+      internalID: 4935847098864247087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1d7575d05448f50800000000000000
+      internalID: 6882702054131225032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb12e410d7983e20800000000000000
+      internalID: 3330578844399836082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31b1c6b00c0c8620800000000000000
+      internalID: 2777608267386433855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79da090b2c3d8f950800000000000000
+      internalID: 6483164496739216791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d99c97d9ba264e0800000000000000
+      internalID: -1989839392502866608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1198f56031588fb70800000000000000
+      internalID: 8933036177647175953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1590
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45292221de6a1b840800000000000000
+      internalID: 5238151378750313044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0cf8fced541b210800000000000000
+      internalID: 1346934586827849912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13457163740dbfc0800000000000000
+      internalID: -3477618443657329892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d25eeeebdab3f0f0800000000000000
+      internalID: -1084317631496957225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ef08fe00b96f600800000000000000
+      internalID: 501758836818902676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9cddf2af7eb157f0800000000000000
+      internalID: -625509417823118181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7b277255d032380800000000000000
+      internalID: -8997332971170908223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1060
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56238b5adcb1ee60800000000000000
+      internalID: 7989874859956184671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76263dd39b4fdf760800000000000000
+      internalID: 7493414431457763943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b7d54673b296170800000000000000
+      internalID: 8172110515747519297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf88fa01df3f36a0800000000000000
+      internalID: -6467380372815966241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4c7661abd2da180800000000000000
+      internalID: -9102568994582838079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f80417e5a088810800000000000000
+      internalID: 1767674254486179743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6895320b30ab961a0800000000000000
+      internalID: -6815712036045760122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 530
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ad52e43b43ea800800000000000000
+      internalID: 625495342965971605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1acc0f33daee79a0800000000000000
+      internalID: -6233286641217385953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WolfSquare_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 385
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a4610ce39b44610800000000000000
+      internalID: 1604611046412536332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d539336093535445d982fc6018e7e00d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WolfSquare_SpriteSheet_0: -3734870691505462724
+      WolfSquare_SpriteSheet_1: 3535436195981288860
+      WolfSquare_SpriteSheet_10: 7193670682911224618
+      WolfSquare_SpriteSheet_11: -2876188357296423794
+      WolfSquare_SpriteSheet_12: 482713727742532933
+      WolfSquare_SpriteSheet_13: 4935847098864247087
+      WolfSquare_SpriteSheet_14: 6882702054131225032
+      WolfSquare_SpriteSheet_15: 3330578844399836082
+      WolfSquare_SpriteSheet_16: 2777608267386433855
+      WolfSquare_SpriteSheet_17: 6483164496739216791
+      WolfSquare_SpriteSheet_18: -1989839392502866608
+      WolfSquare_SpriteSheet_19: 8933036177647175953
+      WolfSquare_SpriteSheet_2: -7902403625825354454
+      WolfSquare_SpriteSheet_20: 5238151378750313044
+      WolfSquare_SpriteSheet_21: 1346934586827849912
+      WolfSquare_SpriteSheet_22: -3477618443657329892
+      WolfSquare_SpriteSheet_23: -1084317631496957225
+      WolfSquare_SpriteSheet_24: 501758836818902676
+      WolfSquare_SpriteSheet_25: -625509417823118181
+      WolfSquare_SpriteSheet_26: -8997332971170908223
+      WolfSquare_SpriteSheet_27: 7989874859956184671
+      WolfSquare_SpriteSheet_28: 7493414431457763943
+      WolfSquare_SpriteSheet_29: 8172110515747519297
+      WolfSquare_SpriteSheet_3: 338581555358652420
+      WolfSquare_SpriteSheet_30: -6467380372815966241
+      WolfSquare_SpriteSheet_31: -9102568994582838079
+      WolfSquare_SpriteSheet_32: 1767674254486179743
+      WolfSquare_SpriteSheet_33: -6815712036045760122
+      WolfSquare_SpriteSheet_34: 625495342965971605
+      WolfSquare_SpriteSheet_35: -6233286641217385953
+      WolfSquare_SpriteSheet_36: 1604611046412536332
+      WolfSquare_SpriteSheet_4: -8229533325151738029
+      WolfSquare_SpriteSheet_5: -6646825243092699970
+      WolfSquare_SpriteSheet_6: -5709676039798640109
+      WolfSquare_SpriteSheet_7: -1750820817042106803
+      WolfSquare_SpriteSheet_8: -6623437184063470477
+      WolfSquare_SpriteSheet_9: 5689335465593421226
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

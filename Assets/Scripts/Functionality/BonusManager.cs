@@ -848,7 +848,7 @@ public class BonusManger : MonoBehaviour
     private void InitializeTweening(Transform slotTransform)
     {
         slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 400f);
-        Tween tween = slotTransform.DOLocalMoveY(0f, 1f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Flash);
+        Tween tween = slotTransform.DOLocalMoveY(0f, 0.8f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Flash);
         _alltweens.Add(tween);
     }
 

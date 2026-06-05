@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: 6721978ec4e5843f8b1803122ddbb2b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7509421642967469029
+    second: K_SpriteSheet_0
+  - first:
+      213: -592735450994100232
+    second: K_SpriteSheet_1
+  - first:
+      213: -5576268486052927732
+    second: K_SpriteSheet_2
+  - first:
+      213: 4916490470067656396
+    second: K_SpriteSheet_3
+  - first:
+      213: 6451681150345494433
+    second: K_SpriteSheet_4
+  - first:
+      213: 2113783003914809520
+    second: K_SpriteSheet_5
+  - first:
+      213: 8076047063419403168
+    second: K_SpriteSheet_6
+  - first:
+      213: 3134560269402344837
+    second: K_SpriteSheet_7
+  - first:
+      213: 4134725554360150846
+    second: K_SpriteSheet_8
+  - first:
+      213: 5802057693427987849
+    second: K_SpriteSheet_9
+  - first:
+      213: -1728029566751880117
+    second: K_SpriteSheet_10
+  - first:
+      213: 294411265327990218
+    second: K_SpriteSheet_11
+  - first:
+      213: -2418253892207790049
+    second: K_SpriteSheet_12
+  - first:
+      213: 8837512999659876494
+    second: K_SpriteSheet_13
+  - first:
+      213: -7916306154417565534
+    second: K_SpriteSheet_14
+  - first:
+      213: 2295834888944087747
+    second: K_SpriteSheet_15
+  - first:
+      213: 3558686375201785393
+    second: K_SpriteSheet_16
+  - first:
+      213: -7130140908823165366
+    second: K_SpriteSheet_17
+  - first:
+      213: 4319214667449137782
+    second: K_SpriteSheet_18
+  - first:
+      213: 5482334574319067156
+    second: K_SpriteSheet_19
+  - first:
+      213: -5883990876302918988
+    second: K_SpriteSheet_20
+  - first:
+      213: 3055773814255141588
+    second: K_SpriteSheet_21
+  - first:
+      213: -7574975193514795476
+    second: K_SpriteSheet_22
+  - first:
+      213: -8636449469454858624
+    second: K_SpriteSheet_23
+  - first:
+      213: 6500024228788180078
+    second: K_SpriteSheet_24
+  - first:
+      213: 7791745040443267084
+    second: K_SpriteSheet_25
+  - first:
+      213: 338651481585310595
+    second: K_SpriteSheet_26
+  - first:
+      213: -6995478400144996906
+    second: K_SpriteSheet_27
+  - first:
+      213: -2893915837290704792
+    second: K_SpriteSheet_28
+  - first:
+      213: 1085787099532523738
+    second: K_SpriteSheet_29
+  - first:
+      213: 9172732010235123717
+    second: K_SpriteSheet_30
+  - first:
+      213: -4484540834687467837
+    second: K_SpriteSheet_31
+  - first:
+      213: 2902355028049220731
+    second: K_SpriteSheet_32
+  - first:
+      213: -4938145172318929604
+    second: K_SpriteSheet_33
+  - first:
+      213: -6200695985852963058
+    second: K_SpriteSheet_34
+  - first:
+      213: 7942728508050487367
+    second: K_SpriteSheet_35
+  - first:
+      213: 974382737161626276
+    second: K_SpriteSheet_36
+  - first:
+      213: -4122238041975873480
+    second: K_SpriteSheet_37
+  - first:
+      213: -1715276925945000604
+    second: K_SpriteSheet_38
+  - first:
+      213: 4144813526592928861
+    second: K_SpriteSheet_39
+  - first:
+      213: -2793446842766792341
+    second: K_SpriteSheet_40
+  - first:
+      213: -5380135086301203430
+    second: K_SpriteSheet_41
+  - first:
+      213: 4548371985006151225
+    second: K_SpriteSheet_42
+  - first:
+      213: 5059572380747074487
+    second: K_SpriteSheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: K_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b143b466dcc29c790800000000000000
+      internalID: -7509421642967469029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f737bd6f3e26c7f0800000000000000
+      internalID: -592735450994100232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c072c943b5d1d92b0800000000000000
+      internalID: -5576268486052927732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6d9f9a802ea3440800000000000000
+      internalID: 4916490470067656396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af3d62e2d9f88950800000000000000
+      internalID: 6451681150345494433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0b998517aa55d10800000000000000
+      internalID: 2113783003914809520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab3374f302e31070800000000000000
+      internalID: 8076047063419403168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d87c815f1308b20800000000000000
+      internalID: 3134560269402344837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bed572cfe716930800000000000000
+      internalID: 4134725554360150846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985f8174bbc058050800000000000000
+      internalID: 5802057693427987849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cc168b34ec408e0800000000000000
+      internalID: -1728029566751880117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac58fb76c75f51400800000000000000
+      internalID: 294411265327990218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18bf32c5e2a07ed0800000000000000
+      internalID: -2418253892207790049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80bf92004725aa70800000000000000
+      internalID: 8837512999659876494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0d3b4be71a32290800000000000000
+      internalID: -7916306154417565534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2f57aeaa17cdf10800000000000000
+      internalID: 2295834888944087747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136ccec476ef26130800000000000000
+      internalID: 3558686375201785393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a464d1bde96ac0d90800000000000000
+      internalID: -7130140908823165366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a76f91bdee0fb30800000000000000
+      internalID: 4319214667449137782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410612aaf3a251c40800000000000000
+      internalID: 5482334574319067156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba3354097dd75ea0800000000000000
+      internalID: -5883990876302918988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d24e98081a486a20800000000000000
+      internalID: 3055773814255141588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e9728023840e690800000000000000
+      internalID: -7574975193514795476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086488427fa252880800000000000000
+      internalID: -8636449469454858624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e641a54f899b43a50800000000000000
+      internalID: 6500024228788180078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c085804f4d6d12c60800000000000000
+      internalID: 7791745040443267084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b5d8e6ab123b400800000000000000
+      internalID: 338651481585310595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5807d65711bee90800000000000000
+      internalID: -6995478400144996906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860196ce0eeb6d7d0800000000000000
+      internalID: -2893915837290704792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad876514d9d711f00800000000000000
+      internalID: 1085787099532523738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5085be10a271c4f70800000000000000
+      internalID: 9172732010235123717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce38b7fed5b3c1c0800000000000000
+      internalID: -4484540834687467837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7451fa458c374820800000000000000
+      internalID: 2902355028049220731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dbe92112f287bb0800000000000000
+      internalID: -4938145172318929604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e072b038ad3b2f9a0800000000000000
+      internalID: -6200695985852963058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748b7b5ee7d3a3e60800000000000000
+      internalID: 7942728508050487367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2aacbdfe3b58d00800000000000000
+      internalID: 974382737161626276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8302d64675edac6c0800000000000000
+      internalID: -4122238041975873480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dcf9949bc1238e0800000000000000
+      internalID: -1715276925945000604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c3ec831f5558930800000000000000
+      internalID: 4144813526592928861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69e2f595eeab39d0800000000000000
+      internalID: -2793446842766792341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14b669e4abe555b0800000000000000
+      internalID: -5380135086301203430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93641a8d8301f1f30800000000000000
+      internalID: 4548371985006151225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: K_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb8ec50646373640800000000000000
+      internalID: 5059572380747074487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6b82d3d6070ba4ada96aee655d41cb75
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      K_SpriteSheet_0: -7509421642967469029
+      K_SpriteSheet_1: -592735450994100232
+      K_SpriteSheet_10: -1728029566751880117
+      K_SpriteSheet_11: 294411265327990218
+      K_SpriteSheet_12: -2418253892207790049
+      K_SpriteSheet_13: 8837512999659876494
+      K_SpriteSheet_14: -7916306154417565534
+      K_SpriteSheet_15: 2295834888944087747
+      K_SpriteSheet_16: 3558686375201785393
+      K_SpriteSheet_17: -7130140908823165366
+      K_SpriteSheet_18: 4319214667449137782
+      K_SpriteSheet_19: 5482334574319067156
+      K_SpriteSheet_2: -5576268486052927732
+      K_SpriteSheet_20: -5883990876302918988
+      K_SpriteSheet_21: 3055773814255141588
+      K_SpriteSheet_22: -7574975193514795476
+      K_SpriteSheet_23: -8636449469454858624
+      K_SpriteSheet_24: 6500024228788180078
+      K_SpriteSheet_25: 7791745040443267084
+      K_SpriteSheet_26: 338651481585310595
+      K_SpriteSheet_27: -6995478400144996906
+      K_SpriteSheet_28: -2893915837290704792
+      K_SpriteSheet_29: 1085787099532523738
+      K_SpriteSheet_3: 4916490470067656396
+      K_SpriteSheet_30: 9172732010235123717
+      K_SpriteSheet_31: -4484540834687467837
+      K_SpriteSheet_32: 2902355028049220731
+      K_SpriteSheet_33: -4938145172318929604
+      K_SpriteSheet_34: -6200695985852963058
+      K_SpriteSheet_35: 7942728508050487367
+      K_SpriteSheet_36: 974382737161626276
+      K_SpriteSheet_37: -4122238041975873480
+      K_SpriteSheet_38: -1715276925945000604
+      K_SpriteSheet_39: 4144813526592928861
+      K_SpriteSheet_4: 6451681150345494433
+      K_SpriteSheet_40: -2793446842766792341
+      K_SpriteSheet_41: -5380135086301203430
+      K_SpriteSheet_42: 4548371985006151225
+      K_SpriteSheet_43: 5059572380747074487
+      K_SpriteSheet_44: 615869079
+      K_SpriteSheet_45: -292742094
+      K_SpriteSheet_46: -243164824
+      K_SpriteSheet_47: 999104547
+      K_SpriteSheet_48: -2120787503
+      K_SpriteSheet_5: 2113783003914809520
+      K_SpriteSheet_6: 8076047063419403168
+      K_SpriteSheet_7: 3134560269402344837
+      K_SpriteSheet_8: 4134725554360150846
+      K_SpriteSheet_9: 5802057693427987849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

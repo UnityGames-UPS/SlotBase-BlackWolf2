@@ -1,0 +1,1694 @@
+fileFormatVersion: 2
+guid: b303dc67f63b2403c977f3037c845559
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6229417924226309470
+    second: Q_SpriteSheet_0
+  - first:
+      213: 7084681308467934781
+    second: Q_SpriteSheet_1
+  - first:
+      213: 5468957207270924177
+    second: Q_SpriteSheet_2
+  - first:
+      213: -6210902702739789274
+    second: Q_SpriteSheet_3
+  - first:
+      213: 4833363414865062276
+    second: Q_SpriteSheet_4
+  - first:
+      213: -5622035970050967377
+    second: Q_SpriteSheet_5
+  - first:
+      213: 6508347786151092967
+    second: Q_SpriteSheet_6
+  - first:
+      213: -8867019148374601606
+    second: Q_SpriteSheet_7
+  - first:
+      213: 1534628425193898749
+    second: Q_SpriteSheet_8
+  - first:
+      213: -6994989736339178250
+    second: Q_SpriteSheet_9
+  - first:
+      213: 190331625552104712
+    second: Q_SpriteSheet_10
+  - first:
+      213: 9221475040612359028
+    second: Q_SpriteSheet_11
+  - first:
+      213: 2675759117193674803
+    second: Q_SpriteSheet_12
+  - first:
+      213: 1691611364722964365
+    second: Q_SpriteSheet_13
+  - first:
+      213: -1899677411763221432
+    second: Q_SpriteSheet_14
+  - first:
+      213: 1314889857401095702
+    second: Q_SpriteSheet_15
+  - first:
+      213: -4207624390284008033
+    second: Q_SpriteSheet_16
+  - first:
+      213: -6283562767931572376
+    second: Q_SpriteSheet_17
+  - first:
+      213: 1425345231984401308
+    second: Q_SpriteSheet_18
+  - first:
+      213: -6085785355215214237
+    second: Q_SpriteSheet_19
+  - first:
+      213: -3982207521708151556
+    second: Q_SpriteSheet_20
+  - first:
+      213: 5335017083612739775
+    second: Q_SpriteSheet_21
+  - first:
+      213: -6022940781906656668
+    second: Q_SpriteSheet_22
+  - first:
+      213: -2861467282334645067
+    second: Q_SpriteSheet_23
+  - first:
+      213: -2581461103341319399
+    second: Q_SpriteSheet_24
+  - first:
+      213: 6614995926923581260
+    second: Q_SpriteSheet_25
+  - first:
+      213: 6306968524955865306
+    second: Q_SpriteSheet_26
+  - first:
+      213: -4757932869372753387
+    second: Q_SpriteSheet_27
+  - first:
+      213: -2817510353030890188
+    second: Q_SpriteSheet_28
+  - first:
+      213: 153321899301004655
+    second: Q_SpriteSheet_29
+  - first:
+      213: 4088298469171175933
+    second: Q_SpriteSheet_30
+  - first:
+      213: -6214626816395074778
+    second: Q_SpriteSheet_31
+  - first:
+      213: 8877264971458463565
+    second: Q_SpriteSheet_32
+  - first:
+      213: -9136150786161294332
+    second: Q_SpriteSheet_33
+  - first:
+      213: 3736021330290730986
+    second: Q_SpriteSheet_34
+  - first:
+      213: -3349761458185130707
+    second: Q_SpriteSheet_35
+  - first:
+      213: 812753841919940875
+    second: Q_SpriteSheet_36
+  - first:
+      213: 2815666243739898036
+    second: Q_SpriteSheet_37
+  - first:
+      213: 2621543066448271820
+    second: Q_SpriteSheet_38
+  - first:
+      213: -823643208905246988
+    second: Q_SpriteSheet_39
+  - first:
+      213: 3390730174492713634
+    second: Q_SpriteSheet_40
+  - first:
+      213: 2835260146658717073
+    second: Q_SpriteSheet_41
+  - first:
+      213: -3893193467156763439
+    second: Q_SpriteSheet_42
+  - first:
+      213: -2423675448866496599
+    second: Q_SpriteSheet_43
+  - first:
+      213: -8856475470634218914
+    second: Q_SpriteSheet_44
+  - first:
+      213: 8079353746240108396
+    second: Q_SpriteSheet_45
+  - first:
+      213: -1396304795998770979
+    second: Q_SpriteSheet_46
+  - first:
+      213: 5661373047237036752
+    second: Q_SpriteSheet_47
+  - first:
+      213: -2238894406928809533
+    second: Q_SpriteSheet_48
+  - first:
+      213: 487069458419967323
+    second: Q_SpriteSheet_49
+  - first:
+      213: -8529077627891520807
+    second: Q_SpriteSheet_50
+  - first:
+      213: 7052981089950471856
+    second: Q_SpriteSheet_51
+  - first:
+      213: -7357088463101555929
+    second: Q_SpriteSheet_52
+  - first:
+      213: -4585751228752647592
+    second: Q_SpriteSheet_53
+  - first:
+      213: 6110913490591987654
+    second: Q_SpriteSheet_54
+  - first:
+      213: 5819820309688216025
+    second: Q_SpriteSheet_55
+  - first:
+      213: 6419713153889055009
+    second: Q_SpriteSheet_56
+  - first:
+      213: -4976424618794721369
+    second: Q_SpriteSheet_57
+  - first:
+      213: 2934460203711276262
+    second: Q_SpriteSheet_58
+  - first:
+      213: 2254879376378747114
+    second: Q_SpriteSheet_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Q_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a22a0d1769ac89a0800000000000000
+      internalID: -6229417924226309470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36b4122d18d15260800000000000000
+      internalID: 7084681308467934781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f123faa93a5eb40800000000000000
+      internalID: 5468957207270924177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a6eac06e07ec9a0800000000000000
+      internalID: -6210902702739789274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489a665ea6e831340800000000000000
+      internalID: 4833363414865062276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8b4a272148af1b0800000000000000
+      internalID: -5622035970050967377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e26c3c24db425a50800000000000000
+      internalID: 6508347786151092967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1008
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a709b84601502f480800000000000000
+      internalID: -8867019148374601606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df246e10c681c4510800000000000000
+      internalID: 1534628425193898749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcfff555edccee90800000000000000
+      internalID: -6994989736339178250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d4e82ea9134a200800000000000000
+      internalID: 190331625552104712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b94d421b249ff70800000000000000
+      internalID: 9221475040612359028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33087d48db4322520800000000000000
+      internalID: 2675759117193674803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87735cd29fc97710800000000000000
+      internalID: 1691611364722964365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c050c757df2a5e0800000000000000
+      internalID: -1899677411763221432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 864
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6160825db5d6f3210800000000000000
+      internalID: 1314889857401095702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f952ad4f8e38b95c0800000000000000
+      internalID: -4207624390284008033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f719d44fc4cc8a0800000000000000
+      internalID: -6283562767931572376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b1abacfe7d7c310800000000000000
+      internalID: 1425345231984401308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3696f1b9672fa8ba0800000000000000
+      internalID: -6085785355215214237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc62be8b5b5cb8c0800000000000000
+      internalID: -3982207521708151556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8b06b75c9c90a40800000000000000
+      internalID: 5335017083612739775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4628d3f05473a6ca0800000000000000
+      internalID: -6022940781906656668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 720
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b48a0cdaa60a48d0800000000000000
+      internalID: -2861467282334645067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b4addbdcecc2cd0800000000000000
+      internalID: -2581461103341319399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c479fee6fbf2dcb50800000000000000
+      internalID: 6614995926923581260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0509b257ad68750800000000000000
+      internalID: 6306968524955865306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ac1ef834d68fdb0800000000000000
+      internalID: -4757932869372753387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dbb90034136e8d0800000000000000
+      internalID: -2817510353030890188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65ef108475b02200800000000000000
+      internalID: 153321899301004655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1a8b60ccd8cb830800000000000000
+      internalID: 4088298469171175933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 576
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623a72546d531c9a0800000000000000
+      internalID: -6214626816395074778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47ccc03571623b70800000000000000
+      internalID: 8877264971458463565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4044370f34fd53180800000000000000
+      internalID: -9136150786161294332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7e2490b9309d330800000000000000
+      internalID: 3736021330290730986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2da49a93b14381d0800000000000000
+      internalID: -3349761458185130707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09d875205b774b00800000000000000
+      internalID: 812753841919940875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0dc28d781431720800000000000000
+      internalID: 2815666243739898036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc999078787916420800000000000000
+      internalID: 2621543066448271820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 432
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f63a878dd4d194f0800000000000000
+      internalID: -823643208905246988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a226dbf02b4e0f20800000000000000
+      internalID: 3390730174492713634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d2a6fd41ed85720800000000000000
+      internalID: 2835260146658717073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcef3c2b2998f9c0800000000000000
+      internalID: -3893193467156763439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af1a7b35006d5ed0800000000000000
+      internalID: -2423675448866496599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a03eaab7a771580800000000000000
+      internalID: -8856475470634218914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67fc5b0d61af1070800000000000000
+      internalID: 8079353746240108396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8a15c9f245f9ce0800000000000000
+      internalID: -1396304795998770979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 288
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dac88d8acc319e40800000000000000
+      internalID: 5661373047237036752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c146692669dde0e0800000000000000
+      internalID: -2238894406928809533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf83e195f9866483581047d2d025b359
+      internalID: 487069458419967323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd97a196ac1f24d7799dc22345982668
+      internalID: -8529077627891520807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c2007f47c7145128c0b33d4d672b9d
+      internalID: 7052981089950471856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d17986fa3d5b43f4a1d7ff73de88113
+      internalID: -7357088463101555929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89de9e5c67a804d3f95243ef9622096e
+      internalID: -4585751228752647592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3879c6e92f9c14edebeb1b970b4b0abc
+      internalID: 6110913490591987654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 144
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad83ace761e9e4e4b9aff8186ecd0a1f
+      internalID: 5819820309688216025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83351feba45849688775a3429b5c0d6
+      internalID: 6419713153889055009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e85b63a41002401392f4d2a4a9e9fe5
+      internalID: -4976424618794721369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078996c4a45e34f9eb1699a9fede44a1
+      internalID: 2934460203711276262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53216b3dec5d94433a0df75d25cd39be
+      internalID: 2254879376378747114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 592e50ba76afc4279b1b43f6c6a5ff3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Q_SpriteSheet_0: -6229417924226309470
+      Q_SpriteSheet_1: 7084681308467934781
+      Q_SpriteSheet_10: 190331625552104712
+      Q_SpriteSheet_11: 9221475040612359028
+      Q_SpriteSheet_12: 2675759117193674803
+      Q_SpriteSheet_13: 1691611364722964365
+      Q_SpriteSheet_14: -1899677411763221432
+      Q_SpriteSheet_15: 1314889857401095702
+      Q_SpriteSheet_16: -4207624390284008033
+      Q_SpriteSheet_17: -6283562767931572376
+      Q_SpriteSheet_18: 1425345231984401308
+      Q_SpriteSheet_19: -6085785355215214237
+      Q_SpriteSheet_2: 5468957207270924177
+      Q_SpriteSheet_20: -3982207521708151556
+      Q_SpriteSheet_21: 5335017083612739775
+      Q_SpriteSheet_22: -6022940781906656668
+      Q_SpriteSheet_23: -2861467282334645067
+      Q_SpriteSheet_24: -2581461103341319399
+      Q_SpriteSheet_25: 6614995926923581260
+      Q_SpriteSheet_26: 6306968524955865306
+      Q_SpriteSheet_27: -4757932869372753387
+      Q_SpriteSheet_28: -2817510353030890188
+      Q_SpriteSheet_29: 153321899301004655
+      Q_SpriteSheet_3: -6210902702739789274
+      Q_SpriteSheet_30: 4088298469171175933
+      Q_SpriteSheet_31: -6214626816395074778
+      Q_SpriteSheet_32: 8877264971458463565
+      Q_SpriteSheet_33: -9136150786161294332
+      Q_SpriteSheet_34: 3736021330290730986
+      Q_SpriteSheet_35: -3349761458185130707
+      Q_SpriteSheet_36: 812753841919940875
+      Q_SpriteSheet_37: 2815666243739898036
+      Q_SpriteSheet_38: 2621543066448271820
+      Q_SpriteSheet_39: -823643208905246988
+      Q_SpriteSheet_4: 4833363414865062276
+      Q_SpriteSheet_40: 3390730174492713634
+      Q_SpriteSheet_41: 2835260146658717073
+      Q_SpriteSheet_42: -3893193467156763439
+      Q_SpriteSheet_43: -2423675448866496599
+      Q_SpriteSheet_44: -8856475470634218914
+      Q_SpriteSheet_45: 8079353746240108396
+      Q_SpriteSheet_46: -1396304795998770979
+      Q_SpriteSheet_47: 5661373047237036752
+      Q_SpriteSheet_48: -2238894406928809533
+      Q_SpriteSheet_49: 487069458419967323
+      Q_SpriteSheet_5: -5622035970050967377
+      Q_SpriteSheet_50: -8529077627891520807
+      Q_SpriteSheet_51: 7052981089950471856
+      Q_SpriteSheet_52: -7357088463101555929
+      Q_SpriteSheet_53: -4585751228752647592
+      Q_SpriteSheet_54: 6110913490591987654
+      Q_SpriteSheet_55: 5819820309688216025
+      Q_SpriteSheet_56: 6419713153889055009
+      Q_SpriteSheet_57: -4976424618794721369
+      Q_SpriteSheet_58: 2934460203711276262
+      Q_SpriteSheet_59: 2254879376378747114
+      Q_SpriteSheet_6: 6508347786151092967
+      Q_SpriteSheet_60: -119315524
+      Q_SpriteSheet_61: 2048599788
+      Q_SpriteSheet_62: 1831817974
+      Q_SpriteSheet_63: 802428116
+      Q_SpriteSheet_7: -8867019148374601606
+      Q_SpriteSheet_8: 1534628425193898749
+      Q_SpriteSheet_9: -6994989736339178250
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

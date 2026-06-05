@@ -163,7 +163,7 @@ public class AnimationManager : MonoBehaviour
         {
             for (int j = 0; j < resultImages[i].slotImages.Count; j++)
             {
-                resultImages[i].slotImages[j].transform.GetChild(4).gameObject.SetActive(false);
+                resultImages[i].slotImages[j].transform.GetChild(5).gameObject.SetActive(false);
             }
         }
         isBoostBlastAnimationFinished = false;

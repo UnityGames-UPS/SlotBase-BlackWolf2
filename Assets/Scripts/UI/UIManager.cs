@@ -97,12 +97,7 @@ public class UIManager : MonoBehaviour
     private bool isMusic = true;
     private bool isSound = true;
     private bool isExit = false;
-    private Tween WinPopupTextTween;
-    private Tween ClosePopupTween;
-    private Tween WinTextScaleTween;
-    private Tween WinImageScaleTween;
 
-    internal int FreeSpins;
     private int paytablePageCounter;
 
     internal static string ToSpriteString(string value)
@@ -324,11 +319,12 @@ public class UIManager : MonoBehaviour
         if (Bet_Text) Bet_Text.text = ToSpriteString(_socketManager.initialData.bets[betCounter] * _socketManager.initialData.lines.Count);
         currentTotalBet = _socketManager.initialData.bets[betCounter] * _socketManager.initialData.lines.Count;
         PopulateBonusInfo(_socketManager.features);
+        InitialisePayTable();
     }
 
     internal void SetBetButtonsInteractable(bool interactable)
     {
-        if (BetPlus_Button)  BetPlus_Button.interactable  = interactable;
+        if (BetPlus_Button) BetPlus_Button.interactable = interactable;
         if (BetMinus_Button) BetMinus_Button.interactable = interactable;
     }
 
@@ -466,7 +462,8 @@ public class UIManager : MonoBehaviour
             SetBetButtonsInteractable(false);
             StopSpinButton.gameObject.SetActive(true);
             SpinButton.gameObject.SetActive(false);
-            AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StartAnimation();
+            //AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StartAnimation();
+            AutoSpinButtonAnimation(true);
         }
         else
         {
@@ -477,7 +474,8 @@ public class UIManager : MonoBehaviour
             StopSpinButton.interactable = false;
             StopSpinButton.gameObject.SetActive(true);
             SpinButton.gameObject.SetActive(false);
-            AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StopAnimation();
+            //AutoSpinButton.gameObject.GetComponent<ImageAnimation>().StopAnimation();
+            AutoSpinButtonAnimation(false);
         }
     }
 
@@ -525,45 +523,63 @@ public class UIManager : MonoBehaviour
 
     private void InitialisePayTable()
     {
-        for(int i=0; i<_socketManager.initUIData.paylines.symbols[12].multiplier.Count; i++)
+        for (int i = 0; i < _socketManager.initUIData.paylines.symbols[12].multiplier.Count; i++)
         {
-            ScatterSymbolText[i].text = _socketManager.initUIData.paylines.symbols[12].multiplier[i].ToString() + "X";
+            ScatterSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[12].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[8].multiplier.Count; i++)
         {
-            WildSymbolText[i].text = _socketManager.initUIData.paylines.symbols[8].multiplier[i].ToString() + "X";
+            WildSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[8].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[7].multiplier.Count; i++)
         {
-            MooseSymbolText[i].text = _socketManager.initUIData.paylines.symbols[7].multiplier[i].ToString() + "X";
+            MooseSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[7].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[5].multiplier.Count; i++)
         {
-            LynxSymbolText[i].text = _socketManager.initUIData.paylines.symbols[5].multiplier[i].ToString() + "X";
+            LynxSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[5].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[6].multiplier.Count; i++)
         {
-            EagleSymbolText[i].text = _socketManager.initUIData.paylines.symbols[6].multiplier[i].ToString() + "X";
+            EagleSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[6].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[4].multiplier.Count; i++)
         {
-            OwlSymbolText[i].text = _socketManager.initUIData.paylines.symbols[4].multiplier[i].ToString() + "X";
+            OwlSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[4].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[0].multiplier.Count; i++)
         {
-            ASymbolText[i].text = _socketManager.initUIData.paylines.symbols[0].multiplier[i].ToString() + "X";
+            ASymbolText[i].text = (_socketManager.initUIData.paylines.symbols[0].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[1].multiplier.Count; i++)
         {
-            KSymbolText[i].text = _socketManager.initUIData.paylines.symbols[1].multiplier[i].ToString() + "X";
+            KSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[1].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[2].multiplier.Count; i++)
         {
-            QSymbolText[i].text = _socketManager.initUIData.paylines.symbols[2].multiplier[i].ToString() + "X";
+            QSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[2].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
         }
         for (int i = 0; i < _socketManager.initUIData.paylines.symbols[3].multiplier.Count; i++)
         {
-            JSymbolText[i].text = _socketManager.initUIData.paylines.symbols[3].multiplier[i].ToString() + "X";
+            JSymbolText[i].text = (_socketManager.initUIData.paylines.symbols[3].multiplier[i] * _socketManager.initialData.bets[betCounter]).ToString() + "X";
+        }
+    }
+
+    private void AutoSpinButtonAnimation(bool animate)
+    {
+        var arrowObject = AutoSpinButton.transform.GetChild(0).gameObject;
+        //while (isAutoSpinAnimating)
+        if (animate)
+        {
+            //arrowObject.SetActive(true);
+            arrowObject.transform.DORotate(new Vector3(0, 0, -360), 3f, RotateMode.LocalAxisAdd)
+                       .SetEase(Ease.Linear)
+                       .SetLoops(-1);
+        }
+        else
+        {
+            arrowObject.transform.DOKill();
+            //arrowObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 }
