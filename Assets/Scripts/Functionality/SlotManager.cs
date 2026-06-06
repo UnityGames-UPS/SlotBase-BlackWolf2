@@ -11,6 +11,9 @@ public class SlotManager : MonoBehaviour
     [Header("Sprites")]
     [SerializeField] private Sprite[] _symbolSprites;
     [SerializeField] private Sprite BlankSprite;
+    [SerializeField] private Sprite MiniTextSprite;
+    [SerializeField] private Sprite MinorTextSprite;
+    [SerializeField] private Sprite MajorTextSprite;
 
     [Header("Slot Images")]
     [SerializeField] private List<SlotImage> _totalImages;
@@ -302,7 +305,7 @@ public class SlotManager : MonoBehaviour
 
         _socketManager.AccumulateResult(_uiManager.betCounter);
         yield return new WaitUntil(() => _socketManager.isResultdone);
-        _currentBalance = _socketManager.playerdata.balance;
+        _currentBalance = _socketManager.resultData.player.balance;
 
         StartCoroutine(moonPhases.SetMoonPhase(_socketManager.resultData.payload.levelProgress));
 
@@ -315,6 +318,7 @@ public class SlotManager : MonoBehaviour
                 {
                     //_resultImages[i].slotImages[j].sprite = _symbolSprites[symbolId];
                     _resultImages[i].slotImages[j].GetComponentInChildren<TMP_Text>().text = "";
+                    _resultImages[i].slotImages[j].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>(true).gameObject.SetActive(false);
                     StartCoroutine(SymbolSize(_resultImages[i].slotImages[j], _symbolSprites[symbolId]));
                 }
             }
@@ -328,8 +332,29 @@ public class SlotManager : MonoBehaviour
                 int position = bs.position;
                 if (_resultImages[reel].slotImages[position].transform.GetChild(2).GetComponent<Image>().sprite != _symbolSprites[11])
                 {
-                    _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text =
-                        UIManager.ToSpriteString(bs.value);
+                    if (bs.isJackpot)
+                    {
+                        if (bs.jackpotName.ToUpper() == "MINI")
+                        {
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>(true).gameObject.SetActive(true);
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>().sprite = MiniTextSprite;
+                        }
+                        else if (bs.jackpotName.ToUpper() == "MINOR")
+                        {
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>(true).gameObject.SetActive(true);
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>().sprite = MinorTextSprite;
+                        }
+                        else if (bs.jackpotName.ToUpper() == "MAJOR")
+                        {
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>(true).gameObject.SetActive(true);
+                            _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().GetComponentInChildren<Image>().sprite = MajorTextSprite;
+                        }
+                    }
+                    else
+                    {
+                        _resultImages[reel].slotImages[position].GetComponentInChildren<TMP_Text>().text =
+                            UIManager.ToSpriteString(bs.value);
+                    }
                 }
             }
         }
@@ -457,10 +482,23 @@ public class SlotManager : MonoBehaviour
                 for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
                 {
                     if (_resultImages[i].slotImages[j].sprite == _symbolSprites[9] || _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<Image>().sprite == _symbolSprites[9])
+                    //foreach (var bs in _socketManager.resultData.payload.bs)
                     {
                         animationManager.isBoostBlastAnimationFinished = false;
-                        double boostAmount = UIManager.FromSpriteString(
-                            _resultImages[i].slotImages[j].gameObject.GetComponentInChildren<TMP_Text>().text);
+                        double boostAmount = UIManager.FromSpriteString(_resultImages[i].slotImages[j].gameObject.GetComponentInChildren<TMP_Text>().text);
+                        //double boostAmount = bs.value;
+                        if (boostAmount == 0)
+                        {
+                            foreach (var bs in _socketManager.resultData.payload.bs)
+                            {
+                                if (bs.reel == i && bs.position == j)
+                                {
+                                    boostAmount = bs.value;
+                                    break;
+                                }
+                            }
+                        }
+                        Debug.Log($"Starting Boost Blast Animation for symbol at reel {i} position {j} with boost amount {boostAmount}");
                         TrailObject trail = _resultImages[i].slotImages[j].gameObject.GetComponentInChildren<TrailObject>(true);
                         if (trail != null)
                         {
@@ -479,7 +517,16 @@ public class SlotManager : MonoBehaviour
         {
             // Boost winnings shown — placeholder
             winPopupAnimation.ShowBoostWinPopup(_socketManager.resultData.payload.boostWin);
-            _uiManager.UpdateBalance(_currentBalance);
+            //_uiManager.UpdateBalance(_currentBalance);
+            yield return new WaitUntil(() => winPopupAnimation.popupDone);
+        }
+
+        if (_socketManager.resultData.payload.lineWins.Count > 0)
+        {
+            _paylineManager.DisplayWinningLines(_socketManager.resultData.payload.lineWins);
+            //_uiManager.UpdateWin(_socketManager.resultData.payload.winAmount);
+            winPopupAnimation.ShowNormalWinPopup(_socketManager.resultData.payload.winAmount, !_isFreeSpin);
+            //_uiManager.UpdateBalance(_currentBalance);
             yield return new WaitUntil(() => winPopupAnimation.popupDone);
         }
 
@@ -514,14 +561,6 @@ public class SlotManager : MonoBehaviour
             yield break;
         }
 
-        if (_socketManager.resultData.payload.lineWins.Count > 0)
-        {
-            _paylineManager.DisplayWinningLines(_socketManager.resultData.payload.lineWins);
-            _uiManager.UpdateWin(_socketManager.resultData.payload.winAmount);
-            winPopupAnimation.ShowNormalWinPopup(_socketManager.resultData.payload.winAmount, !_isFreeSpin);
-            _uiManager.UpdateBalance(_currentBalance);
-            yield return new WaitUntil(() => winPopupAnimation.popupDone);
-        }
 
         if (_socketManager.resultData.payload.freeSpinTriggered && !_isFreeSpin)
         {
@@ -551,6 +590,7 @@ public class SlotManager : MonoBehaviour
 
         // All paths that reach here are truly done spinning
         _isSpinning = false;
+        _currentBalance = _socketManager.resultData.player.balance;
 
         if (!_isAutoSpin && !_isFreeSpin)
         {
@@ -716,11 +756,11 @@ public class SlotManager : MonoBehaviour
 
         if (currentSprite == _symbolSprites[12])      //Free Spin 
         {
-            childRect.localScale = new Vector3(2.1f, 2.1f, 2.1f);
-            imgAnim.textureArray = freeSpinTriggerAnimation;
-            imgAnim.doLoopAnimation = false;
-            imgAnim.AnimationSpeed = 35f;
-            img.sprite = imgAnim.textureArray[0];
+            childRect.localScale = new Vector3(1f, 1f, 1f);
+            // imgAnim.textureArray = freeSpinTriggerAnimation;
+            // imgAnim.doLoopAnimation = false;
+            // imgAnim.AnimationSpeed = 35f;
+            img.sprite = _symbolSprites[12];
             //imgAnim.StartAnimation();
         }
     }
@@ -865,22 +905,46 @@ public class SlotManager : MonoBehaviour
 
     private IEnumerator FreeSpinStartAnimation()
     {
+        int totalSymbols = 0;
+        int finishedSymbols = 0;
 
+        // Pass 1 — start ALL trigger animations simultaneously
         for (int i = 0; i < _resultImages.Count; i++)
         {
             for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
             {
-                if (_resultImages[i].slotImages[j].sprite == _symbolSprites[12])
-                {
-                    _resultImages[i].slotImages[j].transform.GetChild(2).gameObject.SetActive(true);
-                    _resultImages[i].slotImages[j].transform.GetChild(2).GetComponent<ImageAnimation>().StartAnimation();
-                }
+                Transform child = _resultImages[i].slotImages[j].transform.GetChild(2);
+                if (child.GetComponent<Image>().sprite != _symbolSprites[12]) continue;
+
+                child.gameObject.SetActive(true);
+
+                RectTransform childRect = child.GetComponent<RectTransform>();
+                Image img = child.GetComponent<Image>();
+                ImageAnimation imgAnim = child.GetComponent<ImageAnimation>();
+
+                childRect.localScale = new Vector3(2.1f, 2.1f, 2.1f);
+                imgAnim.textureArray = freeSpinTriggerAnimation;
+                imgAnim.doLoopAnimation = false;
+                imgAnim.AnimationSpeed = 35f;
+                img.sprite = imgAnim.textureArray[0];
+                imgAnim.StartAnimation();
+
+                totalSymbols++;
+
+                // Capture for the lambda — avoids the classic loop-variable closure bug
+                ImageAnimation captured = imgAnim;
+                StartCoroutine(WaitForFreeSpinAnim(captured, () => finishedSymbols++));
             }
         }
 
+        // Wait for every symbol to finish before continuing
+        if (totalSymbols > 0)
+            yield return new WaitUntil(() => finishedSymbols >= totalSymbols);
+
         yield return new WaitForSeconds(2f);
 
-        // Placeholder — add banner / sound effect here when ready.
+        // Intro page
+        TimerSkipped = false;   // reset in case it was set from a previous round
         FreeSpinIntroPage.SetActive(true);
         FreeSpinIntroPage.GetComponent<CanvasGroup>().DOFade(1f, 0.7f).SetEase(Ease.InOutSine);
         FreeSpinTextAnimationObject.GetComponent<ImageAnimation>().StartAnimation();
@@ -894,9 +958,16 @@ public class SlotManager : MonoBehaviour
             timer--;
             if (timer < 0) break;
         }
+
         FreeSpinIntroPage.GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InOutSine);
         FreeSpinIntroFinished = true;
         FreeSpinIntroPage.SetActive(false);
+    }
+
+    private IEnumerator WaitForFreeSpinAnim(ImageAnimation anim, System.Action onFinished)
+    {
+        yield return new WaitUntil(() => anim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
+        onFinished?.Invoke();
     }
 
     private void TimerSkipButtonClicked()

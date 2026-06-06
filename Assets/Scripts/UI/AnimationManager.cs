@@ -53,7 +53,7 @@ public class AnimationManager : MonoBehaviour
 
     internal void LogoBlastAnimation()
     {
-        Debug.Log("L O G O");
+        //Debug.Log("L O G O");
         StartCoroutine(moonPhases.BlastAnimation());
         isLogoBlastAnimationFinished = true;
     }

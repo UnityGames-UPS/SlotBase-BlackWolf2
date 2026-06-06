@@ -32,7 +32,7 @@ public class ImageAnimation : MonoBehaviour
 
 	private void OnDisable()
 	{
-		StopAnimation();
+		//StopAnimation();
 	}
 
 	private void AnimationProcess()

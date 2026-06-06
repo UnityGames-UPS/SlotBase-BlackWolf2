@@ -61,6 +61,11 @@ public class WinPopupAnimation : MonoBehaviour
         if (SkipWinAnimation) SkipWinAnimation.onClick.AddListener(SkipWin);
     }
 
+    private void Start()
+    {
+        //ShowBoostWinPopup(15.644, false);   // initialize popup state (balance text, etc) without animation
+    }
+
     internal void ShowNormalWinPopup(double winAmount, bool animateBalance = true)
     {
         audioController.PlayNormalWin();
@@ -192,7 +197,7 @@ public class WinPopupAnimation : MonoBehaviour
         if (WinPopup_Object) WinPopup_Object.SetActive(true);
         TranslucentBackground.GetComponent<CanvasGroup>().alpha = 0f;
         if (TranslucentBackground) TranslucentBackground.SetActive(true);
-        TranslucentBackground.GetComponent<CanvasGroup>().DOFade(1f, 0.2f);
+        TranslucentBackground.GetComponent<CanvasGroup>().DOFade(1f, 0.4f);
         if (WinTextObject)
         {
             WinTextObject.SetActive(true);
@@ -207,7 +212,7 @@ public class WinPopupAnimation : MonoBehaviour
         WinPopupParent.localScale = Vector3.one * 3f;
         bool textLanded = false;
         _textScaleTween = WinPopupParent
-            .DOScale(Vector3.one, 0.3f)
+            .DOScale(Vector3.one, 0.5f)
             .SetEase(Ease.OutBack)
             .OnComplete(() => textLanded = true);
 
@@ -217,17 +222,17 @@ public class WinPopupAnimation : MonoBehaviour
 
         if (_isSkipped) { yield return FinishSkip(); yield break; }
 
-        if (WinBlastObject)
-        {
-            WinBlastObject.SetActive(true);
-            ImageAnimation blastAnim = WinBlastObject.GetComponent<ImageAnimation>();
-            if (blastAnim != null)
-            {
-                blastAnim.doLoopAnimation = false;
-                blastAnim.StartAnimation();
-                StartCoroutine(DeactivateWhenFinished(WinBlastObject, blastAnim));
-            }
-        }
+        // if (WinBlastObject)
+        // {
+        //     WinBlastObject.SetActive(true);
+        //     ImageAnimation blastAnim = WinBlastObject.GetComponent<ImageAnimation>();
+        //     if (blastAnim != null)
+        //     {
+        //         blastAnim.doLoopAnimation = false;
+        //         blastAnim.StartAnimation();
+        //         StartCoroutine(DeactivateWhenFinished(WinBlastObject, blastAnim));
+        //     }
+        // }
 
         if (Win_Text)
         {
@@ -296,7 +301,7 @@ public class WinPopupAnimation : MonoBehaviour
                 {
                     coinAnim.textureArray = CoinLoopSprites;
                     coinAnim.doLoopAnimation = true;
-                    coinAnim.AnimationSpeed = 31f;
+                    coinAnim.AnimationSpeed = 21f;
                     coinAnim.StartAnimation();
                 }
             }
@@ -416,7 +421,7 @@ public class WinPopupAnimation : MonoBehaviour
         if (WinPopup_Object) WinPopup_Object.SetActive(false);
         if (TranslucentBackground)
         {
-            TranslucentBackground.GetComponent<CanvasGroup>().DOFade(0f, 0.2f);
+            TranslucentBackground.GetComponent<CanvasGroup>().DOFade(0f, 0.4f);
             TranslucentBackground.SetActive(false);
         }
         if (WinPopupGlowObject) WinPopupGlowObject.SetActive(false);

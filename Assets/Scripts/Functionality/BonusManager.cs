@@ -415,8 +415,10 @@ public class BonusManger : MonoBehaviour
         NormalSlotPanel.SetActive(true);
         MultiplierPanel.SetActive(false);
         SpinIndicatorObject.SetActive(false);
+        foreach (GameObject spinIndicator in spinIndicators)
+            spinIndicator.GetComponent<ImageAnimation>().StopAnimation();
         uIManager.ToggleBonusBackground();
-
+        slotManager._currentBalance = socketManager.resultData.player.balance;
         isBonusFinished = true;
     }
 
@@ -861,7 +863,7 @@ public class BonusManger : MonoBehaviour
             yield return new WaitUntil(() => isComplete);
         }
         _alltweens[index].Kill();
-        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 600f);
+        slotTransform.localPosition = new Vector2(slotTransform.localPosition.x, 700f);
         _alltweens[index] = slotTransform.DOLocalMoveY(400f, 0.5f).SetEase(Ease.OutSine).SetSpeedBased(false);
         if (!isStop)
             yield return new WaitForSeconds(0.2f);

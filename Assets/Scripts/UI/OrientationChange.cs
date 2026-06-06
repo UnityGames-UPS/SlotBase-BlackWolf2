@@ -9,7 +9,7 @@ public class OrientationChange : MonoBehaviour
   [SerializeField] private CanvasScaler CanvasScaler;
   [SerializeField] private float MatchWidth = 0f;
   [SerializeField] private float MatchHeight = 1f;
-  [SerializeField] private float PortraitMatchWandH = 0.5f;
+  [SerializeField] private float PortraitMatchHeight = 1f;
   [SerializeField] private float transitionDuration = 0.2f;
   [SerializeField] private float waitForRotation = 0.2f;
 
@@ -35,7 +35,7 @@ public class OrientationChange : MonoBehaviour
     string[] parts = dimensions.Split(',');
     if (parts.Length == 2 && int.TryParse(parts[0], out int width) && int.TryParse(parts[1], out int height) && width > 0 && height > 0)
     {
-      Debug.Log($"Unity: Received Dimensions - Width: {width}, Height: {height}");
+      Debug.LogWarning($"Unity: Received Dimensions - Width: {width}, Height: {height}");
 
       isLandscape = width > height;
 
@@ -45,19 +45,45 @@ public class OrientationChange : MonoBehaviour
 
       float currentAspectRatio = isLandscape ? (float)width / height : (float)height / width;
       float referenceAspectRatio = ReferenceAspect.x / ReferenceAspect.y;
+      Debug.LogWarning("currentAspect Ratio: " + currentAspectRatio);
+      float targetMatch;
 
-      float targetMatch = isLandscape ? (currentAspectRatio > referenceAspectRatio ? MatchHeight : MatchWidth) : PortraitMatchWandH;
+      if (isLandscape)
+      {
+        targetMatch = currentAspectRatio > referenceAspectRatio ? MatchHeight : MatchWidth;
+      }
+      else
+      {
+        if (currentAspectRatio >= 1.3f && currentAspectRatio < 1.4f)
+          targetMatch = 0.33f;   // ~1.3
+        else if (currentAspectRatio >= 1.4f && currentAspectRatio < 1.5f)
+          targetMatch = 0.32f;   // ~1.4
+        else if (currentAspectRatio >= 1.5f && currentAspectRatio < 1.6f)
+          targetMatch = 0.34f;   // ~1.5
+        else if (currentAspectRatio >= 1.6f && currentAspectRatio < 1.85f)
+          targetMatch = 0.5f;    // ~2.0 range
+        else if (currentAspectRatio >= 1.85 && currentAspectRatio < 2)
+          targetMatch = 0.5f;
+        else if (currentAspectRatio >= 2 && currentAspectRatio < 2.4)
+          targetMatch = 0.42f;
+        else if(currentAspectRatio >= 2.4 && currentAspectRatio < 2.6)
+          targetMatch = 0.38f;
+        else if(currentAspectRatio >= 2.6 && currentAspectRatio < 2.7)
+          targetMatch = 0.45f;
+        else
+          targetMatch = PortraitMatchHeight;
+      }
+
       if (matchTween != null && matchTween.IsActive()) matchTween.Kill();
       matchTween = DOTween.To(() => CanvasScaler.matchWidthOrHeight, x => CanvasScaler.matchWidthOrHeight = x, targetMatch, transitionDuration).SetEase(Ease.InOutQuad);
 
-      Debug.Log($"matchWidthOrHeight set to: {targetMatch}");
+      Debug.LogWarning($"matchWidthOrHeight set to: {targetMatch}");
     }
     else
     {
       Debug.LogWarning("Unity: Invalid format received in SwitchDisplay");
     }
   }
-
 
 #if UNITY_EDITOR
   private void Update()

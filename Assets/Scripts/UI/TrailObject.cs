@@ -80,7 +80,7 @@ public class TrailObject : MonoBehaviour
 
     private IEnumerator OnBoostFinished(double bonusAmont)
     {
-        //yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         AnimationManager.BoostBlastAnimation(bonusAmont);
         gameObject.SetActive(false);
         yield return null;

@@ -416,6 +416,8 @@ public class UIManager : MonoBehaviour
         if (_slotManager._isAutoSpin)
         {
             _slotManager.StopAutoSpin();
+            AutoSpinButtonAnimation(false);
+            AutoSpinButton.interactable = false;
         }
 
         // Keep the stop button visible but non-interactable while reels and post-spin
@@ -450,6 +452,7 @@ public class UIManager : MonoBehaviour
             SpinButton.gameObject.SetActive(true);
             StopSpinButton.gameObject.SetActive(false);
             SetBetButtonsInteractable(true);
+            AutoSpinButton.interactable = true;
         }
     }
 
