@@ -343,7 +343,7 @@ public class WinPopupAnimation : MonoBehaviour
         // Snap all text to final values
         if (Win_Text) Win_Text.text = UIManager.ToSpriteString(_targetAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
-        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
+        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(socketManager.resultData.player.balance, "F2");
 
         // Brief pause so the snapped values are visible, then close
         yield return new WaitForSeconds(0.5f);
