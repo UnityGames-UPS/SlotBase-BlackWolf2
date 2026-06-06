@@ -517,7 +517,7 @@ public class SlotManager : MonoBehaviour
         {
             // Boost winnings shown — placeholder
             winPopupAnimation.ShowBoostWinPopup(_socketManager.resultData.payload.boostWin);
-            //_uiManager.UpdateBalance(_currentBalance);
+            _uiManager.UpdateBalance(_currentBalance);
             yield return new WaitUntil(() => winPopupAnimation.popupDone);
         }
 
@@ -526,7 +526,7 @@ public class SlotManager : MonoBehaviour
             _paylineManager.DisplayWinningLines(_socketManager.resultData.payload.lineWins);
             //_uiManager.UpdateWin(_socketManager.resultData.payload.winAmount);
             winPopupAnimation.ShowNormalWinPopup(_socketManager.resultData.payload.winAmount, !_isFreeSpin);
-            //_uiManager.UpdateBalance(_currentBalance);
+            _uiManager.UpdateBalance(_currentBalance);
             yield return new WaitUntil(() => winPopupAnimation.popupDone);
         }
 

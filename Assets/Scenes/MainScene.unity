@@ -68001,6 +68001,7 @@ MonoBehaviour:
   slotManager: {fileID: 1472552266}
   uiManager: {fileID: 377874625}
   audioController: {fileID: 1030743558465206379}
+  socketManager: {fileID: 923888316}
   WinAmountText: {fileID: 1923262452}
   BalanceText: {fileID: 103851657}
   WinPopup_Object: {fileID: 105965025}
@@ -80014,7 +80015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a48a0a7ad3e416bbec0af059204b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestToken: 6325b3ad0eff48f38099471e3d804965
+  TestToken: 83c5d33f947f40609987745b9d9442b4
   _slotManager: {fileID: 1472552266}
   _uiManager: {fileID: 377874625}
   JSManager: {fileID: 1148238420}
@@ -107781,7 +107782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e4947d070cf41eb87bc6a9968c32a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Location: 0.59204763
+  m_Location: 0.64657253
   m_Width: 0.189
   m_Softness: 1
   m_Brightness: 1

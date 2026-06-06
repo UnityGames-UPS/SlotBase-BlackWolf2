@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 using TMPro;
 using DG.Tweening;
+using Best.SocketIO;
 
 public class WinPopupAnimation : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class WinPopupAnimation : MonoBehaviour
     [SerializeField] private SlotManager slotManager;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private AudioController audioController;
+    [SerializeField] private SocketIOManager socketManager;
 
     [Header("UI References")]
     [SerializeField] private TMP_Text WinAmountText;
@@ -373,7 +375,7 @@ public class WinPopupAnimation : MonoBehaviour
         // Snap all text to final values immediately
         if (Win_Text) Win_Text.text = UIManager.ToSpriteString(_targetAmount, "F2");
         if (WinAmountText) WinAmountText.text = UIManager.ToSpriteString(_targetAmount, "F2");
-        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(_targetBalance, "F2");
+        if (BalanceText) BalanceText.text = UIManager.ToSpriteString(socketManager.resultData.player.balance, "F2");
 
         // The active coroutine will detect _isSkipped and call FinishSkip/CloseMainPopup itself.
         // If the coroutine hasn't started yet (extremely early tap), kick it off manually.
