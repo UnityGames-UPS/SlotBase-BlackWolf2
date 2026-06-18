@@ -344,6 +344,7 @@ public class SocketIOManager : MonoBehaviour
     {
       case "initData":
         {
+          Debug.Log("BG Build");
           initialData = myData.gameData;
           initUIData = myData.uiData;
           features = myData.features;

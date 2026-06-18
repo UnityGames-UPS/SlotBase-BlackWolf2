@@ -488,13 +488,13 @@ public class UIManager : MonoBehaviour
 
     internal void ToggleBackground(bool isDay)
     {
-        Bg_Image.sprite = isDay ? Day_Sprite : Night_Sprite;
+        //Bg_Image.sprite = isDay ? Day_Sprite : Night_Sprite;
         BgSide_Image.sprite = isDay ? DaySide_Sprite : NightSide_Sprite;
     }
 
     internal void ToggleBonusBackground()
     {
-        Bg_Image.sprite = Bonus_Sprite;
+        //Bg_Image.sprite = Bonus_Sprite;
         BgSide_Image.sprite = BonusSide_Sprite;
     }
 
