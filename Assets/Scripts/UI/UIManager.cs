@@ -31,9 +31,13 @@ public class UIManager : MonoBehaviour
 
     [Header("Bg UI Reference")]
     [SerializeField] private Image Bg_Image;
+    [SerializeField] private Image BgSide_Image;
     [SerializeField] private Sprite Day_Sprite;
     [SerializeField] private Sprite Night_Sprite;
     [SerializeField] private Sprite Bonus_Sprite;
+    [SerializeField] private Sprite DaySide_Sprite;
+    [SerializeField] private Sprite NightSide_Sprite;
+    [SerializeField] private Sprite BonusSide_Sprite;
 
     [Header("Main Popus UI Object")]
     [SerializeField] private GameObject MainPopup_Object;
@@ -485,11 +489,13 @@ public class UIManager : MonoBehaviour
     internal void ToggleBackground(bool isDay)
     {
         Bg_Image.sprite = isDay ? Day_Sprite : Night_Sprite;
+        BgSide_Image.sprite = isDay ? DaySide_Sprite : NightSide_Sprite;
     }
 
     internal void ToggleBonusBackground()
     {
         Bg_Image.sprite = Bonus_Sprite;
+        BgSide_Image.sprite = BonusSide_Sprite;
     }
 
     // Ticks the displayed free-spin counter down by 1 at the moment the spin
