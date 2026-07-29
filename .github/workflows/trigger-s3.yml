@@ -10,7 +10,7 @@ jobs:
   call-reusable:
     uses: UnityGames-UPS/unity-build-pipeline/.github/workflows/main.yml@main
     with:
-      s3_bucket: unity.build-prod-test
+      s3_bucket: unity.build-dev
       s3_folder: SL-BW
       cloudfront_distribution_id: E9CGCQ512LMM7
       invalidate_paths: "/SL-BW/*"
