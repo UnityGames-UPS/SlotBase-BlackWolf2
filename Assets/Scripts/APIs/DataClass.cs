@@ -47,6 +47,12 @@ public class Player
 }
 
 [Serializable]
+public class BalanceSyncPayload
+{
+    public double balance;
+}
+
+[Serializable]
 public class GameData
 {
     public List<List<int>> lines { get; set; }

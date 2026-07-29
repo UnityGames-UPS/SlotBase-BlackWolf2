@@ -95,6 +95,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private AudioController _audioController;
     [SerializeField] private SocketIOManager _socketManager;
     [SerializeField] private SlotManager _slotManager;
+    [SerializeField] private JSFunctCalls jsFunctCalls;
 
     internal double currentTotalBet = 0;
     internal int betCounter = 0;
@@ -166,6 +167,20 @@ public class UIManager : MonoBehaviour
                ? result : 0;
     }
 
+
+    private void Awake()
+    {
+        if (jsFunctCalls != null)
+            jsFunctCalls.RegisterVisibilityListener(gameObject.name);
+    }
+
+    public void OnFocusChanged(string value)
+    {
+        bool focused = value == "1";
+        Debug.Log("UNITY FOCUS CHANGED: " + value + " (focused: " + focused + ")");
+        _audioController?.SetMuteAll(!focused);
+        _socketManager?.HandleFocusChange(focused);
+    }
 
     private void Start()
     {

@@ -224,6 +224,14 @@ public class SlotManager : MonoBehaviour
         }
     }
 
+    internal void UpdateBalanceDisplay(double newBalance)
+    {
+        _currentBalance = newBalance;
+        _uiManager.UpdateBalance(newBalance);
+        if (_currentBalance < _uiManager.currentTotalBet && !_isFreeSpin && !_isSpinning)
+            _uiManager.LowBalPopup();
+    }
+
     internal void StartSlots(bool autoSpin = false)
     {
         if (_isSpinning) return;

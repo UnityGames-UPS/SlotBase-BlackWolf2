@@ -33701,6 +33701,7 @@ MonoBehaviour:
   _audioController: {fileID: 1030743558465206379}
   _socketManager: {fileID: 923888316}
   _slotManager: {fileID: 1472552266}
+  jsFunctCalls: {fileID: 1148238420}
 --- !u!1 &378197073
 GameObject:
   m_ObjectHideFlags: 0
@@ -58898,9 +58899,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIWrapper: {fileID: 396028257}
   CanvasScaler: {fileID: 51930702}
-  MatchWidth: 0
-  MatchHeight: 1
-  PortraitMatchHeight: 1
   transitionDuration: 0.2
   waitForRotation: 0.2
 --- !u!4 &675335794
@@ -107822,7 +107820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e4947d070cf41eb87bc6a9968c32a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Location: 0.004999998
+  m_Location: 0.92811894
   m_Width: 0.189
   m_Softness: 1
   m_Brightness: 1
