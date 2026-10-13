@@ -825,7 +825,7 @@ PlayerSettings:
     PS5: DOTWEEN
     QNX: DOTWEEN
     Stadia: DOTWEEN
-    Standalone: DOTWEEN
+    Standalone: DOTWEEN;CURVY_SPLINES;CURVY_SPLINES_8_11_0
     VisionOS: DOTWEEN
     WebGL: DOTWEEN;CURVY_SPLINES;CURVY_SPLINES_8_11_0
     Windows Store Apps: DOTWEEN
